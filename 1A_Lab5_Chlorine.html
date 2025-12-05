@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry 1A | Lab 5: Preparation and Properties of Chlorine - Blue Nova Chemistry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a202c;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            color: #065f46;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #10b981;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #047857;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #34d399;
+        }
+        
+        h3 {
+            color: #059669;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #10b981;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #1a202c;
+        }
+        
+        code {
+            background: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            color: #1a202c;
+            font-size: 0.9em;
+            border: 1px solid #d1fae5;
+        }
+        
+        pre {
+            background: #f0fdf4;
+            color: #1a202c;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #d1fae5;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        pre code {
+            background: transparent;
+            color: #1a202c;
+            padding: 0;
+            border: none;
+        }
+        
+        .experiment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .experiment-table thead {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+        }
+        
+        .experiment-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .experiment-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #d1fae5;
+            color: #1a202c;
+        }
+        
+        .experiment-table tbody tr:hover {
+            background: #f0fdf4;
+            transition: background 0.3s ease;
+        }
+        
+        .experiment-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #1a202c;
+        }
+        
+        strong {
+            color: #065f46;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #047857;
+        }
+        
+        blockquote {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: #1a202c;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4);
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #d1fae5;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            
+            .back-link {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chemistry 1A | Lab 5: Preparation and Properties of Chlorine</h1>
+<h1>化学1A | 实验5：氯气的制备与性质</h1>
+
+<p>---</p>
+
+<h2>Experiment Purpose | 实验目的</h2>
+
+<p>This is an <strong>investigative experiment</strong> designed to help you:
+<ul>
+<li>Explore the laboratory method for preparing chlorine gas</li>
+<li>Observe and investigate the physical and chemical properties of chlorine</li>
+<li>Develop safe laboratory practices through inquiry-based learning</li>
+<li>Understand the oxidizing and bleaching properties of chlorine through hands-on observation</li>
+</ul></p>
+
+<p>这是一个<strong>探究性实验</strong>，旨在帮助你：
+<ul>
+<li>探索实验室制取氯气的方法</li>
+<li>观察和研究氯气的物理性质和化学性质</li>
+<li>通过探究式学习培养安全的实验室操作习惯</li>
+<li>通过亲手观察理解氯气的氧化性和漂白性</li>
+</ul></p>
+
+<p>---</p>
+
+<h2>Safety Learning | 安全学习</h2>
+
+<p>> <strong>Inquiry-Based Learning Prompt | 探究式学习提示</strong>  
+> Before starting this experiment, think about the following questions and research the answers. This will help you conduct the experiment safely.  
+> 在开始实验前，请思考以下问题并查阅资料。这将帮助你安全地进行实验。</p>
+
+<h3>Pre-lab Safety Questions | 实验前安全问题</h3>
+
+<strong>Please research and answer these questions before the experiment:</strong>
+
+<ul>
+<li><strong>Chlorine Gas Hazards | 氯气的危害</strong></li>
+</ul>
+   - What are the potential hazards of chlorine gas?
+   - 氯气可能有哪些危害？
+
+<ul>
+<li><strong>Concentrated Acid Safety | 浓酸的安全</strong></li>
+</ul>
+   - What safety precautions should you take when using concentrated hydrochloric acid?
+   - 在使用浓盐酸前，你认为需要采取哪些安全措施？
+
+<ul>
+<li><strong>Emergency Response | 应急处理</strong></li>
+</ul>
+   - If chlorine gas is accidentally inhaled, what should you do immediately?
+   - 如果不慎吸入氯气，应该立即采取什么措施？
+
+<ul>
+<li><strong>Waste Disposal | 废液处理</strong></li>
+</ul>
+   - How should the waste gases and solutions from this experiment be properly disposed of?
+   - 本实验产生的废气和废液应该如何正确处理？
+
+<ul>
+<li><strong>Personal Protection | 个人防护</strong></li>
+</ul>
+   - What personal protective equipment (PPE) is necessary for this experiment?
+   - 进行本实验需要哪些个人防护装备？
+
+<h3>Safety Guidelines | 安全指南</h3>
+
+<p>After considering the questions above, review these safety guidelines:</p>
+
+<p>> <strong>⚠️ CRITICAL SAFETY WARNINGS | 重要安全警告</strong></p>
+
+<ul>
+<li><strong>Chlorine is TOXIC | 氯气有毒</strong></li>
+</ul>
+   - This experiment MUST be conducted in a fume hood
+   - 本实验必须在通风橱中进行
+   - Never smell chlorine gas directly
+   - 绝不可直接闻氯气
+
+<ul>
+<li><strong>Concentrated Acids | 浓酸处理</strong></li>
+</ul>
+   - Wear safety goggles and gloves at all times
+   - 始终佩戴护目镜和手套
+   - Add acid slowly along the wall of the flask
+   - 沿烧瓶壁缓慢加入酸
+
+<ul>
+<li><strong>Gas Absorption | 尾气吸收</strong></li>
+</ul>
+   - All waste chlorine gas must be absorbed by NaOH solution
+   - 所有废氯气必须用NaOH溶液吸收
+   - Never release chlorine gas into the atmosphere
+   - 绝不可将氯气直接排放到大气中
+
+<ul>
+<li><strong>Emergency Procedures | 应急程序</strong></li>
+</ul>
+   - If chlorine is inhaled: Move to fresh air immediately and seek medical attention
+   - 如吸入氯气：立即转移到通风处并就医
+   - If acid contacts skin: Rinse with large amounts of water for at least 15 minutes
+   - 如酸接触皮肤：用大量水冲洗至少15分钟
+
+<p>---</p>
+
+<h2>Experimental Preparation | 实验准备</h2>
+
+<h3>Materials and Equipment | 材料与仪器</h3>
+
+<strong>Chemicals | 化学药品</strong>:
+<ul>
+<li>Manganese dioxide (MnO₂) powder, 5 g | 二氧化锰粉末，5克</li>
+<li>Concentrated hydrochloric acid (HCl, 37%), 20 mL | 浓盐酸（37%），20毫升</li>
+<li>Saturated sodium chloride solution (NaCl), 100 mL | 饱和食盐水，100毫升</li>
+<li>Concentrated sulfuric acid (H₂SO₄, 98%), 50 mL | 浓硫酸（98%），50毫升</li>
+<li>Sodium hydroxide solution (NaOH, 2 M), 200 mL | 氢氧化钠溶液（2 M），200毫升</li>
+<li>Bromine water (Br₂/H₂O) | 溴水</li>
+<li>Potassium permanganate solution (KMnO₄, acidified) | 酸性高锰酸钾溶液</li>
+<li>Copper wire | 铜丝</li>
+<li>Colored cloth strips | 有色布条</li>
+<li>Starch-potassium iodide test paper | 淀粉碘化钾试纸</li>
+</ul>
+
+<strong>Equipment | 实验仪器</strong>:
+<ul>
+<li>Round-bottom flask (250 mL) | 圆底烧瓶（250毫升）</li>
+<li>Separatory funnel | 分液漏斗</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Gas delivery tubes | 导气管</li>
+<li>Wash bottles (3) | 洗气瓶（3个）</li>
+<li>Gas collection bottles (3) | 集气瓶（3个）</li>
+<li>Beaker (500 mL) for tail gas absorption | 烧杯（500毫升）用于尾气吸收</li>
+<li>Iron stand with clamps | 铁架台和铁夹</li>
+<li>Test tubes | 试管</li>
+<li>Thermometer | 温度计</li>
+</ul>
+
+<p>---</p>
+
+<h2>Experimental Procedure | 实验操作</h2>
+
+<p>> <strong>Inquiry-Based Learning | 探究式学习</strong>  
+> During the experiment, focus on careful observation of phenomena and think about the questions provided.  
+> 在实验过程中，请仔细观察现象并思考提供的问题。</p>
+
+<h3>Part 1: Apparatus Setup | 装置组装</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Assemble the gas generation apparatus | 组装气体发生装置</strong></li>
+</ul>
+   - Place 5.0 g of MnO₂ powder in the round-bottom flask
+   - 在圆底烧瓶中加入5.0克二氧化锰粉末
+   - Insert the separatory funnel into the flask stopper
+   - 将分液漏斗插入烧瓶塞中
+
+<ul>
+<li><strong>Connect the purification system | 连接净化系统</strong></li>
+</ul>
+   - Connect gas delivery tube to the first wash bottle containing 100 mL saturated NaCl solution
+   - 将导气管连接到第一个洗气瓶（装有100毫升饱和食盐水）
+   - Connect to the second wash bottle containing 50 mL concentrated H₂SO₄
+   - 连接到第二个洗气瓶（装有50毫升浓硫酸）
+
+<ul>
+<li><strong>Set up tail gas absorption | 设置尾气吸收</strong></li>
+</ul>
+   - Place a 500 mL beaker containing 200 mL of 2 M NaOH solution at the end
+   - 在末端放置装有200毫升2 M NaOH溶液的500毫升烧杯
+   - Ensure the gas delivery tube extends into the NaOH solution
+   - 确保导气管伸入NaOH溶液中
+
+<ul>
+<li><strong>Check for leaks | 检查气密性</strong></li>
+</ul>
+   - Close the separatory funnel stopcock
+   - 关闭分液漏斗活塞
+   - Gently warm the flask and observe if bubbles appear in the NaOH solution
+   - 轻轻加热烧瓶，观察NaOH溶液中是否出现气泡
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why is it important to check the apparatus for leaks before starting?</li>
+</ul>
+   为什么在开始前检查装置气密性很重要？
+
+<ul>
+<li>What is the purpose of the saturated NaCl solution in the first wash bottle?</li>
+</ul>
+   第一个洗气瓶中饱和食盐水的作用是什么？
+
+<p>---</p>
+
+<h3>Part 2: Preparation of Chlorine Gas | 氯气的制备</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Add concentrated HCl | 加入浓盐酸</strong></li>
+</ul>
+   - Pour 20 mL of concentrated HCl (37%) into the separatory funnel
+   - 向分液漏斗中倒入20毫升浓盐酸（37%）
+   - Slowly open the stopcock to allow HCl to drip into the flask
+   - 缓慢打开活塞，让盐酸滴入烧瓶
+
+<ul>
+<li><strong>Heat the reaction mixture | 加热反应混合物</strong></li>
+</ul>
+   - Light the alcohol lamp and gently heat the round-bottom flask
+   - 点燃酒精灯，轻轻加热圆底烧瓶
+   - Maintain gentle heating throughout the experiment
+   - 在整个实验过程中保持温和加热
+
+<ul>
+<li><strong>Observe gas generation | 观察气体产生</strong></li>
+</ul>
+   - Wait for gas generation to begin
+   - 等待气体开始产生
+   - Allow the system to purge for 2-3 minutes before collecting gas
+   - 让系统排气2-3分钟后再收集气体
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What color is the gas being produced?</li>
+</ul>
+   产生的气体是什么颜色？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the liquid in the round-bottom flask?</li>
+</ul>
+   圆底烧瓶中的液体发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Do you observe any changes in the wash bottles?</li>
+</ul>
+   你观察到洗气瓶中有什么变化吗？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why do we need to heat the reaction mixture?</li>
+</ul>
+   为什么需要加热反应混合物？
+
+<ul>
+<li>Why do we wait 2-3 minutes before collecting the gas?</li>
+</ul>
+   为什么要等待2-3分钟后再收集气体？
+
+<p>---</p>
+
+<h3>Part 3: Collection of Chlorine Gas | 氯气的收集</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare collection bottles | 准备收集瓶</strong></li>
+</ul>
+   - Fill 3 gas collection bottles with water and invert them in a water trough
+   - 用水装满3个集气瓶并倒置在水槽中
+   - OR prepare dry bottles for upward displacement of air
+   - 或准备干燥的瓶子用于向上排空气法
+
+<ul>
+<li><strong>Collect chlorine gas | 收集氯气</strong></li>
+</ul>
+   - Insert the gas delivery tube into the first collection bottle
+   - 将导气管插入第一个集气瓶
+   - Collect gas by downward displacement of water
+   - 用向下排水法收集气体
+
+<ul>
+<li><strong>Test for fullness | 检验是否收集满</strong></li>
+</ul>
+   - Hold moist starch-KI test paper near the bottle mouth
+   - 将湿润的淀粉碘化钾试纸靠近瓶口
+   - When the paper turns blue-black, the bottle is full
+   - 当试纸变蓝黑色时，瓶子已满
+
+<ul>
+<li><strong>Seal the bottles | 密封瓶子</strong></li>
+</ul>
+   - Cover each full bottle with a glass plate underwater
+   - 在水下用玻璃片盖住每个装满的瓶子
+   - Remove from water trough keeping the plate in place
+   - 保持玻璃片位置从水槽中取出
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What color is the collected gas?</li>
+</ul>
+   收集到的气体是什么颜色？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the starch-KI test paper?</li>
+</ul>
+   淀粉碘化钾试纸发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why can we use downward displacement of water to collect chlorine?</li>
+</ul>
+   为什么可以用向下排水法收集氯气？
+
+<ul>
+<li>How does the starch-KI test paper detect chlorine gas?</li>
+</ul>
+   淀粉碘化钾试纸如何检测氯气？
+
+<p>---</p>
+
+<h3>Part 4: Physical Properties of Chlorine | 氯气的物理性质</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Observe color and state | 观察颜色和状态</strong></li>
+</ul>
+   - Examine the collected chlorine gas in the bottle
+   - 检查收集瓶中的氯气
+
+<ul>
+<li><strong>Test odor (CAREFULLY!) | 测试气味（小心！）</strong></li>
+</ul>
+   - DO NOT smell directly!
+   - 不要直接闻！
+   - Use your hand to waft a small amount of gas toward your nose
+   - 用手扇动少量气体到鼻子附近
+
+<ul>
+<li><strong>Observe density | 观察密度</strong></li>
+</ul>
+   - Note the position of the yellow-green color in the bottle
+   - 注意黄绿色在瓶中的位置
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>Describe the color and physical state of chlorine:</li>
+</ul>
+   描述氯气的颜色和物理状态：
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Describe the odor (be very careful!):</li>
+</ul>
+   描述气味（非常小心！）：
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Is chlorine gas denser or less dense than air? How can you tell?</li>
+</ul>
+   氯气比空气密度大还是小？你如何判断？
+   
+   Your observation | 你的观察: _______________________
+
+<p>---</p>
+
+<h3>Part 5: Chemical Properties - Reaction with Metals | 化学性质 - 与金属反应</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare copper wire | 准备铜丝</strong></li>
+</ul>
+   - Take a 10 cm piece of copper wire
+   - 取一根10厘米长的铜丝
+   - Coil one end to increase surface area
+   - 将一端卷成螺旋以增加表面积
+
+<ul>
+<li><strong>Heat and react | 加热并反应</strong></li>
+</ul>
+   - Heat the copper wire in the alcohol lamp flame until red hot
+   - 在酒精灯火焰中加热铜丝直到红热
+   - Quickly insert the hot copper wire into a bottle of chlorine gas
+   - 快速将红热的铜丝插入装有氯气的瓶中
+
+<ul>
+<li><strong>Observe the reaction | 观察反应</strong></li>
+</ul>
+   - Watch what happens to the copper wire
+   - 观察铜丝发生了什么
+   - Note any smoke or color changes
+   - 注意任何烟雾或颜色变化
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What happens when the hot copper wire enters the chlorine gas?</li>
+</ul>
+   当红热的铜丝进入氯气时发生了什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What color is the smoke produced?</li>
+</ul>
+   产生的烟是什么颜色？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What substance do you think forms on the copper wire?</li>
+</ul>
+   你认为铜丝上形成了什么物质？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why does the copper wire need to be heated first?</li>
+</ul>
+   为什么铜丝需要先加热？
+
+<ul>
+<li>Based on your observations, what type of chemical reaction occurred?</li>
+</ul>
+   根据你的观察，发生了什么类型的化学反应？
+
+<p>---</p>
+
+<h3>Part 6: Bleaching Property | 漂白性质</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare test materials | 准备测试材料</strong></li>
+</ul>
+   - Cut colored cloth into small strips (2 cm × 5 cm)
+   - 将有色布条剪成小条（2厘米×5厘米）
+   - Moisten one strip with distilled water
+   - 用蒸馏水润湿一条布条
+   - Keep one strip dry
+   - 保持一条布条干燥
+
+<ul>
+<li><strong>Test with dry chlorine | 用干燥氯气测试</strong></li>
+</ul>
+   - Place the dry colored cloth strip in a bottle of chlorine gas
+   - 将干燥的有色布条放入装有氯气的瓶中
+   - Observe for 2-3 minutes
+   - 观察2-3分钟
+
+<ul>
+<li><strong>Test with moist chlorine | 用湿润氯气测试</strong></li>
+</ul>
+   - Place the moist colored cloth strip in another bottle of chlorine gas
+   - 将湿润的有色布条放入另一瓶氯气中
+   - Observe for 2-3 minutes
+   - 观察2-3分钟
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What happens to the dry colored cloth in chlorine gas?</li>
+</ul>
+   干燥的有色布条在氯气中发生了什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the moist colored cloth in chlorine gas?</li>
+</ul>
+   湿润的有色布条在氯气中发生了什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Is there a difference between the two? If so, what?</li>
+</ul>
+   两者之间有区别吗？如果有，是什么？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Does chlorine gas itself have bleaching properties, or is water necessary?</li>
+</ul>
+   氯气本身具有漂白性吗，还是需要水？
+
+<ul>
+<li>What might be the actual bleaching agent in this experiment?</li>
+</ul>
+   在这个实验中，实际的漂白剂可能是什么？
+
+<p>---</p>
+
+<h3>Part 7: Reaction with Sodium Hydroxide | 与氢氧化钠反应</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare NaOH solution | 准备NaOH溶液</strong></li>
+</ul>
+   - Pour 50 mL of 2 M NaOH solution into a gas wash bottle
+   - 向洗气瓶中倒入50毫升2 M NaOH溶液
+
+<ul>
+<li><strong>Pass chlorine through NaOH | 通氯气入NaOH</strong></li>
+</ul>
+   - Direct the gas delivery tube into the NaOH solution
+   - 将导气管导入NaOH溶液
+   - Continue passing chlorine gas for 5 minutes
+   - 继续通入氯气5分钟
+
+<ul>
+<li><strong>Observe changes | 观察变化</strong></li>
+</ul>
+   - Watch the color of the gas above the solution
+   - 观察溶液上方气体的颜色
+   - Note any temperature changes in the solution
+   - 注意溶液中的温度变化
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What happens to the yellow-green color of chlorine?</li>
+</ul>
+   氯气的黄绿色发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Does the solution temperature change? How?</li>
+</ul>
+   溶液温度有变化吗？如何变化？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why is NaOH solution used to absorb waste chlorine gas?</li>
+</ul>
+   为什么用NaOH溶液吸收废氯气？
+
+<ul>
+<li>What products might form from this reaction?</li>
+</ul>
+   这个反应可能生成什么产物？
+
+<p>---</p>
+
+<h2>Experimental Principles | 实验原理</h2>
+
+<p>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</p>
+
+<p>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</p>
+
+<h3>1. Preparation of Chlorine Gas | 氯气的制备</h3>
+
+<strong>Chemical Reaction | 化学反应:</strong>
+
+<pre><code class="">MnO₂ + 4HCl(concentrated) --Δ--> MnCl₂ + Cl₂↑ + 2H₂O
+</code></pre>
+
+<strong>Reaction Conditions | 反应条件:</strong>
+<ul>
+<li>Concentrated HCl (37%) is required; dilute HCl will not react effectively</li>
+<li>需要浓盐酸（37%）；稀盐酸不能有效反应</li>
+<li>Heating is necessary to increase the reaction rate</li>
+<li>需要加热以提高反应速率</li>
+</ul>
+
+<strong>Role of Reagents | 试剂作用:</strong>
+<ul>
+<li>MnO₂: Oxidizing agent (氧化剂)</li>
+<li>HCl: Reducing agent and provides Cl⁻ ions (还原剂，提供Cl⁻离子)</li>
+</ul>
+
+<h3>2. Purification of Chlorine | 氯气的净化</h3>
+
+<strong>Saturated NaCl Solution | 饱和食盐水:</strong>
+<ul>
+<li>Removes HCl gas (highly soluble in water)</li>
+<li>除去HCl气体（极易溶于水）</li>
+<li>Chlorine has low solubility in saturated NaCl solution</li>
+<li>氯气在饱和食盐水中溶解度低</li>
+</ul>
+
+<strong>Concentrated H₂SO₄ | 浓硫酸:</strong>
+<ul>
+<li>Dries the chlorine gas by absorbing water vapor</li>
+<li>通过吸收水蒸气干燥氯气</li>
+</ul>
+
+<h3>3. Physical Properties | 物理性质</h3>
+
+<ul>
+<li><strong>Color | 颜色:</strong> Yellow-green gas (黄绿色气体)</li>
+<li><strong>Odor | 气味:</strong> Pungent, irritating (刺激性气味)</li>
+<li><strong>Density | 密度:</strong> Denser than air (ρ = 3.21 g/L at STP) (比空气密度大)</li>
+<li><strong>Solubility | 溶解性:</strong> Moderately soluble in water (中等溶于水)</li>
+<li><strong>Toxicity | 毒性:</strong> Highly toxic (剧毒)</li>
+</ul>
+
+<h3>4. Chemical Properties | 化学性质</h3>
+
+<h4>(1) Oxidizing Property - Reaction with Metals | 氧化性 - 与金属反应</h4>
+
+<strong>Reaction with Copper | 与铜反应:</strong>
+<pre><code class="">Cu + Cl₂ --Δ--> CuCl₂
+</code></pre>
+
+<ul>
+<li>Copper burns in chlorine with a brownish-yellow smoke</li>
+<li>铜在氯气中燃烧产生棕黄色烟</li>
+<li>Product: Copper(II) chloride (CuCl₂)</li>
+<li>产物：氯化铜(II)</li>
+</ul>
+
+<strong>Reaction with Iron | 与铁反应:</strong>
+<pre><code class="">2Fe + 3Cl₂ --Δ--> 2FeCl₃
+</code></pre>
+
+<ul>
+<li>Note: Forms Fe³⁺, not Fe²⁺, due to strong oxidizing power of Cl₂</li>
+<li>注意：由于Cl₂的强氧化性，生成Fe³⁺而非Fe²⁺</li>
+</ul>
+
+<h4>(2) Reaction with Water | 与水反应</h4>
+
+<pre><code class="">Cl₂ + H₂O ⇌ HCl + HClO
+</code></pre>
+
+<ul>
+<li>This is a reversible reaction (可逆反应)</li>
+<li>HClO (hypochlorous acid) is unstable and has strong oxidizing power</li>
+<li>HClO（次氯酸）不稳定且具有强氧化性</li>
+<li>HClO is the actual bleaching agent, not Cl₂</li>
+<li>HClO是实际的漂白剂，而非Cl₂</li>
+</ul>
+
+<strong>Chlorine Water Composition | 氯水成分:</strong>
+<ul>
+<li>Molecules: Cl₂, H₂O, HClO</li>
+<li>Ions: H⁺, Cl⁻, ClO⁻, OH⁻</li>
+</ul>
+
+<h4>(3) Bleaching Property | 漂白性质</h4>
+
+<strong>Important Distinction | 重要区别:</strong>
+<ul>
+<li>Dry Cl₂ does NOT bleach (干燥的Cl₂不漂白)</li>
+<li>Moist Cl₂ bleaches because it reacts with water to form HClO</li>
+<li>湿润的Cl₂漂白是因为与水反应生成HClO</li>
+<li>HClO oxidizes colored compounds to colorless compounds</li>
+<li>HClO将有色化合物氧化成无色化合物</li>
+</ul>
+
+<strong>Mechanism | 机理:</strong>
+<pre><code class="">Cl₂ + H₂O → HCl + HClO
+HClO → HCl + [O]
+Colored compound + [O] → Colorless compound
+</code></pre>
+
+<strong>Comparison with SO₂ Bleaching | 与SO₂漂白对比:</strong>
+<ul>
+<li>HClO bleaching: Oxidation, permanent (氧化漂白，永久性)</li>
+<li>SO₂ bleaching: Combination, temporary (化合漂白，暂时性)</li>
+</ul>
+
+<h4>(4) Reaction with Alkali | 与碱反应</h4>
+
+<strong>Reaction with NaOH | 与NaOH反应:</strong>
+<pre><code class="">Cl₂ + 2NaOH → NaCl + NaClO + H₂O
+</code></pre>
+
+<ul>
+<li>This is a disproportionation reaction (歧化反应)</li>
+<li>Chlorine is both oxidized (to ClO⁻) and reduced (to Cl⁻)</li>
+<li>氯既被氧化（成ClO⁻）又被还原（成Cl⁻）</li>
+<li>Used industrially to produce bleach (工业上用于生产漂白液)</li>
+<li>NaClO is the active ingredient in bleach (NaClO是漂白液的有效成分)</li>
+</ul>
+
+<h3>5. Uses of Chlorine | 氯气的用途</h3>
+
+<ul>
+<li><strong>Water Disinfection | 水消毒</strong></li>
+</ul>
+   - Drinking water treatment (饮用水处理)
+   - Swimming pool sanitation (游泳池消毒)
+
+<ul>
+<li><strong>Bleaching | 漂白</strong></li>
+</ul>
+   - Textile industry (纺织工业)
+   - Paper industry (造纸工业)
+
+<ul>
+<li><strong>Chemical Production | 化工生产</strong></li>
+</ul>
+   - Hydrochloric acid: H₂ + Cl₂ → 2HCl
+   - Bleach: Cl₂ + 2NaOH → NaCl + NaClO + H₂O
+   - PVC plastic and other chlorinated compounds
+   - PVC塑料和其他氯化物
+
+<p>---</p>
+
+<h2>Knowledge Summary | 知识点梳理</h2>
+
+<h3>I. Laboratory Preparation of Chlorine | 氯气的实验室制法</h3>
+
+<strong>Principle | 原理:</strong>
+<ul>
+<li>Oxidation (氧化) of concentrated HCl by MnO₂</li>
+<li>MnO₂氧化浓HCl</li>
+</ul>
+
+<strong>Key Points | 要点:</strong>
+<ul>
+<li>Must use concentrated HCl, not dilute</li>
+</ul>
+   必须使用浓盐酸，不能用稀盐酸
+<ul>
+<li>Heating is required</li>
+</ul>
+   需要加热
+<ul>
+<li>Purification: saturated NaCl (remove HCl) → concentrated H₂SO₄ (dry)</li>
+</ul>
+   净化：饱和食盐水（除HCl）→ 浓硫酸（干燥）
+<ul>
+<li>Collection: downward displacement of water or upward displacement of air</li>
+</ul>
+   收集：向下排水法或向上排空气法
+<ul>
+<li>Tail gas must be absorbed by NaOH solution</li>
+</ul>
+   尾气必须用NaOH溶液吸收
+
+<h3>II. Properties of Chlorine | 氯气的性质</h3>
+
+<strong>Physical Properties | 物理性质:</strong>
+<ul>
+<li>Yellow-green gas (黄绿色气体)</li>
+<li>Pungent odor (刺激性气味)</li>
+<li>Denser than air (比空气密度大)</li>
+<li>Moderately soluble in water (中等溶于水)</li>
+<li>Toxic (有毒)</li>
+</ul>
+
+<strong>Chemical Properties | 化学性质:</strong>
+<ul>
+<li>Strong oxidizing agent (强氧化剂)</li>
+<li>Reacts with metals to form chlorides (与金属反应生成氯化物)</li>
+<li>Reacts with water to form HCl and HClO (与水反应生成HCl和HClO)</li>
+<li>Bleaching property (through HClO formation) (漂白性，通过生成HClO)</li>
+<li>Reacts with alkali in disproportionation (与碱发生歧化反应)</li>
+</ul>
+
+<h3>III. Important Concepts | 重要概念</h3>
+
+<strong>1. Bleaching Mechanism | 漂白机理</strong>
+<ul>
+<li>Cl₂ itself does NOT bleach (Cl₂本身不漂白)</li>
+<li>Cl₂ + H₂O → HClO (actual bleaching agent)</li>
+<li>HClO oxidizes colored compounds (HClO氧化有色物质)</li>
+</ul>
+
+<strong>2. Chlorine Water | 氯水</strong>
+<ul>
+<li>Fresh chlorine water: yellow-green, acidic, oxidizing, bleaching</li>
+</ul>
+  新制氯水：黄绿色，酸性，氧化性，漂白性
+<ul>
+<li>Aged chlorine water: colorless (HClO decomposes), only acidic</li>
+</ul>
+  久置氯水：无色（HClO分解），仅有酸性
+
+<strong>3. Environmental Awareness | 环境意识</strong>
+<ul>
+<li>Chlorine is toxic and must not be released</li>
+</ul>
+  氯气有毒，不可排放
+<ul>
+<li>Waste gas must be absorbed by alkali</li>
+</ul>
+  废气必须用碱吸收
+<ul>
+<li>Proper disposal of chemical waste</li>
+</ul>
+  正确处理化学废物
+
+<p>---</p>
+
+<h2>Post-lab Questions | 实验后思考</h2>
+
+<p>Based on your observations and understanding of the principles, answer these questions:</p>
+
+<ul>
+<li><strong>Observation Analysis | 观察分析</strong></li>
+</ul>
+   - Why did the moist colored cloth bleach but the dry cloth did not?
+   - 为什么湿润的有色布条褪色而干燥的没有？
+
+<ul>
+<li><strong>Reaction Conditions | 反应条件</strong></li>
+</ul>
+   - Why is concentrated HCl necessary for preparing Cl₂? What would happen with dilute HCl?
+   - 为什么制备Cl₂需要浓盐酸？如果用稀盐酸会怎样？
+
+<ul>
+<li><strong>Safety Consideration | 安全考虑</strong></li>
+</ul>
+   - Why must this experiment be conducted in a fume hood?
+   - 为什么本实验必须在通风橱中进行？
+
+<ul>
+<li><strong>Environmental Impact | 环境影响</strong></li>
+</ul>
+   - What would happen if chlorine gas were released into the atmosphere?
+   - 如果氯气被释放到大气中会发生什么？
+
+<ul>
+<li><strong>Application | 应用</strong></li>
+</ul>
+   - Based on this experiment, explain why chlorine is used for water disinfection.
+   - 基于本实验，解释为什么氯气用于水消毒。
+
+<p>---</p>
+
+<strong>Experiment Completed | 实验完成</strong>
+
+<p>Remember to clean all equipment and properly dispose of all chemical waste according to safety guidelines.</p>
+
+<p>记得清洁所有设备并按照安全指南正确处理所有化学废物。</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>

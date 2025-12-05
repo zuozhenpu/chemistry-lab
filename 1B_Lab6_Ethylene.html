@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry 1B | Lab 6: Preparation and Properties of Ethylene - Blue Nova Chemistry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a202c;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            color: #065f46;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #10b981;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #047857;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #34d399;
+        }
+        
+        h3 {
+            color: #059669;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #10b981;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #1a202c;
+        }
+        
+        code {
+            background: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            color: #1a202c;
+            font-size: 0.9em;
+            border: 1px solid #d1fae5;
+        }
+        
+        pre {
+            background: #f0fdf4;
+            color: #1a202c;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #d1fae5;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        pre code {
+            background: transparent;
+            color: #1a202c;
+            padding: 0;
+            border: none;
+        }
+        
+        .experiment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .experiment-table thead {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+        }
+        
+        .experiment-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .experiment-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #d1fae5;
+            color: #1a202c;
+        }
+        
+        .experiment-table tbody tr:hover {
+            background: #f0fdf4;
+            transition: background 0.3s ease;
+        }
+        
+        .experiment-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #1a202c;
+        }
+        
+        strong {
+            color: #065f46;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #047857;
+        }
+        
+        blockquote {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: #1a202c;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4);
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #d1fae5;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            
+            .back-link {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chemistry 1B | Lab 6: Preparation and Properties of Ethylene</h1>
+<h1>化学1B | 实验6：乙烯的制备与性质</h1>
+
+<p>---</p>
+
+<h2>Experiment Purpose | 实验目的</h2>
+
+<p>This is an <strong>investigative experiment</strong> designed to help you:
+<ul>
+<li>Explore the laboratory method for preparing ethylene gas</li>
+<li>Investigate the characteristic reactions of alkenes through hands-on observation</li>
+<li>Understand the difference between saturated and unsaturated hydrocarbons</li>
+<li>Practice safe techniques for working with flammable gases and concentrated acids</li>
+</ul></p>
+
+<p>这是一个<strong>探究性实验</strong>，旨在帮助你：
+<ul>
+<li>探索实验室制取乙烯气体的方法</li>
+<li>通过亲手观察研究烯烃的特征反应</li>
+<li>理解饱和烃和不饱和烃的区别</li>
+<li>练习处理易燃气体和浓酸的安全技术</li>
+</ul></p>
+
+<p>---</p>
+
+<h2>Safety Learning | 安全学习</h2>
+
+<p>> <strong>Inquiry-Based Learning Prompt | 探究式学习提示</strong>  
+> Before starting this experiment, think about the following questions and research the answers.  
+> 在开始实验前，请思考以下问题并查阅资料。</p>
+
+<h3>Pre-lab Safety Questions | 实验前安全问题</h3>
+
+<ul>
+<li><strong>Concentrated Acid Hazards | 浓酸危害</strong></li>
+</ul>
+   - What safety precautions should you take when using concentrated sulfuric acid?
+   - 在使用浓硫酸时应采取哪些安全预防措施？
+
+<ul>
+<li><strong>Temperature Control | 温度控制</strong></li>
+</ul>
+   - Why is temperature control critical in this experiment? What could happen at wrong temperatures?
+   - 为什么温度控制在本实验中至关重要？错误的温度会发生什么？
+
+<ul>
+<li><strong>Gas Flammability | 气体易燃性</strong></li>
+</ul>
+   - Ethylene is flammable. What precautions should you take?
+   - 乙烯易燃。你应该采取什么预防措施？
+
+<ul>
+<li><strong>Preventing Backflow | 防止倒吸</strong></li>
+</ul>
+   - What is "suck-back" and how can it be prevented in gas collection experiments?
+   - 什么是"倒吸"，在气体收集实验中如何防止？
+
+<ul>
+<li><strong>Waste Disposal | 废物处理</strong></li>
+</ul>
+   - How should the waste mixture containing sulfuric acid and ethanol be disposed of?
+   - 含有硫酸和乙醇的废混合物应如何处理？
+
+<h3>Safety Guidelines | 安全指南</h3>
+
+<p>> <strong>⚠️ CRITICAL SAFETY WARNINGS | 重要安全警告</strong></p>
+
+<ul>
+<li><strong>Concentrated Sulfuric Acid | 浓硫酸</strong></li>
+</ul>
+   - Extremely corrosive - wear goggles and gloves
+   - 极具腐蚀性 - 佩戴护目镜和手套
+   - Add acid slowly along the wall of the flask
+   - 沿烧瓶壁缓慢加入酸
+   - If spilled on skin: Rinse immediately with large amounts of water
+   - 如溅到皮肤：立即用大量水冲洗
+
+<ul>
+<li><strong>Temperature Control | 温度控制</strong></li>
+</ul>
+   - Must maintain 170°C - use thermometer!
+   - 必须保持170°C - 使用温度计！
+   - Too low (140°C): produces ether instead
+   - 过低（140°C）：产生乙醚
+   - Too high: carbonization occurs
+   - 过高：发生碳化
+
+<ul>
+<li><strong>Prevent Suck-back | 防止倒吸</strong></li>
+</ul>
+   - ALWAYS remove gas delivery tube from liquid BEFORE turning off heat
+   - 关闭加热前务必先将导气管从液体中取出
+   - Never do it in reverse order!
+   - 绝不可颠倒顺序！
+
+<ul>
+<li><strong>Flammable Gas | 易燃气体</strong></li>
+</ul>
+   - Keep away from flames during collection
+   - 收集时远离火焰
+   - Work in well-ventilated area
+   - 在通风良好的区域工作
+
+<p>---</p>
+
+<h2>Experimental Preparation | 实验准备</h2>
+
+<h3>Materials and Equipment | 材料与仪器</h3>
+
+<strong>Chemicals | 化学药品</strong>:
+<ul>
+<li>Absolute ethanol (C₂H₅OH, 99.5%), 10 mL | 无水乙醇（99.5%），10毫升</li>
+<li>Concentrated sulfuric acid (H₂SO₄, 98%), 5 mL | 浓硫酸（98%），5毫升</li>
+<li>Fine sand, 2 g | 细沙，2克</li>
+<li>Bromine water (Br₂/H₂O) | 溴水</li>
+<li>Potassium permanganate solution (KMnO₄, acidified, 0.1 M) | 酸性高锰酸钾溶液（0.1 M）</li>
+<li>Sodium hydroxide solution (NaOH, 2 M) | 氢氧化钠溶液（2 M）</li>
+</ul>
+
+<strong>Equipment | 实验仪器</strong>:
+<ul>
+<li>Round-bottom flask (100 mL) | 圆底烧瓶（100毫升）</li>
+<li>Thermometer (0-200°C) | 温度计（0-200°C）</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Gas delivery tubes | 导气管</li>
+<li>Wash bottle with NaOH solution | 装有NaOH溶液的洗气瓶</li>
+<li>Gas collection bottles (3) | 集气瓶（3个）</li>
+<li>Water trough | 水槽</li>
+<li>Test tubes | 试管</li>
+<li>Beaker for limewater | 装石灰水的烧杯</li>
+<li>Iron stand with clamps | 铁架台和铁夹</li>
+</ul>
+
+<p>---</p>
+
+<h2>Experimental Procedure | 实验操作</h2>
+
+<p>> <strong>Inquiry-Based Learning | 探究式学习</strong>  
+> Focus on careful observation and think about the questions provided.  
+> 请仔细观察并思考提供的问题。</p>
+
+<h3>Part 1: Preparation of Ethylene | 乙烯的制备</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare the reaction mixture | 准备反应混合物</strong></li>
+</ul>
+   - Add 2.0 g of fine sand to the round-bottom flask
+   - 向圆底烧瓶中加入2.0克细沙
+   - Add 10 mL of absolute ethanol
+   - 加入10毫升无水乙醇
+   - Slowly add 5 mL of concentrated H₂SO₄ along the wall of the flask
+   - 沿烧瓶壁缓慢加入5毫升浓硫酸
+   - Swirl gently to mix (CAUTION: mixture will heat up!)
+   - 轻轻摇动混合（注意：混合物会发热！）
+
+<ul>
+<li><strong>Set up apparatus | 组装装置</strong></li>
+</ul>
+   - Insert thermometer so bulb is in the liquid
+   - 插入温度计使水银球在液体中
+   - Connect gas delivery tube
+   - 连接导气管
+   - Pass gas through NaOH wash bottle first
+   - 先通过NaOH洗气瓶
+
+<ul>
+<li><strong>Heat and generate gas | 加热产生气体</strong></li>
+</ul>
+   - Heat the flask rapidly to 170°C
+   - 快速加热烧瓶至170°C
+   - Maintain temperature at 170°C (±5°C)
+   - 保持温度在170°C（±5°C）
+   - Wait 2-3 minutes for air to be purged
+   - 等待2-3分钟排出空气
+
+<ul>
+<li><strong>Collect ethylene | 收集乙烯</strong></li>
+</ul>
+   - Collect gas by downward displacement of water
+   - 用向下排水法收集气体
+   - Fill 3 gas collection bottles
+   - 装满3个集气瓶
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What happens when H₂SO₄ is added to ethanol?</li>
+</ul>
+   当H₂SO₄加入乙醇时发生了什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What color does the mixture turn during heating?</li>
+</ul>
+   加热过程中混合物变成什么颜色？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Describe the gas being produced:</li>
+</ul>
+   描述产生的气体：
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why is sand added to the mixture?</li>
+</ul>
+   为什么要在混合物中加入沙子？
+
+<ul>
+<li>Why must the temperature be maintained at exactly 170°C?</li>
+</ul>
+   为什么必须将温度精确保持在170°C？
+
+<p>---</p>
+
+<h3>Part 2: Reaction with Bromine Water | 与溴水反应</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare bromine water | 准备溴水</strong></li>
+</ul>
+   - Pour 3 mL of bromine water into a test tube
+   - 向试管中倒入3毫升溴水
+
+<ul>
+<li><strong>Pass ethylene through bromine water | 通乙烯入溴水</strong></li>
+</ul>
+   - Insert gas delivery tube into the bromine water
+   - 将导气管插入溴水
+   - Pass ethylene gas through for 1-2 minutes
+   - 通入乙烯气体1-2分钟
+   - Shake the test tube gently
+   - 轻轻摇动试管
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What is the initial color of bromine water?</li>
+</ul>
+   溴水的初始颜色是什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the color as ethylene passes through?</li>
+</ul>
+   当乙烯通过时颜色发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>How long does it take for the color to disappear?</li>
+</ul>
+   颜色消失需要多长时间？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>What type of chemical reaction is occurring?</li>
+</ul>
+   发生了什么类型的化学反应？
+
+<ul>
+<li>Why does the bromine color disappear?</li>
+</ul>
+   为什么溴的颜色消失了？
+
+<p>---</p>
+
+<h3>Part 3: Reaction with Acidified KMnO₄ | 与酸性高锰酸钾反应</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare KMnO₄ solution | 准备KMnO₄溶液</strong></li>
+</ul>
+   - Pour 3 mL of acidified KMnO₄ solution into a test tube
+   - 向试管中倒入3毫升酸性高锰酸钾溶液
+
+<ul>
+<li><strong>Pass ethylene through | 通入乙烯</strong></li>
+</ul>
+   - Insert gas delivery tube into the solution
+   - 将导气管插入溶液
+   - Pass ethylene gas through for 1-2 minutes
+   - 通入乙烯气体1-2分钟
+   - Shake gently
+   - 轻轻摇动
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What is the initial color of the KMnO₄ solution?</li>
+</ul>
+   KMnO₄溶液的初始颜色是什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the color?</li>
+</ul>
+   颜色发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Do you see any precipitate forming?</li>
+</ul>
+   你看到有沉淀生成吗？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>What type of reaction is this - oxidation or reduction?</li>
+</ul>
+   这是什么类型的反应 - 氧化还是还原？
+
+<ul>
+<li>How does this reaction differ from the bromine water reaction?</li>
+</ul>
+   这个反应与溴水反应有何不同？
+
+<p>---</p>
+
+<h3>Part 4: Combustion of Ethylene | 乙烯的燃烧</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Collect ethylene in a test tube | 在试管中收集乙烯</strong></li>
+</ul>
+   - Fill a test tube with ethylene gas
+   - 用乙烯气体装满试管
+
+<ul>
+<li><strong>Ignite the gas | 点燃气体</strong></li>
+</ul>
+   - Bring a burning splint to the mouth of the test tube
+   - 将燃烧的木条靠近试管口
+   - Observe the flame
+   - 观察火焰
+
+<ul>
+<li><strong>Test combustion products | 测试燃烧产物</strong></li>
+</ul>
+   - Hold a cold, dry beaker above the flame
+   - 在火焰上方举起冷的干燥烧杯
+   - Add limewater to the beaker
+   - 向烧杯中加入石灰水
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>Describe the flame (color, brightness, smoke):</li>
+</ul>
+   描述火焰（颜色、亮度、烟雾）：
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What appears on the cold beaker?</li>
+</ul>
+   冷烧杯上出现了什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the limewater?</li>
+</ul>
+   石灰水发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>How does the ethylene flame compare to an ethanol flame?</li>
+</ul>
+   乙烯火焰与乙醇火焰相比如何？
+
+<ul>
+<li>Why is there black smoke when ethylene burns?</li>
+</ul>
+   为什么乙烯燃烧时有黑烟？
+
+<p>---</p>
+
+<h2>Experimental Principles | 实验原理</h2>
+
+<p>Now that you have completed observations, let's understand the principles.</p>
+
+<p>现在你已经完成了观察，让我们来理解原理。</p>
+
+<h3>1. Preparation of Ethylene | 乙烯的制备</h3>
+
+<strong>Chemical Reaction | 化学方程式:</strong>
+<pre><code class="">CH₃CH₂OH --concentrated H₂SO₄, 170°C--> CH₂=CH₂↑ + H₂O
+</code></pre>
+
+<strong>Reaction Type | 反应类型:</strong> Elimination reaction (dehydration)
+消去反应（脱水）
+
+<strong>Temperature Control | 温度控制:</strong>
+<ul>
+<li>140°C: 2C₂H₅OH → C₂H₅OC₂H₅ + H₂O (ether formation)</li>
+<li>140°C: 2C₂H₅OH → C₂H₅OC₂H₅ + H₂O（生成乙醚）</li>
+<li>170°C: C₂H₅OH → CH₂=CH₂ + H₂O (ethylene formation)</li>
+<li>170°C: C₂H₅OH → CH₂=CH₂ + H₂O（生成乙烯）</li>
+<li>>170°C: Carbonization (mixture turns black)</li>
+<li>>170°C: 碳化（混合物变黑）</li>
+</ul>
+
+<strong>Role of Reagents | 试剂作用:</strong>
+<ul>
+<li>H₂SO₄: Catalyst and dehydrating agent (催化剂和脱水剂)</li>
+<li>Sand: Prevents bumping and provides heat distribution (防止暴沸，提供均匀受热)</li>
+</ul>
+
+<h3>2. Molecular Structure | 分子结构</h3>
+
+<strong>Molecular Formula | 分子式:</strong> C₂H₄
+
+<strong>Key Features | 关键特征:</strong>
+<ul>
+<li>Contains C=C double bond (含有C=C双键)</li>
+<li>Planar molecule - all atoms in same plane (平面分子 - 所有原子在同一平面)</li>
+<li>Unsaturated hydrocarbon (不饱和烃)</li>
+</ul>
+
+<h3>3. Chemical Properties | 化学性质</h3>
+
+<h4>(1) Addition Reaction with Bromine | 与溴的加成反应</h4>
+
+<strong>Chemical Equation | 化学方程式:</strong>
+<pre><code class="">CH₂=CH₂ + Br₂ → CH₂BrCH₂Br
+                (1,2-dibromoethane)
+</code></pre>
+
+<strong>Observations Explained | 观察解释:</strong>
+<ul>
+<li>Reddish-brown bromine color disappears (红棕色溴消失)</li>
+<li>Forms colorless 1,2-dibromoethane (生成无色1,2-二溴乙烷)</li>
+<li>This is the characteristic test for alkenes (这是烯烃的特征测试)</li>
+</ul>
+
+<h4>(2) Oxidation by KMnO₄ | 被KMnO₄氧化</h4>
+
+<strong>Chemical Equation | 化学方程式:</strong>
+<pre><code class="">3CH₂=CH₂ + 2KMnO₄ + 4H₂O → 3CH₂OHCH₂OH + 2MnO₂↓ + 2KOH
+</code></pre>
+
+<strong>Observations Explained | 观察解释:</strong>
+<ul>
+<li>Purple KMnO₄ color fades (紫色KMnO₄褪色)</li>
+<li>Brown MnO₂ precipitate may form (可能形成棕色MnO₂沉淀)</li>
+<li>Ethylene is oxidized (乙烯被氧化)</li>
+</ul>
+
+<h4>(3) Combustion | 燃烧</h4>
+
+<strong>Chemical Equation | 化学方程式:</strong>
+<pre><code class="">C₂H₄ + 3O₂ → 2CO₂ + 2H₂O
+</code></pre>
+
+<strong>Observations Explained | 观察解释:</strong>
+<ul>
+<li>Bright, luminous flame with black smoke (明亮的火焰伴有黑烟)</li>
+<li>Black smoke = incomplete combustion due to high C:H ratio</li>
+<li>黑烟 = 由于高C:H比导致的不完全燃烧</li>
+<li>Water vapor condenses on cold surface (水蒸气在冷表面凝结)</li>
+<li>CO₂ turns limewater milky (CO₂使石灰水变浑浊)</li>
+</ul>
+
+<h3>4. Comparison: Ethylene vs. Ethane | 对比：乙烯与乙烷</h3>
+
+<table class="experiment-table">
+<thead><tr><th>Property</th><th>Ethylene (C₂H₄)</th><th>Ethane (C₂H₆)</th></tr></thead>
+<tbody>
+<tr><td>Structure</td><td>C=C double bond</td><td>C-C single bond</td></tr>
+<tr><td>Type</td><td>Unsaturated</td><td>Saturated</td></tr>
+<tr><td>Main reaction</td><td>Addition</td><td>Substitution</td></tr>
+<tr><td>With Br₂</td><td>Decolorizes</td><td>No reaction</td></tr>
+<tr><td>With KMnO₄</td><td>Decolorizes</td><td>No reaction</td></tr>
+<tr><td>Combustion</td><td>Bright flame, smoke</td><td>Pale blue, no smoke</td></tr>
+</tbody>
+</table>
+
+<p>---</p>
+
+<h2>Knowledge Summary | 知识点梳理</h2>
+
+<h3>I. Laboratory Preparation | 实验室制法</h3>
+
+<strong>Principle | 原理:</strong> Dehydration of ethanol
+乙醇脱水
+
+<strong>Critical Conditions | 关键条件:</strong>
+<ul>
+<li>Temperature: 170°C (exactly!)</li>
+<li>温度：170°C（精确！）</li>
+<li>Catalyst (催化剂): Concentrated H₂SO₄</li>
+<li>催化剂：浓硫酸</li>
+</ul>
+
+<strong>Purification | 净化:</strong>
+<ul>
+<li>NaOH solution removes acidic impurities</li>
+<li>NaOH溶液除去酸性杂质</li>
+</ul>
+
+<h3>II. Properties | 性质</h3>
+
+<strong>Physical | 物理:</strong>
+<ul>
+<li>Colorless gas (无色气体)</li>
+<li>Slightly sweet odor (略带甜味)</li>
+<li>Slightly less dense than air (比空气略轻)</li>
+<li>Sparingly soluble (微溶) in water (微溶于水)</li>
+</ul>
+
+<strong>Chemical | 化学:</strong>
+<ul>
+<li>Addition reactions (characteristic)</li>
+<li>加成反应（特征）</li>
+<li>Oxidation (氧化) reactions</li>
+<li>氧化反应</li>
+<li>Combustion</li>
+<li>燃烧</li>
+</ul>
+
+<h3>III. Important Concepts | 重要概念</h3>
+
+<strong>Addition vs. Substitution | 加成与取代:</strong>
+<ul>
+<li>Addition: Unsaturated compounds add atoms across double bond</li>
+<li>加成：不饱和化合物在双键两端加成原子</li>
+<li>Substitution: Saturated compounds replace atoms</li>
+<li>取代：饱和化合物替换原子</li>
+</ul>
+
+<strong>Testing for Alkenes | 烯烃的检验:</strong>
+<ul>
+<li>Bromine water decolorization (溴水褪色)</li>
+<li>Acidified KMnO₄ decolorization (酸性KMnO₄褪色)</li>
+</ul>
+
+<p>---</p>
+
+<h2>Post-lab Questions | 实验后思考</h2>
+
+<ul>
+<li><strong>Temperature Control | 温度控制</strong></li>
+</ul>
+   - Why is it critical to maintain 170°C? What happens at other temperatures?
+   - 为什么保持170°C至关重要？其他温度会发生什么？
+
+<ul>
+<li><strong>Observation Analysis | 观察分析</strong></li>
+</ul>
+   - Both bromine water and KMnO₄ solution lose their color. Are these the same type of reaction? Explain.
+   - 溴水和KMnO₄溶液都褪色。这是同一类型的反应吗？解释。
+
+<ul>
+<li><strong>Safety Application | 安全应用</strong></li>
+</ul>
+   - Why must you remove the gas delivery tube from liquid before turning off the heat?
+   - 为什么必须在关闭加热前将导气管从液体中取出？
+
+<ul>
+<li><strong>Comparison | 比较</strong></li>
+</ul>
+   - How can you distinguish ethylene from ethane using simple chemical tests?
+   - 如何使用简单的化学测试区分乙烯和乙烷？
+
+<ul>
+<li><strong>Application | 应用</strong></li>
+</ul>
+   - Based on this experiment, explain why ethylene is used to make plastics.
+   - 基于本实验，解释为什么乙烯用于制造塑料。
+
+<p>---</p>
+
+<strong>Experiment Completed | 实验完成</strong>
+
+<p>Remember to properly dispose of the sulfuric acid-ethanol mixture and clean all equipment thoroughly.</p>
+
+<p>记得正确处理硫酸-乙醇混合物并彻底清洁所有设备。</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>

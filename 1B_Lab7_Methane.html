@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry 1B | Lab 7: Properties of Methane - Blue Nova Chemistry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a202c;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            color: #065f46;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #10b981;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #047857;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #34d399;
+        }
+        
+        h3 {
+            color: #059669;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #10b981;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #1a202c;
+        }
+        
+        code {
+            background: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            color: #1a202c;
+            font-size: 0.9em;
+            border: 1px solid #d1fae5;
+        }
+        
+        pre {
+            background: #f0fdf4;
+            color: #1a202c;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #d1fae5;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        pre code {
+            background: transparent;
+            color: #1a202c;
+            padding: 0;
+            border: none;
+        }
+        
+        .experiment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .experiment-table thead {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+        }
+        
+        .experiment-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .experiment-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #d1fae5;
+            color: #1a202c;
+        }
+        
+        .experiment-table tbody tr:hover {
+            background: #f0fdf4;
+            transition: background 0.3s ease;
+        }
+        
+        .experiment-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #1a202c;
+        }
+        
+        strong {
+            color: #065f46;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #047857;
+        }
+        
+        blockquote {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: #1a202c;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4);
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #d1fae5;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            
+            .back-link {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chemistry 1B | Lab 7: Properties of Methane</h1>
+<h1>化学1B | 实验7：甲烷的性质</h1>
+
+<p>---</p>
+
+<h2>Experiment Purpose | 实验目的</h2>
+
+<p>This is an <strong>investigative experiment</strong> designed to help you:
+<ul>
+<li>Explore the laboratory method for preparing methane gas</li>
+<li>Investigate the properties of the simplest alkane through observation</li>
+<li>Understand the difference between alkanes and alkenes</li>
+<li>Learn about substitution reactions in saturated hydrocarbons</li>
+</ul></p>
+
+<p>这是一个<strong>探究性实验</strong>，旨在帮助你：
+<ul>
+<li>探索实验室制取甲烷气体的方法</li>
+<li>通过观察研究最简单烷烃的性质</li>
+<li>理解烷烃和烯烃的区别</li>
+<li>学习饱和烃中的取代反应</li>
+</ul></p>
+
+<p>---</p>
+
+<h2>Safety Learning | 安全学习</h2>
+
+<p>> <strong>Inquiry-Based Learning Prompt | 探究式学习提示</strong>  
+> Before starting this experiment, research and answer these questions.  
+> 在开始实验前，请研究并回答这些问题。</p>
+
+<h3>Pre-lab Safety Questions | 实验前安全问题</h3>
+
+<ul>
+<li><strong>Gas Flammability | 气体易燃性</strong></li>
+</ul>
+   - Methane is highly flammable. What safety precautions should you take?
+   - 甲烷高度易燃。你应该采取什么安全预防措施？
+
+<ul>
+<li><strong>Explosion Hazards | 爆炸危险</strong></li>
+</ul>
+   - What is the explosive range of methane in air? Why is this important?
+   - 甲烷在空气中的爆炸范围是多少？为什么这很重要？
+
+<ul>
+<li><strong>Chlorine Gas Safety | 氯气安全</strong></li>
+</ul>
+   - What precautions should you take when working with chlorine gas?
+   - 使用氯气时应采取什么预防措施？
+
+<ul>
+<li><strong>Testing for Purity | 纯度测试</strong></li>
+</ul>
+   - Why must methane be tested for purity before ignition?
+   - 为什么甲烷在点燃前必须测试纯度？
+
+<ul>
+<li><strong>Waste Disposal | 废物处理</strong></li>
+</ul>
+   - How should excess methane and chlorine gases be disposed of?
+   - 过量的甲烷和氯气应如何处理？
+
+<h3>Safety Guidelines | 安全指南</h3>
+
+<p>> <strong>⚠️ CRITICAL SAFETY WARNINGS | 重要安全警告</strong></p>
+
+<ul>
+<li><strong>Methane is HIGHLY FLAMMABLE | 甲烷高度易燃</strong></li>
+</ul>
+   - Explosive (爆炸性) range: 5-15% in air (爆炸范围：空气中5-15%)
+   - ALWAYS test for purity before ignition (点燃前务必测试纯度)
+   - Keep away from all flames during collection (收集时远离所有火焰)
+
+<ul>
+<li><strong>Purity Testing | 纯度测试</strong></li>
+</ul>
+   - Collect gas in test tube, cover with thumb (在试管中收集气体，用拇指盖住)
+   - Bring near flame and remove thumb (靠近火焰并移开拇指)
+   - Sharp "pop" = impure (contains air) - DANGER! (尖锐"啪"声 = 不纯（含空气）- 危险！)
+   - Quiet burning = pure - SAFE (安静燃烧 = 纯净 - 安全)
+
+<ul>
+<li><strong>Chlorine Gas | 氯气</strong></li>
+</ul>
+   - Toxic (有毒) - work in fume hood (有毒 - 在通风橱中工作)
+   - Never smell directly (绝不可直接闻)
+   - Absorb waste gas with NaOH solution (用NaOH溶液吸收废气)
+
+<ul>
+<li><strong>Substitution Reaction | 取代反应</strong></li>
+</ul>
+   - Avoid direct sunlight (reaction too vigorous) (避免阳光直射（反应过于剧烈）)
+   - Use diffused light or fluorescent lamp (使用散射光或荧光灯)
+
+<p>---</p>
+
+<h2>Experimental Preparation | 实验准备</h2>
+
+<h3>Materials and Equipment | 材料与仪器</h3>
+
+<strong>Chemicals | 化学药品</strong>:
+<ul>
+<li>Anhydrous sodium acetate (CH₃COONa), 5 g | 无水醋酸钠，5克</li>
+<li>Soda lime (NaOH + CaO mixture), 15 g | 碱石灰（NaOH和CaO混合物），15克</li>
+<li>Chlorine gas (Cl₂) | 氯气</li>
+<li>Bromine water (Br₂/H₂O) | 溴水</li>
+<li>Potassium permanganate solution (KMnO₄, acidified) | 酸性高锰酸钾溶液</li>
+<li>Limewater (Ca(OH)₂) | 石灰水</li>
+</ul>
+
+<strong>Equipment | 实验仪器</strong>:
+<ul>
+<li>Large test tube with one-hole stopper | 带单孔塞的大试管</li>
+<li>Gas delivery tubes | 导气管</li>
+<li>Gas collection bottles (5) | 集气瓶（5个）</li>
+<li>Water trough | 水槽</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Test tubes | 试管</li>
+<li>Beaker for limewater | 装石灰水的烧杯</li>
+<li>Test tube holder | 试管夹</li>
+<li>Matches | 火柴</li>
+</ul>
+
+<p>---</p>
+
+<h2>Experimental Procedure | 实验操作</h2>
+
+<p>> <strong>Inquiry-Based Learning | 探究式学习</strong>  
+> Focus on careful observation and think about the questions.  
+> 请仔细观察并思考问题。</p>
+
+<h3>Part 1: Preparation of Methane | 甲烷的制备</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare the reaction mixture | 准备反应混合物</strong></li>
+</ul>
+   - Mix 5.0 g of anhydrous sodium acetate with 15.0 g of soda lime
+   - 将5.0克无水醋酸钠与15.0克碱石灰混合
+   - Grind the mixture thoroughly in a mortar
+   - 在研钵中彻底研磨混合物
+   - Transfer to a large, dry test tube
+   - 转移到大的干燥试管中
+
+<ul>
+<li><strong>Set up apparatus | 组装装置</strong></li>
+</ul>
+   - Insert one-hole stopper with gas delivery tube
+   - 插入带导气管的单孔塞
+   - Tilt the test tube slightly downward at the mouth
+   - 将试管口略微向下倾斜
+   - Connect to gas collection system
+   - 连接到气体收集系统
+
+<ul>
+<li><strong>Heat and generate gas | 加热产生气体</strong></li>
+</ul>
+   - Heat the test tube gently and evenly
+   - 轻轻均匀地加热试管
+   - Start collecting gas after 1-2 minutes (to purge air)
+   - 1-2分钟后开始收集气体（排出空气）
+
+<ul>
+<li><strong>Collect methane | 收集甲烷</strong></li>
+</ul>
+   - Collect by downward displacement of water
+   - 用向下排水法收集
+   - Fill 5 gas collection bottles
+   - 装满5个集气瓶
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What happens when the mixture is heated?</li>
+</ul>
+   混合物加热时发生了什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Describe the gas being produced:</li>
+</ul>
+   描述产生的气体：
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why is the test tube tilted downward at the mouth?</li>
+</ul>
+   为什么试管口向下倾斜？
+
+<ul>
+<li>Why do we wait before collecting the gas?</li>
+</ul>
+   为什么我们要等待后再收集气体？
+
+<p>---</p>
+
+<h3>Part 2: Testing Purity and Combustion | 纯度测试和燃烧</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Test for purity | 测试纯度</strong></li>
+</ul>
+   - Collect methane in a small test tube
+   - 在小试管中收集甲烷
+   - Cover the mouth with your thumb
+   - 用拇指盖住试管口
+   - Bring near a flame
+   - 靠近火焰
+   - Quickly remove thumb
+   - 快速移开拇指
+   - Listen for sound
+   - 听声音
+
+<ul>
+<li><strong>If pure, perform combustion test | 如果纯净，进行燃烧测试</strong></li>
+</ul>
+   - Ignite methane in a collection bottle
+   - 点燃集气瓶中的甲烷
+   - Observe the flame
+   - 观察火焰
+
+<ul>
+<li><strong>Test combustion products | 测试燃烧产物</strong></li>
+</ul>
+   - Hold cold, dry beaker above flame
+   - 在火焰上方举起冷的干燥烧杯
+   - Add limewater to the beaker
+   - 向烧杯中加入石灰水
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What sound do you hear during purity test?</li>
+</ul>
+   纯度测试时你听到什么声音？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Describe the flame color and characteristics:</li>
+</ul>
+   描述火焰颜色和特征：
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What appears on the cold beaker?</li>
+</ul>
+   冷烧杯上出现了什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the limewater?</li>
+</ul>
+   石灰水发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why does pure methane burn quietly while impure methane makes a sharp sound?</li>
+</ul>
+   为什么纯甲烷安静燃烧而不纯甲烷发出尖锐声音？
+
+<ul>
+<li>What products are formed when methane burns?</li>
+</ul>
+   甲烷燃烧时生成什么产物？
+
+<p>---</p>
+
+<h3>Part 3: Stability Test | 稳定性测试</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Test with bromine water | 用溴水测试</strong></li>
+</ul>
+   - Pour 3 mL of bromine water into a test tube
+   - 向试管中倒入3毫升溴水
+   - Pass methane through for 2 minutes
+   - 通入甲烷2分钟
+   - Observe any changes
+   - 观察任何变化
+
+<ul>
+<li><strong>Test with KMnO₄ solution | 用KMnO₄溶液测试</strong></li>
+</ul>
+   - Pour 3 mL of acidified KMnO₄ into a test tube
+   - 向试管中倒入3毫升酸性KMnO₄
+   - Pass methane through for 2 minutes
+   - 通入甲烷2分钟
+   - Observe any changes
+   - 观察任何变化
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>Does the bromine water color change?</li>
+</ul>
+   溴水颜色改变了吗？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Does the KMnO₄ solution color change?</li>
+</ul>
+   KMnO₄溶液颜色改变了吗？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>What do these results tell you about methane's reactivity?</li>
+</ul>
+   这些结果告诉你甲烷的反应性如何？
+
+<ul>
+<li>How does methane differ from ethylene in these tests?</li>
+</ul>
+   在这些测试中甲烷与乙烯有何不同？
+
+<p>---</p>
+
+<h3>Part 4: Substitution Reaction with Chlorine | 与氯气的取代反应</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Prepare gas mixture | 准备气体混合物</strong></li>
+</ul>
+   - Collect equal volumes of methane and chlorine in a gas collection bottle
+   - 在集气瓶中收集等体积的甲烷和氯气
+   - Cover with glass plate
+   - 用玻璃片盖住
+   - Wrap bottle with black paper (to block light)
+   - 用黑纸包住瓶子（遮光）
+
+<ul>
+<li><strong>Expose to light | 暴露于光下</strong></li>
+</ul>
+   - Remove black paper
+   - 移除黑纸
+   - Place in diffused light or near fluorescent lamp
+   - 放在散射光下或荧光灯附近
+   - Observe for 5-10 minutes
+   - 观察5-10分钟
+
+<ul>
+<li><strong>Observe changes | 观察变化</strong></li>
+</ul>
+   - Watch the color of the gas
+   - 观察气体颜色
+   - Look for liquid droplets on the walls
+   - 寻找瓶壁上的液滴
+   - Carefully smell (waft, don't inhale!)
+   - 小心闻（扇动，不要吸入！）
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What is the initial color of the gas mixture?</li>
+</ul>
+   气体混合物的初始颜色是什么？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>What happens to the color over time?</li>
+</ul>
+   颜色随时间如何变化？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Do you see any liquid droplets? Where?</li>
+</ul>
+   你看到液滴了吗？在哪里？
+   
+   Your observation | 你的观察: _______________________
+
+<ul>
+<li>Describe any odor (be very careful!):</li>
+</ul>
+   描述任何气味（非常小心！）：
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>Why does the yellow-green color fade?</li>
+</ul>
+   为什么黄绿色褪去？
+
+<ul>
+<li>What might the oily liquid droplets be?</li>
+</ul>
+   油状液滴可能是什么？
+
+<ul>
+<li>Why is light necessary for this reaction?</li>
+</ul>
+   为什么这个反应需要光？
+
+<p>---</p>
+
+<h2>Experimental Principles | 实验原理</h2>
+
+<p>Now let's understand the principles behind your observations.</p>
+
+<p>现在让我们理解你观察背后的原理。</p>
+
+<h3>1. Preparation of Methane | 甲烷的制备</h3>
+
+<strong>Chemical Reaction | 化学方程式:</strong>
+<pre><code class="">CH₃COONa + NaOH --CaO, Δ--> CH₄↑ + Na₂CO₃
+</code></pre>
+
+<strong>Role of Reagents | 试剂作用:</strong>
+<ul>
+<li>CH₃COONa: Source of methyl group (CH₃-) (甲基来源)</li>
+<li>NaOH: Provides OH⁻ for reaction (提供OH⁻参与反应)</li>
+<li>CaO: Absorbs water, prevents hydrolysis (吸水，防止水解)</li>
+</ul>
+
+<strong>Why Soda Lime? | 为什么用碱石灰？</strong>
+<ul>
+<li>NaOH alone would cause sodium acetate to hydrolyze</li>
+<li>单独NaOH会导致醋酸钠水解</li>
+<li>CaO keeps mixture dry</li>
+<li>CaO保持混合物干燥</li>
+</ul>
+
+<h3>2. Molecular Structure | 分子结构</h3>
+
+<strong>Molecular Formula | 分子式:</strong> CH₄
+
+<strong>3D Structure | 三维结构:</strong>
+<ul>
+<li>Tetrahedral geometry (正四面体几何)</li>
+<li>Bond angle: 109.5° (键角：109.5°)</li>
+<li>All C-H bonds are equivalent (所有C-H键等同)</li>
+<li>sp³ hybridization (sp³杂化)</li>
+</ul>
+
+<h3>3. Physical Properties | 物理性质</h3>
+
+<ul>
+<li>Colorless, odorless gas (无色无味气体)</li>
+<li>Less dense than air (比空气密度小)</li>
+<li>Sparingly soluble (微溶) in water (微溶于水)</li>
+<li>Boiling point: -161.5°C (沸点：-161.5°C)</li>
+</ul>
+
+<h3>4. Chemical Properties | 化学性质</h3>
+
+<h4>(1) Stability | 稳定性</h4>
+
+<strong>At Room Temperature | 室温下:</strong>
+<ul>
+<li>Does NOT react with strong oxidizers (不与强氧化剂反应)</li>
+<li>Bromine water: NO decolorization (溴水：不褪色)</li>
+<li>KMnO₄: NO decolorization (KMnO₄：不褪色)</li>
+</ul>
+
+<strong>Reason | 原因:</strong>
+<ul>
+<li>Strong C-H bonds (bond energy = 413 kJ/mol)</li>
+<li>强C-H键（键能 = 413 kJ/mol）</li>
+<li>Stable tetrahedral structure</li>
+<li>稳定的四面体结构</li>
+<li>No double bonds to react</li>
+<li>没有双键可反应</li>
+</ul>
+
+<h4>(2) Combustion | 燃烧</h4>
+
+<strong>Chemical Equation | 化学方程式:</strong>
+<pre><code class="">CH₄ + 2O₂ → CO₂ + 2H₂O
+</code></pre>
+
+<strong>Observations Explained | 观察解释:</strong>
+<ul>
+<li>Pale blue flame (淡蓝色火焰)</li>
+<li>No smoke (clean combustion) (无烟（完全燃烧）)</li>
+<li>Releases large amount of heat (890 kJ/mol)</li>
+<li>释放大量热（890 kJ/mol）</li>
+<li>Water condenses on cold surface (水在冷表面凝结)</li>
+<li>CO₂ turns limewater milky (CO₂使石灰水变浑浊)</li>
+</ul>
+
+<strong>Incomplete Combustion | 不完全燃烧:</strong>
+<pre><code class="">2CH₄ + 3O₂ → 2CO + 4H₂O
+</code></pre>
+<ul>
+<li>Occurs when oxygen is insufficient (氧气不足时发生)</li>
+<li>Produces toxic CO (产生有毒CO)</li>
+</ul>
+
+<h4>(3) Substitution Reaction with Chlorine | 与氯气的取代反应</h4>
+
+<strong>Step-wise Reactions | 逐步反应:</strong>
+<pre><code class="">CH₄ + Cl₂ --light--> CH₃Cl + HCl (chloromethane)
+CH₃Cl + Cl₂ --light--> CH₂Cl₂ + HCl (dichloromethane)
+CH₂Cl₂ + Cl₂ --light--> CHCl₃ + HCl (chloroform)
+CHCl₃ + Cl₂ --light--> CCl₄ + HCl (carbon tetrachloride)
+</code></pre>
+
+<strong>Mechanism | 机理:</strong> Free radical substitution
+自由基取代
+
+<strong>Steps | 步骤:</strong>
+<ul>
+<li>Initiation: Cl₂ --light--> 2Cl· (引发)</li>
+<li>Propagation: CH₄ + Cl· → CH₃· + HCl (链传递)</li>
+</ul>
+              CH₃· + Cl₂ → CH₃Cl + Cl·
+<ul>
+<li>Termination: Cl· + Cl· → Cl₂ (链终止)</li>
+</ul>
+
+<strong>Observations Explained | 观察解释:</strong>
+<ul>
+<li>Yellow-green Cl₂ color fades (黄绿色Cl₂褪去)</li>
+<li>Oily liquid droplets = CH₂Cl₂, CHCl₃, CCl₄ (油状液滴 = CH₂Cl₂, CHCl₃, CCl₄)</li>
+<li>Pungent odor (刺激性气味) = HCl gas (刺激性气味 = HCl气体)</li>
+<li>Light is necessary to break Cl-Cl bond (光是打破Cl-Cl键所必需的)</li>
+</ul>
+
+<h3>5. Comparison: Methane vs. Ethylene | 对比：甲烷与乙烯</h3>
+
+<table class="experiment-table">
+<thead><tr><th>Property</th><th>Methane (CH₄)</th><th>Ethylene (C₂H₄)</th></tr></thead>
+<tbody>
+<tr><td>Structure</td><td>Tetrahedral, sp³</td><td>Planar, sp²</td></tr>
+<tr><td>Saturation</td><td>Saturated</td><td>Unsaturated</td></tr>
+<tr><td>Main reaction</td><td>Substitution</td><td>Addition</td></tr>
+<tr><td>With Br₂</td><td>No reaction</td><td>Decolorizes</td></tr>
+<tr><td>With KMnO₄</td><td>No reaction</td><td>Decolorizes</td></tr>
+<tr><td>Combustion</td><td>Pale blue, no smoke</td><td>Bright, smoky</td></tr>
+<tr><td>Reactivity</td><td>Stable</td><td>Reactive</td></tr>
+</tbody>
+</table>
+
+<p>---</p>
+
+<h2>Knowledge Summary | 知识点梳理</h2>
+
+<h3>I. Alkanes (Saturated Hydrocarbons) | 烷烃（饱和烃）</h3>
+
+<strong>General Formula | 通式:</strong> CₙH₂ₙ₊₂ (n ≥ 1)
+
+<strong>Characteristics | 特征:</strong>
+<ul>
+<li>Only C-C single bonds and C-H bonds (只有C-C单键和C-H键)</li>
+<li>Saturated with hydrogen (氢饱和)</li>
+<li>Relatively stable (相对稳定)</li>
+<li>Main reaction: substitution (主要反应：取代)</li>
+</ul>
+
+<h3>II. Properties of Methane | 甲烷的性质</h3>
+
+<strong>Physical | 物理:</strong>
+<ul>
+<li>Simplest alkane (最简单的烷烃)</li>
+<li>Colorless, odorless gas (无色无味气体)</li>
+<li>Less dense than air (比空气密度小)</li>
+</ul>
+
+<strong>Chemical | 化学:</strong>
+<ul>
+<li>Stable at room temperature (室温下稳定)</li>
+<li>Burns with pale blue flame (淡蓝色火焰燃烧)</li>
+<li>Substitution with halogens under light (光照下与卤素取代)</li>
+</ul>
+
+<h3>III. Important Concepts | 重要概念</h3>
+
+<strong>Mine Gas (Coal Mine Methane) | 瓦斯（煤矿甲烷）:</strong>
+<ul>
+<li>Methane in coal mines (煤矿中的甲烷)</li>
+<li>Explosive (爆炸性) range: 5-15% in air (爆炸范围：空气中5-15%)</li>
+<li>Safety measures: ventilation, no sparks</li>
+<li>安全措施：通风，无火花</li>
+</ul>
+
+<strong>Natural Gas | 天然气:</strong>
+<ul>
+<li>Main component: methane (90%+) (主要成分：甲烷（90%+）)</li>
+<li>Clean fuel (清洁燃料)</li>
+<li>Used for heating and cooking (用于加热和烹饪)</li>
+</ul>
+
+<p>---</p>
+
+<h2>Post-lab Questions | 实验后思考</h2>
+
+<ul>
+<li><strong>Structure and Reactivity | 结构与反应性</strong></li>
+</ul>
+   - Explain why methane is much less reactive than ethylene.
+   - 解释为什么甲烷的反应性比乙烯低得多。
+
+<ul>
+<li><strong>Observation Analysis | 观察分析</strong></li>
+</ul>
+   - Why does methane burn with a pale blue flame while ethylene burns with a bright, smoky flame?
+   - 为什么甲烷燃烧时呈淡蓝色火焰而乙烯燃烧时呈明亮的有烟火焰？
+
+<ul>
+<li><strong>Safety Application | 安全应用</strong></li>
+</ul>
+   - Why is it dangerous to have 5-15% methane in air? What should be done in coal mines?
+   - 为什么空气中含有5-15%的甲烷很危险？煤矿中应该怎么做？
+
+<ul>
+<li><strong>Reaction Mechanism | 反应机理</strong></li>
+</ul>
+   - Why is light necessary for the substitution reaction between methane and chlorine?
+   - 为什么甲烷和氯气的取代反应需要光？
+
+<ul>
+<li><strong>Comparison | 比较</strong></li>
+</ul>
+   - Create a table comparing methane and ethylene in terms of structure, reactivity, and main reactions.
+   - 创建一个表格，比较甲烷和乙烯的结构、反应性和主要反应。
+
+<p>---</p>
+
+<strong>Experiment Completed | 实验完成</strong>
+
+<p>Remember to properly dispose of chlorinated products and clean all equipment thoroughly.</p>
+
+<p>记得正确处理氯化产物并彻底清洁所有设备。</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>

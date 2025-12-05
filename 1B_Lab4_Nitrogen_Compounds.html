@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry 1B | Lab 4: Compounds of Nitrogen - Blue Nova Chemistry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a202c;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            color: #065f46;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #10b981;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #047857;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #34d399;
+        }
+        
+        h3 {
+            color: #059669;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #10b981;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #1a202c;
+        }
+        
+        code {
+            background: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Consolas", "Monaco", monospace;
+            color: #1a202c;
+            font-size: 0.9em;
+            border: 1px solid #d1fae5;
+        }
+        
+        pre {
+            background: #f0fdf4;
+            color: #1a202c;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #d1fae5;
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        pre code {
+            background: transparent;
+            color: #1a202c;
+            padding: 0;
+            border: none;
+        }
+        
+        .experiment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .experiment-table thead {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+        }
+        
+        .experiment-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .experiment-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #d1fae5;
+            color: #1a202c;
+        }
+        
+        .experiment-table tbody tr:hover {
+            background: #f0fdf4;
+            transition: background 0.3s ease;
+        }
+        
+        .experiment-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #1a202c;
+        }
+        
+        strong {
+            color: #065f46;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #047857;
+        }
+        
+        blockquote {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: #1a202c;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4);
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #d1fae5;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            
+            .back-link {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chemistry 1B | Lab 4: Compounds of Nitrogen</h1>
+<h1>化学1B | 实验4：Nitrogen的化合物</h1>
+
+<p>---</p>
+
+<h2>Experiment Purpose | 实验目的</h2>
+
+<p>This is an <strong>investigative experiment</strong> designed to help you:
+<ul>
+<li>Explore the properties and reactions of nitrogen compoundsthrough hands-on observation</li>
+<li>Investigate characteristic chemical reactions through systematic experimentation</li>
+<li>Develop understanding of compound properties and applications</li>
+<li>Practice safe laboratory techniques with various chemical compounds</li>
+</ul></p>
+
+<p>这是一个<strong>探究性实验</strong>，旨在帮助你：
+<ul>
+<li>通过亲手观察探索氮化合物的性质和反应</li>
+<li>通过系统实验研究特征化学反应</li>
+<li>培养对化合物性质和应用的理解</li>
+<li>练习使用各种化学化合物的安全实验室技术</li>
+</ul></p>
+
+<p>---</p>
+
+<h2>Safety Learning | 安全学习</h2>
+
+<p>> <strong>Inquiry-Based Learning Prompt | 探究式学习提示</strong>  
+> Before starting this experiment, think about the following questions and research the answers.  
+> 在开始实验前，请思考以下问题并查阅资料。</p>
+
+<h3>Pre-lab Safety Questions | 实验前安全问题</h3>
+
+<ul>
+<li><strong>Question 1</strong></li>
+</ul>
+   - What are the hazards of nitrogen oxides?
+   - What are the hazards of nitrogen oxides?
+
+<ul>
+<li><strong>Question 2</strong></li>
+</ul>
+   - How should ammonia gas be handled safely?
+   - How should ammonia gas be handled safely?
+
+<ul>
+<li><strong>Question 3</strong></li>
+</ul>
+   - What precautions are needed when working with nitric acid?
+   - What precautions are needed when working with nitric acid?
+
+<ul>
+<li><strong>Question 4</strong></li>
+</ul>
+   - What should you do if exposed to nitrogen dioxide?
+   - What should you do if exposed to nitrogen dioxide?
+
+<ul>
+<li><strong>Question 5</strong></li>
+</ul>
+   - How should nitrogen compound waste be properly disposed of?
+   - How should nitrogen compound waste be properly disposed of?
+
+<h3>Safety Guidelines | 安全指南</h3>
+
+<p>> <strong>⚠️ CRITICAL SAFETY WARNINGS | 重要安全警告</strong></p>
+
+<ul>
+<li><strong>Personal Protection | 个人防护</strong></li>
+</ul>
+   - Always wear safety goggles and lab coat
+   - 始终佩戴护目镜和实验服
+   - Use gloves when handling chemicals
+   - 处理化学品时使用手套
+
+<ul>
+<li><strong>Chemical Handling | 化学品处理</strong></li>
+</ul>
+   - Read all labels carefully before use
+   - 使用前仔细阅读所有标签
+   - Never taste or directly smell chemicals
+   - 绝不可品尝或直接闻化学品
+
+<ul>
+<li><strong>Emergency Procedures | 应急程序</strong></li>
+</ul>
+   - Know the location of safety equipment
+   - 了解安全设备的位置
+   - Report all accidents immediately
+   - 立即报告所有事故
+
+<ul>
+<li><strong>Waste Disposal | 废物处理</strong></li>
+</ul>
+   - Dispose of chemicals in designated containers
+   - 将化学品放入指定容器
+   - Never pour chemicals down the drain without permission
+   - 未经许可绝不可将化学品倒入下水道
+
+<p>---</p>
+
+<h2>Experimental Preparation | 实验准备</h2>
+
+<h3>Materials and Equipment | 材料与仪器</h3>
+
+<strong>Chemicals | 化学药品</strong>:
+<ul>
+<li>Nitrogen sample or compounds | Nitrogen样品或化合物</li>
+<li>Various reagents for testing | 各种测试试剂</li>
+<li>Indicator solutions | 指示剂溶液</li>
+<li>Distilled water | 蒸馏水</li>
+</ul>
+
+<strong>Equipment | 实验仪器</strong>:
+<ul>
+<li>Test tubes and test tube holder | 试管和试管夹</li>
+<li>Beakers (various sizes) | 烧杯（各种尺寸）</li>
+<li>Graduated cylinders | 量筒</li>
+<li>Dropper pipettes | 滴管</li>
+<li>Stirring rods | 搅拌棒</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Watch glass | 表玻璃</li>
+<li>pH paper | pH试纸</li>
+</ul>
+
+<p>---</p>
+
+<h2>Experimental Procedure | 实验操作</h2>
+
+<p>> <strong>Inquiry-Based Learning | 探究式学习</strong>  
+> During the experiment, focus on careful observation of phenomena and think about the questions provided.  
+> 在实验过程中，请仔细观察现象并思考提供的问题。</p>
+
+<h3>Part 1: Initial Observations | 初步观察</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Observe the sample | 观察样品</strong></li>
+</ul>
+   - Examine the physical appearance
+   - 检查物理外观
+   - Note color, state, and texture
+   - 注意颜色、状态和质地
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>Describe the appearance:</li>
+</ul>
+   描述外观：
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>What can you infer about the substance from its appearance?</li>
+</ul>
+   从外观你能推断出什么？
+
+<p>---</p>
+
+<h3>Part 2: Chemical Reactions | 化学反应</h3>
+
+<h4>Procedure | 操作步骤</h4>
+
+<ul>
+<li><strong>Perform test reactions | 进行测试反应</strong></li>
+</ul>
+   - Add appropriate reagents
+   - 加入适当的试剂
+   - Observe and record changes
+   - 观察并记录变化
+
+<h4>Observations | 观察与记录</h4>
+
+<strong>Please carefully observe and record:</strong>
+
+<ul>
+<li>What changes occur?</li>
+</ul>
+   发生了什么变化？
+   
+   Your observation | 你的观察: _______________________
+
+<h4>Inquiry Questions | 探究问题</h4>
+
+<ul>
+<li>What type of reaction is occurring?</li>
+</ul>
+   发生了什么类型的反应？
+
+<p>---</p>
+
+<p>[Additional experimental parts would be added based on specific element]</p>
+
+<p>---</p>
+
+<h2>Experimental Principles | 实验原理</h2>
+
+<p>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</p>
+
+<p>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</p>
+
+<h3>1. Ammonia (NH₃) | 氨</h3>
+
+<strong>Properties | 性质:</strong>
+<ul>
+<li>Colorless gas (无色气体)</li>
+<li>Pungent, characteristic odor (刺激性特征气味)</li>
+<li>Less dense than air (比空气密度小)</li>
+<li>Highly soluble (易溶) in water (极易溶于水)</li>
+</ul>
+
+<strong>Aqueous Solution | 水溶液:</strong>
+<pre><code class="">NH₃ + H₂O ⇌ NH₃·H₂O ⇌ NH₄⁺ + OH⁻
+</code></pre>
+<ul>
+<li>Weak base (弱碱)</li>
+<li>Turns red litmus blue (使红色石蕊变蓝)</li>
+<li>pH > 7</li>
+</ul>
+
+<strong>Reactions as a Base | 作为碱的反应:</strong>
+<pre><code class="">NH₃ + HCl → NH₄Cl (white smoke)
+2NH₃ + H₂SO₄ → (NH₄)₂SO₄
+NH₃ + HNO₃ → NH₄NO₃
+</code></pre>
+
+<strong>Reducing Properties | 还原性:</strong>
+<pre><code class="">2NH₃ + 3CuO --Δ--> 3Cu + N₂ + 3H₂O
+4NH₃ + 3O₂ --Δ--> 2N₂ + 6H₂O
+4NH₃ + 5O₂ --催化剂,Δ--> 4NO + 6H₂O (industrial)
+</code></pre>
+
+<strong>Complex Formation | 配合物形成:</strong>
+<pre><code class="">Cu²⁺ + 4NH₃ → [Cu(NH₃)₄]²⁺ (deep blue)
+Ag⁺ + 2NH₃ → [Ag(NH₃)₂]⁺ (colorless)
+</code></pre>
+
+<h3>2. Ammonium Salts | 铵盐</h3>
+
+<strong>Ammonium Chloride (NH₄Cl) | 氯化铵:</strong>
+
+<em>Thermal Decomposition | 热分解:</em>
+<pre><code class="">NH₄Cl --Δ--> NH₃↑ + HCl↑ (reversible)
+</code></pre>
+
+<em>Hydrolysis | 水解:</em>
+<pre><code class="">NH₄⁺ + H₂O ⇌ NH₃·H₂O + H⁺
+</code></pre>
+<ul>
+<li>Solution is acidic (溶液呈酸性)</li>
+</ul>
+
+<strong>Ammonium Nitrate (NH₄NO₃) | 硝酸铵:</strong>
+<pre><code class="">NH₄NO₃ --Δ--> N₂O↑ + 2H₂O
+</code></pre>
+<ul>
+<li>Explosive (爆炸性) when heated strongly (强热时爆炸)</li>
+<li>Used as fertilizer (用作肥料)</li>
+</ul>
+
+<strong>Ammonium Sulfate [(NH₄)₂SO₄] | 硫酸铵:</strong>
+<ul>
+<li>Important nitrogen fertilizer (重要氮肥)</li>
+<li>Non-explosive (不爆炸)</li>
+<li>Acidic (酸性) in solution (溶液呈酸性)</li>
+</ul>
+
+<strong>Detection of NH₄⁺ | NH₄⁺的检验:</strong>
+<pre><code class="">NH₄⁺ + OH⁻ --Δ--> NH₃↑ + H₂O
+</code></pre>
+<ul>
+<li>Add NaOH and heat (加NaOH并加热)</li>
+<li>Ammonia gas turns moist red litmus blue (氨气使湿润的红色石蕊变蓝)</li>
+</ul>
+
+<h3>3. Nitric Acid (HNO₃) | 硝酸</h3>
+
+<strong>Properties | 性质:</strong>
+<ul>
+<li>Colorless liquid when pure (纯净时为无色液体)</li>
+<li>Yellow-brown when impure (含杂质时呈黄棕色，含NO₂)</li>
+<li>Strong acid (强酸)</li>
+<li>Strong oxidizing agent (强氧化剂)</li>
+</ul>
+
+<strong>Acidic Properties | 酸性:</strong>
+<pre><code class="">HNO₃ + NaOH → NaNO₃ + H₂O
+2HNO₃ + CuO → Cu(NO₃)₂ + H₂O
+</code></pre>
+
+<strong>Oxidizing Properties | 氧化性:</strong>
+
+<em>With Metals | 与金属:</em>
+
+<p>Dilute HNO₃:
+<pre><code class="">3Cu + 8HNO₃(dilute) → 3Cu(NO₃)₂ + 2NO↑ + 4H₂O
+</code></pre></p>
+
+<p>Concentrated HNO₃:
+<pre><code class="">Cu + 4HNO₃(conc) → Cu(NO₃)₂ + 2NO₂↑ + 2H₂O
+</code></pre></p>
+
+<em>Passivation | 钝化:</em>
+<ul>
+<li>Fe, Al passivated by concentrated HNO₃ (cold) (Fe、Al被浓硝酸（冷）钝化)</li>
+<li>Forms protective oxide layer (形成保护性氧化层)</li>
+</ul>
+
+<em>With Non-metals | 与非金属:</em>
+<pre><code class="">C + 4HNO₃(conc) --Δ--> CO₂↑ + 4NO₂↑ + 2H₂O
+S + 6HNO₃(conc) --Δ--> H₂SO₄ + 6NO₂↑ + 2H₂O
+</code></pre>
+
+<strong>Aqua Regia | 王水:</strong>
+<pre><code class="">HNO₃ + 3HCl → NOCl + Cl₂ + 2H₂O
+</code></pre>
+<ul>
+<li>Mixture of HNO₃ and HCl (1:3) (HNO₃和HCl的混合物（1:3）)</li>
+<li>Can dissolve gold and platinum (能溶解金和铂)</li>
+</ul>
+
+<h3>4. Industrial Production of HNO₃ | 硝酸的工业生产</h3>
+
+<strong>Ostwald Process | 奥斯特瓦尔德法:</strong>
+
+<em>Step 1: Oxidation of ammonia | 氨的氧化:</em>
+<pre><code class="">4NH₃ + 5O₂ --Pt催化剂,Δ--> 4NO + 6H₂O
+</code></pre>
+
+<em>Step 2: Oxidation of NO | NO的氧化:</em>
+<pre><code class="">2NO + O₂ → 2NO₂
+</code></pre>
+
+<em>Step 3: Absorption in water | 水吸收:</em>
+<pre><code class="">4NO₂ + O₂ + 2H₂O → 4HNO₃
+</code></pre>
+
+<h3>5. Nitrates | 硝酸盐</h3>
+
+<strong>Thermal Decomposition | 热分解:</strong>
+
+<em>Nitrates of active metals | 活泼金属硝酸盐:</em>
+<pre><code class="">2NaNO₃ --Δ--> 2NaNO₂ + O₂↑
+</code></pre>
+
+<em>Nitrates of less active metals | 不活泼金属硝酸盐:</em>
+<pre><code class="">2Cu(NO₃)₂ --Δ--> 2CuO + 4NO₂↑ + O₂↑
+</code></pre>
+
+<em>Nitrates of very inactive metals | 很不活泼金属硝酸盐:</em>
+<pre><code class="">2AgNO₃ --Δ--> 2Ag + 2NO₂↑ + O₂↑
+</code></pre>
+
+<h3>6. Applications | 应用</h3>
+
+<strong>NH₃:</strong>
+<ul>
+<li>Fertilizer production (肥料生产)</li>
+<li>Refrigerant (制冷剂)</li>
+<li>Cleaning agent (清洁剂)</li>
+<li>Chemical synthesis (化学合成)</li>
+</ul>
+
+<strong>HNO₃:</strong>
+<ul>
+<li>Fertilizer production (肥料生产)</li>
+<li>Explosive (爆炸性)s (TNT, nitroglycerin) (炸药（TNT、硝化甘油）)</li>
+<li>Metal etching (金属蚀刻)</li>
+<li>Rocket propellant (火箭推进剂)</li>
+</ul>
+
+<strong>Ammonium Salts | 铵盐:</strong>
+<ul>
+<li>Fertilizers (肥料)</li>
+<li>Explosive (爆炸性)s (炸药)</li>
+<li>Food additives (食品添加剂)</li>
+</ul>
+
+<p>---</p>
+
+<p>---</p>
+
+<h2>Knowledge Summary | 知识点梳理</h2>
+
+<h3>I. Key Properties | 关键性质</h3>
+
+<strong>Physical Properties | 物理性质:</strong>
+<ul>
+<li>[Properties will be summarized based on observations]</li>
+<li>[根据观察总结性质]</li>
+</ul>
+
+<strong>Chemical Properties | 化学性质:</strong>
+<ul>
+<li>[Reactions will be summarized based on experiments]</li>
+<li>[根据实验总结反应]</li>
+</ul>
+
+<h3>II. Important Reactions | 重要反应</h3>
+
+<p>[Key chemical equations from the experiment]
+[实验中的关键化学方程式]</p>
+
+<h3>III. Applications | 应用</h3>
+
+<p>[Practical applications of the element/compounds]
+[元素/化合物的实际应用]</p>
+
+<p>---</p>
+
+<h2>Post-lab Questions | 实验后思考</h2>
+
+<p>Based on your observations and understanding of the principles, answer these questions:</p>
+
+<ul>
+<li><strong>Observation Analysis | 观察分析</strong></li>
+</ul>
+   - What were the most significant observations in this experiment?
+   - 本实验中最重要的观察是什么？
+
+<ul>
+<li><strong>Reaction Mechanisms | 反应机理</strong></li>
+</ul>
+   - Explain the mechanisms behind the key reactions observed.
+   - 解释观察到的关键反应的机理。
+
+<ul>
+<li><strong>Safety Considerations | 安全考虑</strong></li>
+</ul>
+   - What safety precautions were most important in this experiment and why?
+   - 本实验中哪些安全预防措施最重要？为什么？
+
+<ul>
+<li><strong>Practical Applications | 实际应用</strong></li>
+</ul>
+   - How are the properties observed in this experiment used in real-world applications?
+   - 本实验中观察到的性质如何在实际应用中使用？
+
+<ul>
+<li><strong>Comparative Analysis | 比较分析</strong></li>
+</ul>
+   - How do the properties of this compound compare to related substances?
+   - 这个化合物的性质与相关物质相比如何？
+
+<p>---</p>
+
+<strong>Experiment Completed | 实验完成</strong>
+
+<p>Remember to clean all equipment and properly dispose of all chemical waste according to safety guidelines.</p>
+
+<p>记得清洁所有设备并按照安全指南正确处理所有化学废物。</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>
