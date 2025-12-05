@@ -2,7 +2,9 @@
 
 欢迎访问Blue Nova化学实验室手册！
 
-## 在线访问
+## 🚀 在线访问 (Live Site)
+**[点击这里进入化学实验室 / Click here to enter the Chemistry Lab](https://zuozhenpu.github.io/chemistry-lab/)**
+
 本网站包含14个高中化学实验，采用探究式学习方法。
 
 ## 实验列表
@@ -33,7 +35,7 @@
 - 实验后思考题
 
 ## 部署说明
-本网站使用Netlify托管，无需服务器即可访问。
+本网站使用 GitHub Pages 托管。
 
 ---
 © 2025 Blue Nova Chemistry Laboratory Manual
