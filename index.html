@@ -1,20 +1,197 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Chemistry Lab</title>
-  <style>
-    body {font-family: system-ui, sans-serif; margin: 2rem;}
-    a {color:#0066cc; text-decoration:none;}
-    a:hover {text-decoration:underline;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Nova Chemistry Laboratory Manual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: #1a202c;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #065f46;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            color: #1a202c;
+        }
+        
+        .lab-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .lab-section h2 {
+            color: #065f46;
+            font-size: 2em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #34d399;
+        }
+        
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .lab-card {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .lab-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+        }
+        
+        .lab-number {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .lab-title {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        footer {
+            text-align: center;
+            color: #1a202c;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .lab-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to Chemistry Lab</h1>
-  <p>This repository is now served as a static website via GitHub Pages.</p>
-  <ul>
-    <li><a href="README.md">Project README</a></li>
-    <!-- Add more links to files/folders as needed -->
-  </ul>
+    <div class="container">
+        <header>
+            <h1>🧪 Blue Nova Chemistry Laboratory Manual</h1>
+            <p class="subtitle">Inquiry-Based Learning for High School Chemistry</p>
+            <p class="subtitle">探究式学习 | 高中化学实验手册</p>
+        </header>
+        
+        <div class="lab-section">
+<h2>Chemistry 1A Experiments | 化学1A实验</h2>
+<div class="lab-grid">
+<a href="1A_Lab1_Sodium.html" class="lab-card">
+<div class="lab-number">Lab 1</div>
+<div class="lab-title">Sodium</div>
+</a>
+<a href="1A_Lab2_Sodium_Compounds.html" class="lab-card">
+<div class="lab-number">Lab 2</div>
+<div class="lab-title">Sodium Compounds</div>
+</a>
+<a href="1A_Lab3_Iron.html" class="lab-card">
+<div class="lab-number">Lab 3</div>
+<div class="lab-title">Iron</div>
+</a>
+<a href="1A_Lab4_Iron_Compounds.html" class="lab-card">
+<div class="lab-number">Lab 4</div>
+<div class="lab-title">Iron Compounds</div>
+</a>
+<a href="1A_Lab5_Chlorine.html" class="lab-card">
+<div class="lab-number">Lab 5</div>
+<div class="lab-title">Chlorine</div>
+</a>
+<a href="1A_Lab6_Aluminum.html" class="lab-card">
+<div class="lab-number">Lab 6</div>
+<div class="lab-title">Aluminum</div>
+</a>
+<a href="1A_Lab7_Aluminum_Compounds.html" class="lab-card">
+<div class="lab-number">Lab 7</div>
+<div class="lab-title">Aluminum Compounds</div>
+</a>
+</div>
+</div>
+<div class="lab-section">
+<h2>Chemistry 1B Experiments | 化学1B实验</h2>
+<div class="lab-grid">
+<a href="1B_Lab1_Sulfur.html" class="lab-card">
+<div class="lab-number">Lab 1</div>
+<div class="lab-title">Sulfur</div>
+</a>
+<a href="1B_Lab2_Sulfur_Compounds.html" class="lab-card">
+<div class="lab-number">Lab 2</div>
+<div class="lab-title">Sulfur Compounds</div>
+</a>
+<a href="1B_Lab3_Nitrogen.html" class="lab-card">
+<div class="lab-number">Lab 3</div>
+<div class="lab-title">Nitrogen</div>
+</a>
+<a href="1B_Lab4_Nitrogen_Compounds.html" class="lab-card">
+<div class="lab-number">Lab 4</div>
+<div class="lab-title">Nitrogen Compounds</div>
+</a>
+<a href="1B_Lab5_Methane.html" class="lab-card">
+<div class="lab-number">Lab 5</div>
+<div class="lab-title">Methane</div>
+</a>
+<a href="1B_Lab6_Ethylene.html" class="lab-card">
+<div class="lab-number">Lab 6</div>
+<div class="lab-title">Ethylene</div>
+</a>
+<a href="1B_Lab7_Ethanol.html" class="lab-card">
+<div class="lab-number">Lab 7</div>
+<div class="lab-title">Ethanol</div>
+</a>
+<a href="1B_Lab8_Acetic_Acid.html" class="lab-card">
+<div class="lab-number">Lab 8</div>
+<div class="lab-title">Acetic Acid</div>
+</a>
+</div>
+</div>
+
+        
+        <footer>
+            <p>© 2025 Blue Nova Chemistry Laboratory Manual</p>
+            <p>Empowering Students Through Inquiry-Based Learning</p>
+        </footer>
+    </div>
 </body>
 </html>
