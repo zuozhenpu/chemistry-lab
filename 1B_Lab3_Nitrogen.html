@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry 1B | Lab 3: Properties of Nitrogen - Blue Nova Chemistry</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif; line-height: 1.8; color: #1a202c; background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%); padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); }
+        h1 { color: #065f46; font-size: 2.5em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 4px solid #10b981; text-align: center; }
+        h2 { color: #047857; font-size: 2em; margin-top: 40px; margin-bottom: 20px; padding-left: 15px; border-left: 5px solid #34d399; }
+        h3 { color: #059669; font-size: 1.5em; margin-top: 30px; margin-bottom: 15px; }
+        h4 { color: #10b981; font-size: 1.2em; margin-top: 20px; margin-bottom: 10px; }
+        p { margin-bottom: 15px; text-align: justify; color: #1a202c; }
+        code { background: white; padding: 2px 6px; border-radius: 4px; font-family: "Consolas", "Monaco", monospace; color: #1a202c; font-size: 0.9em; border: 1px solid #d1fae5; }
+        pre { background: #f0fdf4; color: #1a202c; padding: 20px; border-radius: 10px; border: 2px solid #d1fae5; overflow-x: auto; margin: 20px 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+        pre code { background: transparent; color: #1a202c; padding: 0; border: none; }
+        ul, ol { margin: 15px 0 15px 30px; }
+        li { margin-bottom: 8px; color: #1a202c; }
+        strong { color: #065f46; font-weight: 600; }
+        blockquote { background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; margin: 20px 0; border-radius: 5px; color: #1a202c; }
+        .back-link { display: inline-block; margin-top: 30px; padding: 12px 24px; background: linear-gradient(135deg, #10b981 0%, #34d399 100%); color: white; text-decoration: none; border-radius: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; font-weight: 600; }
+        .back-link:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4); }
+        hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
+        @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>Chemistry 1B | Lab 3: Properties of Nitrogen</h1>
+<h1>化学1B | 实验3：Nitrogen的性质</h1>
+<hr>
+<h2>Experiment Purpose | 实验目的</h2>
+<p>This is an investigative experiment designed to help you:</p>
+<p>1. Explore the properties and reactions of nitrogen through hands-on observation</p>
+<p>2. Investigate characteristic chemical reactions through systematic experimentation</p>
+<p>3. Develop understanding of elemental properties and reactivity</p>
+<p>4. Practice safe laboratory techniques with reactive elements</p>
+<p>这是一个探究性实验，旨在帮助你：</p>
+<p>1. 通过亲手观察探索氮的性质和反应</p>
+<p>2. 通过系统实验研究特征化学反应</p>
+<p>3. 培养对元素性质和反应性的理解</p>
+<p>4. 练习使用活泼元素的安全实验室技术</p>
+<hr>
+<h2>Safety Learning | 安全学习</h2>
+<hr>
+<h2>Pre-lab Work | 实验前准备</h2>
+<h3>Basic Knowledge | 基础知识</h3>
+<blockquote>Inquiry-Based Learning Prompt | 探究式学习提示</blockquote>
+<blockquote>Before starting this experiment, research and answer the following questions about nitrogen.</blockquote>
+<blockquote>在开始实验前，请研究并回答以下关于氮气的问题。</blockquote>
+<p>1. Nitrogen Bond | 氮氮键</p>
+<ul>
+<li>- Explain the stability of nitrogen gas based on its bond structure. What is the bond energy?</li>
+<li>- 基于键结构解释氮气的稳定性。键能是多少？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>2. Preparation Method | 制备方法</p>
+<ul>
+<li>- Write the chemical equation for laboratory preparation of nitrogen using sodium nitrite and ammonium chloride.</li>
+<li>- 写出实验室使用亚硝酸钠和氯化铵制备氮气的化学方程式。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>3. Magnesium Nitride | 氮化镁</p>
+<ul>
+<li>- What is the formula and color of magnesium nitride? What happens when it reacts with water?</li>
+<li>- 氮化镁的化学式和颜色是什么？它与水反应时会发生什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<h3>Theory Questions | 理论问题</h3>
+<p>1. Inertness vs Reactivity | 惰性与反应性</p>
+<ul>
+<li>- Under what conditions does nitrogen react? Why is high energy often required?</li>
+<li>- 氮气在什么条件下会反应？为什么通常需要高能量？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<hr>
+<h2>Safety Learning | 安全学习</h2>
+<blockquote>Inquiry-Based Learning Prompt | 探究式学习提示</blockquote>
+<blockquote>Before starting this experiment, think about the following questions and research the answers.</blockquote>
+<blockquote>在开始实验前，请思考以下问题并查阅资料。</blockquote>
+<h3>Pre-lab Safety Questions | 实验前安全问题</h3>
+<p>Answer the following safety questions before the experiment | 实验前请回答以下安全问题:</p>
+<p>1. Question 1: Sodium Nitrite Toxicity | 问题1：亚硝酸钠毒性</p>
+<ul>
+<li>- Sodium nitrite (NaNO₂) is toxic and an oxidizer. How should you handle it safely?</li>
+<li>- 亚硝酸钠(NaNO₂)有毒且是氧化剂。应如何安全处理？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>2. Question 2: Magnesium Burning | 问题2：镁的燃烧</p>
+<ul>
+<li>- Burning magnesium produces intense light and heat. What eye protection is needed?</li>
+<li>- 燃烧的镁产生强烈的光和热。需要什么眼部防护？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>3. Question 3: Gas Collection | 问题3：气体收集</p>
+<ul>
+<li>- Nitrogen is collected by water displacement. What precaution prevents suck-back when heating stops?</li>
+<li>- 氮气通过排水法收集。停止加热时，什么预防措施可以防止倒吸？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>4. Question 4: Hot Glassware | 问题4：热玻璃器皿</p>
+<ul>
+<li>- Standard precautions for heating wet glassware or rapid cooling?</li>
+<li>- 加热湿玻璃器皿或快速冷却时的标准预防措施？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>5. Question 5: Waste Disposal | 问题5：废物处理</p>
+<ul>
+<li>- How should solid waste (magnesium nitride, unreacted salts) be disposed of?</li>
+<li>- 固体废物（氮化镁，未反应的盐）应如何处理？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>6. Question 6: Ammonium Chloride | 问题6：氯化铵</p>
+<ul>
+<li>- Is NH₄Cl hazardous upon heating? What does it decompose into?</li>
+<li>- NH₄Cl加热时有危险吗？它分解成什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>7. Question 7: Emergency Eye Wash | 问题7：紧急洗眼</p>
+<ul>
+<li>- Location and operation of the nearest eye wash station?</li>
+<li>- 最近洗眼台的位置和操作方法？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>8. Question 8: Fire Safety | 问题8：消防安全</p>
+<ul>
+<li>- Since we are using an open flame (alcohol lamp), what are the rapid extinguishing methods?</li>
+<li>- 既然使用明火（酒精灯），有哪些快速灭火方法？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<h3>Safety Guidelines | 安全指南</h3>
+<blockquote>⚠️ CRITICAL SAFETY WARNINGS | 重要安全警告</blockquote>
+<p>1. Visual Safety | 视觉安全</p>
+<ul>
+<li>- Do not look directly at burning magnesium. It emits UV light that can damage eyes.</li>
+<li>- 不要直视燃烧的镁。它发射出的紫外线会伤害眼睛。</li>
+<li>- Use cobalt glass or look indirectly if possible.</li>
+<li>- 尽可能使用钴玻璃或间接观察。</li>
+</ul>
+<p>2. Chemical Safety | 化学品安全</p>
+<ul>
+<li>- NaNO₂ is toxic if swallowed. Wash hands thoroughly.</li>
+<li>- 吞食NaNO₂有毒。彻底洗手。</li>
+</ul>
+<p>3. Apparatus Safety | 装置安全</p>
+<ul>
+<li>- Prevent suck-back: Remove delivery tube from water before stopping heat.</li>
+<li>- 防止倒吸：停止加热前将导管从水中取出。</li>
+</ul>
+<hr>
+<h2>Experimental Procedure | 实验操作</h2>
+<blockquote>Inquiry-Based Learning | 探究式学习</blockquote>
+<blockquote>During the experiment, focus on careful observation of phenomena and think about the questions provided.</blockquote>
+<blockquote>在实验过程中，请仔细观察现象并思考提供的问题。</blockquote>
+<h3>Part 1: Preparation of Nitrogen Gas | 氮气的制备</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p><strong>Chemicals | 化学药品</strong>:</p>
+<ul>
+<li>Sodium nitrite (NaNO₂) powder | 亚硝酸钠粉末</li>
+<li>Ammonium chloride (NH₄Cl) powder | 氯化铵粉末</li>
+<li>Distilled water | 蒸馏水</li>
+</ul>
+<p><strong>Equipment | 实验仪器</strong>:</p>
+<ul>
+<li>Round-bottom flask or large test tube | 圆底烧瓶或大试管</li>
+<li>Delivery tube and rubber stopper | 导管和橡胶塞</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Gas collection bottles (Gas jars) | 集气瓶</li>
+<li>Water trough | 水槽</li>
+<li>Crucible tongs | 坩埚钳</li>
+<li>Sandpaper | 砂纸</li>
+<li>Matches/Lighter | 火柴/打火机</li>
+</ul>
+<h4>Procedure | 操作步骤</h4>
+<p>Step 1: Assembly | 组装</p>
+<ul>
+<li>Set up a gas generation apparatus (solid + liquid -> gas heating setup).</li>
+<li>搭建气体发生装置（固+液加热制气装置）。</li>
+<li>Note: Although reagents are solid, we usually add saturated solutions or mix solids with some water to facilitate reaction control.</li>
+<li>注：虽然试剂是固体，我们通常加入饱和溶液或将固体与少量水混合以便于控制反应。</li>
+<li>Mix saturated NaNO₂ solution and saturated NH₄Cl solution in the flask.</li>
+<li>在烧瓶中混合饱和NaNO₂溶液和饱和NH₄Cl溶液。</li>
+</ul>
+<p>Step 2: Collection Setup | 收集设置</p>
+<ul>
+<li>Prepare gas jars filled with water inverted in the water trough.</li>
+<li>准备装满水的集气瓶，倒置在水槽中。</li>
+</ul>
+<p>Step 3: Reaction | 反应</p>
+<ul>
+<li>Gently heat the flask.</li>
+<li>轻轻加热烧瓶。</li>
+<li>Collect the gas produced. (Discard the first few bubbles as they are air).</li>
+<li>收集产生的气体。（丢弃最初的几个气泡，因为它们是空气）。</li>
+<li>Collect 2 bottles of Nitrogen.</li>
+<li>收集2瓶氮气。</li>
+<li>Important: Remove the delivery tube from water before extinguishing the lamp!</li>
+<li>重要：熄灭酒精灯前将导管从水中取出！</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record | 请仔细观察并记录:</p>
+<p>1. Gas Appearance | 气体外观:</p>
+<ul>
+<li>- Color and solubility (inferred from collection method).</li>
+<li>- 颜色和溶解性（从收集方法推断）。</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. Question 1 | 问题1:</p>
+<ul>
+<li>- Why use saturated solutions instead of dry solids?</li>
+<li>- 为什么使用饱和溶液而不是干燥固体？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<h3>Part 2: Chemical Properties - Reaction with Magnesium | 化学性质 - 与镁反应</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p><strong>Chemicals | 化学药品</strong>:</p>
+<ul>
+<li>Sodium nitrite (NaNO₂) powder | 亚硝酸钠粉末</li>
+<li>Ammonium chloride (NH₄Cl) powder | 氯化铵粉末</li>
+<li>Magnesium ribbon (Mg) | 镁条</li>
+<li>Distilled water | 蒸馏水</li>
+</ul>
+<p><strong>Equipment | 实验仪器</strong>:</p>
+<ul>
+<li>Round-bottom flask or large test tube | 圆底烧瓶或大试管</li>
+<li>Delivery tube and rubber stopper | 导管和橡胶塞</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Gas collection bottles (Gas jars) | 集气瓶</li>
+<li>Water trough | 水槽</li>
+<li>Crucible tongs | 坩埚钳</li>
+<li>Sandpaper | 砂纸</li>
+<li>Matches/Lighter | 火柴/打火机</li>
+</ul>
+<h4>Procedure | 操作步骤</h4>
+<p>Step 1: Preparation of Mg | 准备镁条</p>
+<ul>
+<li>Polish a strip of magnesium ribbon with sandpaper to remove oxide layer.</li>
+<li>用砂纸打磨镁条以去除氧化层。</li>
+</ul>
+<p>Step 2: Combustion | 燃烧</p>
+<ul>
+<li>Hold the magnesium ribbon with crucible tongs.</li>
+<li>用坩埚钳夹住镁条。</li>
+<li>Ignite it using the alcohol lamp (outside the jar).</li>
+<li>用酒精灯点燃它（在集气瓶外）。</li>
+<li>Immediately insert the burning magnesium into the jar of Nitrogen.</li>
+<li>立即将燃烧的镁条插入氮气瓶中。</li>
+</ul>
+<p>Step 3: Product Examination | 产物检查</p>
+<ul>
+<li>Observe if combustion continues.</li>
+<li>观察燃烧是否继续。</li>
+<li>After cooling, add a few drops of water to the solid residue. Test the gas evolved with moist red litmus paper.</li>
+<li>冷却后，向固体残留物中加入几滴水。用湿润的红色石蕊试纸测试放出的气体。</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record | 请仔细观察并记录:</p>
+<p>1. Burning in Nitrogen | 在氮气中燃烧:</p>
+<ul>
+<li>- Does Mg continue to burn? Comparison with burning in air?</li>
+<li>- 镁条是否继续燃烧？与在空气中燃烧对比？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<p>2. Residue and Hydrolysis | 残留物与水解:</p>
+<ul>
+<li>- Color of the ash? Smell of gas when water is added? Litmus paper change?</li>
+<li>- 灰烬的颜色？加水时气体的气味？石蕊试纸变化？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. Question 1 | 问题1:</p>
+<ul>
+<li>- Write the equation for Mg burning in N₂ and the subsequent reaction with water.</li>
+<li>- 写出Mg在N₂中燃烧及随后与水反应的方程式。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<h2>Experimental Principles | 实验原理</h2>
+<p>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</p>
+<p>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</p>
+<h3>1. Physical Properties | 氮的物理性质</h3>
+<p>Appearance | 外观:</p>
+<ul>
+<li>Colorless, odorless gas (无色无味气体)</li>
+<li>Tasteless (无味)</li>
+</ul>
+<p>Density | 密度:</p>
+<ul>
+<li>Slightly less dense than air (比空气略轻)</li>
+<li>1.25 g/L at STP (标准状况下1.25克/升)</li>
+</ul>
+<p>Boiling Point | 沸点:</p>
+<ul>
+<li>-196°C (very low) (很低)</li>
+<li>Used as cryogenic liquid (用作低温液体)</li>
+</ul>
+<p>Solubility | 溶解性:</p>
+<ul>
+<li>Sparingly soluble (微溶) in water (微溶于水)</li>
+</ul>
+<h3>2. Chemical Properties | 化学性质</h3>
+<p>Stability | 稳定性:</p>
+<ul>
+<li>N≡N triple bond is very strong (N≡N三键很强)</li>
+<li>Bond energy: 946 kJ/mol (键能：946 kJ/mol)</li>
+<li>Chemically inert at room temperature (室温下化学性质不活泼)</li>
+</ul>
+<h4>(1) Reaction with Hydrogen | 与氢气反应</h4>
+<p>Haber Process | 哈伯法:</p>
+<pre><code>
+N₂ + 3H₂ ⇌ 2NH₃ (reversible, exothermic)
+</code></pre>
+<ul>
+<li>Requires high temperature (450-500°C) (需要高温)</li>
+<li>High pressure (200-300 atm) (高压)</li>
+<li>Iron catalyst (铁催化剂)</li>
+<li>Industrial production of ammonia (工业生产氨)</li>
+</ul>
+<h4>(2) Reaction with Oxygen | 与氧气反应</h4>
+<p>At High Temperature | 高温下:</p>
+<pre><code>
+N₂ + O₂ --高温--> 2NO (nitrogen monoxide)
+</code></pre>
+<ul>
+<li>Occurs in lightning (闪电中发生)</li>
+<li>Occurs in car engines (汽车发动机中发生)</li>
+<li>Endothermic reaction (吸热反应)</li>
+</ul>
+<p>Further Oxidation | 进一步氧化:</p>
+<pre><code>
+2NO + O₂ → 2NO₂ (nitrogen dioxide)
+</code></pre>
+<h4>(3) Reaction with Metals | 与金属反应</h4>
+<p>With Magnesium | 与镁:</p>
+<pre><code>
+3Mg + N₂ --Δ--> Mg₃N₂ (magnesium nitride)
+</code></pre>
+<ul>
+<li>Requires heating (需要加热)</li>
+<li>Yellow-green solid (黄绿色固体)</li>
+</ul>
+<p>With Lithium | 与锂:</p>
+<pre><code>
+6Li + N₂ → 2Li₃N (lithium nitride)
+</code></pre>
+<ul>
+<li>Can occur at room temperature (室温下可发生)</li>
+</ul>
+<h3>3. Nitrogen Oxides | 氮的氧化物</h3>
+<p>Nitric Oxide (NO) | 一氧化氮:</p>
+<ul>
+<li>Colorless gas (无色气体)</li>
+<li>Slightly soluble in water (微溶于水)</li>
+<li>Oxidized rapidly in air (在空气中迅速被氧化)</li>
+</ul>
+<p>Nitrogen Dioxide (NO₂) | 二氧化氮:</p>
+<ul>
+<li>Red-brown gas (红棕色气体)</li>
+<li>Pungent odor (刺激性气味)</li>
+<li>Toxic (有毒)</li>
+</ul>
+<p>Dinitrogen Tetroxide (N₂O₄) | 四氧化二氮:</p>
+<pre><code>
+2NO₂ ⇌ N₂O₄ (equilibrium, colorless)
+</code></pre>
+<ul>
+<li>Exists in equilibrium with NO₂ (与NO₂平衡存在)</li>
+</ul>
+<p>Dinitrogen Oxide (N₂O) | 一氧化二氮:</p>
+<ul>
+<li>Colorless gas (无色气体)</li>
+<li>Sweet odor (甜味)</li>
+<li>Laughing gas (笑气)</li>
+<li>Anesthetic (麻醉剂)</li>
+</ul>
+<h3>4. Nitrogen Cycle | 氮循环</h3>
+<p>Nitrogen Fixation | 固氮:</p>
+<p>1. Lightning (闪电)</p>
+<p>2. Nitrogen-fixing bacteria (固氮细菌)</p>
+<p>3. Industrial Haber process (工业哈伯法)</p>
+<p>Nitrification | 硝化:</p>
+<pre><code>
+NH₃ → NO₂⁻ → NO₃⁻
+</code></pre>
+<p>Denitrification | 反硝化:</p>
+<pre><code>
+NO₃⁻ → NO₂⁻ → N₂
+</code></pre>
+<h3>5. Uses of Nitrogen | 氮的用途</h3>
+<p>1. Inert Atmosphere | 惰性气氛:</p>
+<ul>
+<li>Food packaging (食品包装)</li>
+<li>Prevents oxidation (防止氧化)</li>
+<li>Electronics manufacturing (电子制造)</li>
+</ul>
+<p>2. Cryogenic Applications | 低温应用:</p>
+<ul>
+<li>Liquid nitrogen for freezing (液氮冷冻)</li>
+<li>Medical procedures (医疗程序)</li>
+<li>Food preservation (食品保存)</li>
+</ul>
+<p>3. Chemical Production | 化工生产:</p>
+<ul>
+<li>Ammonia synthesis (合成氨)</li>
+<li>Nitric acid production (生产硝酸)</li>
+<li>Fertilizers (肥料)</li>
+</ul>
+<p>4. Tire Inflation | 轮胎充气:</p>
+<ul>
+<li>More stable than air (比空气更稳定)</li>
+<li>Less pressure variation (压力变化小)</li>
+</ul>
+<h3>6. Environmental Concerns | 环境问题</h3>
+<p>NOₓ Pollution | 氮氧化物污染:</p>
+<ul>
+<li>From vehicle emissions (来自车辆排放)</li>
+<li>From power plants (来自发电厂)</li>
+<li>Contributes to acid rain (导致酸雨)</li>
+<li>Forms photochemical smog (形成光化学烟雾)</li>
+</ul>
+<p>Control Measures | 控制措施:</p>
+<ul>
+<li>Catalytic converters (催化转化器)</li>
+<li>Selective catalytic reduction (选择性催化还原)</li>
+<li>Low-NOₓ burners (低氮氧化物燃烧器)</li>
+</ul>
+<hr>
+<hr>
+<h2>Knowledge Summary | 知识点梳理</h2>
+<h3>I. Key Properties | 关键性质</h3>
+<p>Physical Properties | 物理性质:</p>
+<ul>
+<li>[Properties will be summarized based on observations]</li>
+<li>[根据观察总结性质]</li>
+</ul>
+<p>Chemical Properties | 化学性质:</p>
+<ul>
+<li>[Reactions will be summarized based on experiments]</li>
+<li>[根据实验总结反应]</li>
+</ul>
+<h3>II. Important Reactions | 重要反应</h3>
+<p>[Key chemical equations from the experiment]</p>
+<p>[实验中的关键化学方程式]</p>
+<h3>III. Applications | 应用</h3>
+<p>[Practical applications of the element/compounds]</p>
+<p>[元素/化合物的实际应用]</p>
+<hr>
+<h2>Post-lab Questions | 实验后思考</h2>
+<p>Based on your observations and understanding of the principles, answer these questions:</p>
+<p>1. Observation Analysis | 观察分析</p>
+<ul>
+<li>- What were the most significant observations in this experiment?</li>
+<li>- 本实验中最重要的观察是什么？</li>
+</ul>
+<p>2. Reaction Mechanisms | 反应机理</p>
+<ul>
+<li>- Explain the mechanisms behind the key reactions observed.</li>
+<li>- 解释观察到的关键反应的机理。</li>
+</ul>
+<p>3. Safety Considerations | 安全考虑</p>
+<ul>
+<li>- What safety precautions were most important in this experiment and why?</li>
+<li>- 本实验中哪些安全预防措施最重要？为什么？</li>
+</ul>
+<p>4. Practical Applications | 实际应用</p>
+<ul>
+<li>- How are the properties observed in this experiment used in real-world applications?</li>
+<li>- 本实验中观察到的性质如何在实际应用中使用？</li>
+</ul>
+<p>5. Comparative Analysis | 比较分析</p>
+<ul>
+<li>- How do the properties of this element compare to related substances?</li>
+<li>- 这个元素的性质与相关物质相比如何？</li>
+</ul>
+<hr>
+<p>Experiment Completed | 实验完成</p>
+<p>Remember to clean all equipment and properly dispose of all chemical waste according to safety guidelines.</p>
+<p>记得清洁所有设备并按照安全指南正确处理所有化学废物。</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>

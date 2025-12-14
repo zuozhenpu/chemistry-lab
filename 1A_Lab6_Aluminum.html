@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry 1A | Lab 6: Properties of Aluminum - Blue Nova Chemistry</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif; line-height: 1.8; color: #1a202c; background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%); padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); }
+        h1 { color: #065f46; font-size: 2.5em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 4px solid #10b981; text-align: center; }
+        h2 { color: #047857; font-size: 2em; margin-top: 40px; margin-bottom: 20px; padding-left: 15px; border-left: 5px solid #34d399; }
+        h3 { color: #059669; font-size: 1.5em; margin-top: 30px; margin-bottom: 15px; }
+        h4 { color: #10b981; font-size: 1.2em; margin-top: 20px; margin-bottom: 10px; }
+        p { margin-bottom: 15px; text-align: justify; color: #1a202c; }
+        code { background: white; padding: 2px 6px; border-radius: 4px; font-family: "Consolas", "Monaco", monospace; color: #1a202c; font-size: 0.9em; border: 1px solid #d1fae5; }
+        pre { background: #f0fdf4; color: #1a202c; padding: 20px; border-radius: 10px; border: 2px solid #d1fae5; overflow-x: auto; margin: 20px 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+        pre code { background: transparent; color: #1a202c; padding: 0; border: none; }
+        ul, ol { margin: 15px 0 15px 30px; }
+        li { margin-bottom: 8px; color: #1a202c; }
+        strong { color: #065f46; font-weight: 600; }
+        blockquote { background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; margin: 20px 0; border-radius: 5px; color: #1a202c; }
+        .back-link { display: inline-block; margin-top: 30px; padding: 12px 24px; background: linear-gradient(135deg, #10b981 0%, #34d399 100%); color: white; text-decoration: none; border-radius: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; font-weight: 600; }
+        .back-link:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4); }
+        hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
+        @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>Chemistry 1A | Lab 6: Properties of Aluminum</h1>
+<h1>化学1A | 实验6：Aluminum的性质</h1>
+<hr>
+<h2>Experiment Purpose | 实验目的</h2>
+<p>This is an investigative experiment designed to help you:</p>
+<p>1. Explore the properties and reactions of aluminum through hands-on observation</p>
+<p>2. Investigate characteristic chemical reactions through systematic experimentation</p>
+<p>3. Develop understanding of elemental properties and reactivity</p>
+<p>4. Practice safe laboratory techniques with reactive elements</p>
+<p>这是一个探究性实验，旨在帮助你：</p>
+<p>1. 通过亲手观察探索铝的性质和反应</p>
+<p>2. 通过系统实验研究特征化学反应</p>
+<p>3. 培养对元素性质和反应性的理解</p>
+<p>4. 练习使用活泼元素的安全实验室技术</p>
+<hr>
+<h2>Pre-lab Work | 实验前准备</h2>
+<h3>Basic Knowledge | 基础知识</h3>
+<blockquote>Inquiry-Based Learning Prompt | 探究式学习提示</blockquote>
+<blockquote>Before starting this experiment, research and answer the following questions about aluminum.</blockquote>
+<blockquote>在开始实验前，请研究并回答以下关于铝的问题。</blockquote>
+<p>1. Element Information | 元素信息</p>
+<ul>
+<li>- What is the atomic number of aluminum? Write its electron configuration and common oxidation state.</li>
+<li>- 铝的原子序数是多少？写出其电子构型和常见氧化态。</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>2. Physical Properties | 物理性质</p>
+<ul>
+<li>- Describe the physical properties of aluminum including color, density, melting point, and electrical conductivity.</li>
+<li>- 描述铝的物理性质，包括颜色、密度、熔点和导电性。</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>3. Amphoteric Nature | 两性性质</p>
+<ul>
+<li>- What does it mean that aluminum is amphoteric? Can it react with both acids and bases?</li>
+<li>- 铝具有两性是什么意思？它能与酸和碱反应吗？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>4. Passivation | 钝化现象</p>
+<ul>
+<li>- What is passivation? Why doesn't aluminum corrode easily despite being an active metal?</li>
+<li>- 什么是钝化？为什么铝尽管是活泼金属却不容易腐蚀？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<h3>Theory Questions | 理论问题</h3>
+<p>1. Reactivity with Acids | 与酸的反应性</p>
+<ul>
+<li>- Why does aluminum react with dilute acids but shows passivation with concentrated nitric acid? Explain the mechanism.</li>
+<li>- 为什么铝与稀酸反应，但与浓硝酸发生钝化？解释机理。</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>2. Applications | 应用</p>
+<ul>
+<li>- List three important industrial applications of aluminum and explain why aluminum is suitable for each application.</li>
+<li>- 列出铝的三个重要工业应用，并解释为什么铝适合each应用。</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<hr>
+<h2>Safety Learning | 安全学习</h2>
+<blockquote>Inquiry-Based Learning Prompt | 探究式学习提示</blockquote>
+<blockquote>Before starting this experiment, think about the following questions and research the answers.</blockquote>
+<blockquote>在开始实验前，请思考以下问题并查阅资料。</blockquote>
+<h3>Pre-lab Safety Questions | 实验前安全问题</h3>
+<p>Answer the following safety questions before the experiment | 实验前请回答以下安全问题:</p>
+<p>1. Question 1: Aluminum Powder Safety | 问题1：铝粉安全</p>
+<ul>
+<li>- Why is aluminum powder potentially dangerous? What precautions should be taken when handling it?</li>
+<li>- 为什么铝粉有潜在危险？处理时应采取什么预防措施？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>2. Question 2: Acid Handling | 问题2：酸的处理</p>
+<ul>
+<li>- What are the differences in hazards between dilute HCl, concentrated H₂SO₄, and concentrated HNO₃? How should each be handled safely?</li>
+<li>- 稀盐酸、浓硫酸和浓硝酸的危害有何不同？应如何安全处理每种酸？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>3. Question 3: Base (NaOH) Safety | 问题3：碱（NaOH）安全</p>
+<ul>
+<li>- What are the hazards of sodium hydroxide solution? What should you do if it contacts your skin or eyes?</li>
+<li>- 氢氧化钠溶液有什么危害？如果接触皮肤或眼睛应该怎么办？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>4. Question 4: Hydrogen Gas | 问题4：氢气</p>
+<ul>
+<li>- This experiment may produce hydrogen gas. What are the properties and hazards of H₂? How can you safely detect it?</li>
+<li>- 本实验可能产生氢气。H₂的性质和危害是什么？如何安全地检测它？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>5. Question 5: Heat Generation | 问题5：放热</p>
+<ul>
+<li>- The reaction between aluminum and acids/bases can be exothermic. What precautions should you take?</li>
+<li>- 铝与酸/碱的反应可能放热。您应采取什么预防措施？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>6. Question 6: Passivation Film | 问题6：钝化膜</p>
+<ul>
+<li>- What is the passivation film on aluminum? Is it safe to remove it? What happens if you do?</li>
+<li>- 铝上的钝化膜是什么？去除它安全吗？如果去除会发生什么？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>7. Question 7: Waste Disposal | 问题7：废物处理</p>
+<ul>
+<li>- How should waste solutions from aluminum experiments be disposed of? Can they be neutralized and poured down the drain?</li>
+<li>- 铝实验的废液应如何处理？可以中和后倒入下水道吗？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<p>8. Question 8: Emergency Response | 问题8：应急响应</p>
+<ul>
+<li>- If aluminum powder catches fire, what type of fire extinguisher should be used? Why can't water be used?</li>
+<li>- 如果铝粉着火，应使用什么类型的灭火器？为什么不能用水？</li>
+</ul>
+<p>   Your answer | 你的答案:</p>
+<p>   _______________________________________________________________________________</p>
+<p>   _______________________________________________________________________________</p>
+<h3>Safety Guidelines | 安全指南</h3>
+<blockquote>⚠️ CRITICAL SAFETY WARNINGS | 重要安全警告</blockquote>
+<p>1. Personal Protection | 个人防护</p>
+<ul>
+<li>- Always wear safety goggles and lab coat</li>
+<li>- 始终佩戴护目镜和实验服</li>
+<li>- Use gloves when handling chemicals</li>
+<li>- 处理化学品时使用手套</li>
+</ul>
+<p>2. Chemical Handling | 化学品处理</p>
+<ul>
+<li>- Read all labels carefully before use</li>
+<li>- 使用前仔细阅读所有标签</li>
+<li>- Never taste or directly smell chemicals</li>
+<li>- 绝不可品尝或直接闻化学品</li>
+</ul>
+<p>3. Emergency Procedures | 应急程序</p>
+<ul>
+<li>- Know the location of safety equipment</li>
+<li>- 了解安全设备的位置</li>
+<li>- Report all accidents immediately</li>
+<li>- 立即报告所有事故</li>
+</ul>
+<p>4. Waste Disposal | 废物处理</p>
+<ul>
+<li>- Dispose of chemicals in designated containers</li>
+<li>- 将化学品放入指定容器</li>
+<li>- Never pour chemicals down the drain without permission</li>
+<li>- 未经许可绝不可将化学品倒入下水道</li>
+</ul>
+<hr>
+<h2>Experimental Procedure | 实验操作</h2>
+<blockquote>Inquiry-Based Learning | 探究式学习</blockquote>
+<blockquote>During the experiment, focus on careful observation of phenomena and think about the questions provided.</blockquote>
+<blockquote>在实验过程中，请仔细观察现象并思考提供的问题。</blockquote>
+<hr>
+<h3>Part 1: Aluminum Reaction with Dilute Hydrochloric Acid | 铝与稀盐酸反应</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p>Chemicals | 化学药品:</p>
+<ul>
+<li>Aluminum wire or foil | 铝丝或铝箔</li>
+<li>Dilute hydrochloric acid (2M HCl) | 稀盐酸（2M HCl）</li>
+<li>Sandpaper | 砂纸</li>
+</ul>
+<p>Equipment | 实验仪器:</p>
+<ul>
+<li>Test tube | 试管</li>
+<li>Test tube holder | 试管夹</li>
+<li>Beaker (100 mL) | 烧杯（100毫升）</li>
+</ul>
+<h4>Procedure | 操作步骤</h4>
+<p>Step 1 | 步骤1:</p>
+<ul>
+<li>Use sandpaper to polish the surface of aluminum wire/foil to remove the oxide layer.</li>
+<li>用砂纸打磨铝丝/铝箔表面，去除氧化层。</li>
+<li>⚠️ Safety Warning | 安全警告: The oxide layer must be removed for reaction to occur!</li>
+<li>⚠️ 安全警告：必须去除氧化层才能发生反应！</li>
+</ul>
+<p>Step 2 | 步骤2:</p>
+<ul>
+<li>Place the polished aluminum (about 0.5g) in a test tube.</li>
+<li>将打磨好的铝（约0.5克）放入试管中。</li>
+<li>Add approximately 5 mL of dilute HCl.</li>
+<li>加入约5毫升稀盐酸。</li>
+</ul>
+<p>Step 3 | 步骤3:</p>
+<ul>
+<li>Observe the reaction carefully.</li>
+<li>仔细观察反应。</li>
+<li>Note bubble formation, solution changes, and heat generation.</li>
+<li>注意气泡产生、溶液变化和放热情况。</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record | 请仔细观察并记录:</p>
+<p>1. Reaction Rate | 反应速率:</p>
+<ul>
+<li>- How quickly do bubbles form? Does the reaction speed up or slow down over time?</li>
+<li>- 气泡产生的速度如何？反应是加快还是减慢？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<p>2. Gas Evolution | 气体产生:</p>
+<ul>
+<li>- What gas is produced? How can you test for it?</li>
+<li>- 产生了什么气体？如何检验？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<p>3. Heat Generation | 放热:</p>
+<ul>
+<li>- Does the test tube feel warm? Is this an exothermic reaction?</li>
+<li>- 试管摸起来温热吗？这是放热反应吗？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. Question 1 | 问题1:</p>
+<ul>
+<li>- Write the chemical equation for this reaction. Why must the oxide layer be removed first?</li>
+<li>- 写出这个反应的化学方程式。为什么必须先去除氧化层？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<h3>Part 2: Aluminum Reaction with Concentrated Nitric Acid | 铝与浓硝酸反应</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p>Chemicals | 化学药品:</p>
+<ul>
+<li>Aluminum wire or foil | 铝丝或铝箔</li>
+<li>Concentrated nitric acid (conc. HNO₃) | 浓硝酸</li>
+<li>Dilute nitric acid (2M HNO₃) | 稀硝酸</li>
+<li>Sandpaper | 砂纸</li>
+</ul>
+<p>Equipment | 实验仪器:</p>
+<ul>
+<li>Two test tubes | 两支试管</li>
+<li>Test tube holder | 试管夹</li>
+<li>Dropper pipette | 胶头滴管</li>
+</ul>
+<h4>Procedure | 操作步骤</h4>
+<p>Step 1 | 步骤1:</p>
+<ul>
+<li>Polish two pieces of aluminum wire/foil with sandpaper.</li>
+<li>用砂纸打磨两片铝丝/铝箔。</li>
+<li>Place each in a separate test tube.</li>
+<li>分别放入两支试管中。</li>
+</ul>
+<p>Step 2 | 步骤2:</p>
+<ul>
+<li>Add 2-3 mL of concentrated HNO₃ to the first tube (at room temperature).</li>
+<li>向第一支试管中加入2-3毫升浓硝酸（室温）。</li>
+<li>⚠️ Safety Warning | 安全警告: Handle concentrated acid with extreme care! Use fume hood if available!</li>
+<li>⚠️ 安全警告：小心处理浓酸！如有通风橱请使用！</li>
+<li>Observe for 5 minutes.</li>
+<li>观察5分钟。</li>
+</ul>
+<p>Step 3 | 步骤3:</p>
+<ul>
+<li>Add 5 mL of dilute HNO₃ to the second tube.</li>
+<li>向第二支试管中加入5毫升稀硝酸。</li>
+<li>Observe the reaction.</li>
+<li>观察反应。</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record | 请仔细观察并记录:</p>
+<p>1. With Concentrated HNO₃ | 与浓硝酸:</p>
+<ul>
+<li>- Does any reaction occur at room temperature? What happens to the aluminum surface?</li>
+<li>- 室温下是否发生反应？铝表面发生了什么变化？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<p>2. With Dilute HNO₃ | 与稀硝酸:</p>
+<ul>
+<li>- Does the aluminum dissolve? Are there any gas bubbles? What color is the gas?</li>
+<li>- 铝是否溶解？是否有气泡？气体颜色如何？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<p>3. Passivation Phenomenon | 钝化现象:</p>
+<ul>
+<li>- Compare the two reactions. What is the difference and why?</li>
+<li>- 比较两个反应。有什么区别？为什么？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. Question 1 | 问题1:</p>
+<ul>
+<li>- What is passivation? Why does aluminum become passive in concentrated HNO₃?</li>
+<li>- 什么是钝化？为什么铝在浓硝酸中发生钝化？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<p>2. Question 2 | 问题2:</p>
+<ul>
+<li>- Write the equation for aluminum reacting with dilute HNO₃. What is the brown gas produced?</li>
+<li>- 写出铝与稀硝酸反应的方程式。产生的棕色气体是什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<h3>Part 3: Aluminum Reaction with Sodium Hydroxide Solution | 铝与氢氧化钠溶液反应</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p>Chemicals | 化学药品:</p>
+<ul>
+<li>Aluminum foil | 铝箔</li>
+<li>Sodium hydroxide solution (2M NaOH) | 氢氧化钠溶液（2M NaOH）</li>
+<li>Sandpaper | 砂纸</li>
+</ul>
+<p>Equipment | 实验仪器:</p>
+<ul>
+<li>Test tube | 试管</li>
+<li>Test tube holder | 试管夹</li>
+<li>Beaker (50 mL) | 烧杯（50毫升）</li>
+</ul>
+<h4>Procedure | 操作步骤</h4>
+<p>Step 1 | 步骤1:</p>
+<ul>
+<li>Polish a small piece of aluminum foil (about 0.3g) with sandpaper.</li>
+<li>用砂纸打磨一小片铝箔（约0.3克）。</li>
+</ul>
+<p>Step 2 | 步骤2:</p>
+<ul>
+<li>Place the aluminum in a test tube.</li>
+<li>将铝放入试管中。</li>
+<li>Add 5 mL of 2M NaOH solution.</li>
+<li>加入5毫升2M NaOH溶液。</li>
+<li>⚠️ Safety Warning | 安全警告: NaOH is corrosive! Avoid skin contact!</li>
+<li>⚠️ 安全警告：NaOH有腐蚀性！避免皮肤接触！</li>
+</ul>
+<p>Step 3 | 步骤3:</p>
+<ul>
+<li>Observe the reaction.</li>
+<li>观察反应。</li>
+<li>Note bubble formation and solution changes.</li>
+<li>注意气泡产生和溶液变化。</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record | 请仔细观察并记录:</p>
+<p>1. Reaction Phenomena | 反应现象:</p>
+<ul>
+<li>- Does the aluminum dissolve? How vigorous is the reaction?</li>
+<li>- 铝是否溶解？反应剧烈程度如何？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<p>2. Gas Production | 产生气体:</p>
+<ul>
+<li>- What gas is produced? How can you identify it?</li>
+<li>- 产生什么气体？如何鉴别？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<p>3. Solution Changes | 溶液变化:</p>
+<ul>
+<li>- Does the solution remain clear or become cloudy? Why?</li>
+<li>- 溶液保持澄清还是变浑浊？为什么？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. Question 1 | 问题1:</p>
+<ul>
+<li>- Write the chemical equation for aluminum reacting with NaOH solution. What is the product?</li>
+<li>- 写出铝与NaOH溶液反应的化学方程式。产物是什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<p>2. Question 2 | 问题2:</p>
+<ul>
+<li>- This reaction proves aluminum is amphoteric. Explain what this means and give examples.</li>
+<li>- 这个反应证明了铝的两性。解释这意味着什么并举例。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<h2>Experimental Principles | 实验原理</h2>
+<p>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</p>
+<p>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</p>
+<h3>1. Physical Properties | 铝的物理性质</h3>
+<p>Appearance | 外观:</p>
+<ul>
+<li>Silvery-white metal with metallic luster (银白色金属，具有金属光泽)</li>
+<li>Soft and lightweight (软而轻)</li>
+<li>Malleable and ductile (可锻可延展)</li>
+</ul>
+<p>Density | 密度:</p>
+<ul>
+<li>2.70 g/cm³ (low density for a metal) (金属中密度较低)</li>
+</ul>
+<p>Melting Point | 熔点:</p>
+<ul>
+<li>660°C (relatively low) (相对较低)</li>
+</ul>
+<p>Conductivity | 导电性:</p>
+<ul>
+<li>Excellent conductor of heat and electricity (优良的热和电导体)</li>
+<li>Second only to copper in electrical conductivity (导电性仅次于铜)</li>
+</ul>
+<h3>2. Chemical Properties | 化学性质</h3>
+<h4>(1) Reaction with Oxygen | 与氧气反应</h4>
+<p>At Room Temperature | 室温下:</p>
+<pre><code>
+4Al + 3O₂ → 2Al₂O₃ (thin protective layer)
+</code></pre>
+<ul>
+<li>Forms dense protective oxide layer (形成致密的保护性氧化层)</li>
+<li>Prevents further oxidation (阻止进一步氧化)</li>
+<li>This is why aluminum is corrosion-resistant (这就是铝耐腐蚀的原因)</li>
+</ul>
+<p>When Heated | 加热时:</p>
+<pre><code>
+4Al + 3O₂ --Δ--> 2Al₂O₃ (vigorous reaction)
+</code></pre>
+<ul>
+<li>Bright white flame (明亮的白色火焰)</li>
+<li>Releases large amount of heat (释放大量热)</li>
+</ul>
+<h4>(2) Reaction with Acids | 与酸反应</h4>
+<p>With Dilute Hydrochloric Acid | 与稀盐酸:</p>
+<pre><code>
+2Al + 6HCl → 2AlCl₃ + 3H₂↑
+</code></pre>
+<p>With Dilute Sulfuric Acid | 与稀硫酸:</p>
+<pre><code>
+2Al + 3H₂SO₄(dilute) → Al₂(SO₄)₃ + 3H₂↑
+</code></pre>
+<p>With Concentrated Nitric Acid (Cold) | 与浓硝酸（冷）:</p>
+<ul>
+<li>Aluminum is passivated (铝被钝化)</li>
+<li>Forms protective Al₂O₃ layer (形成保护性Al₂O₃层)</li>
+<li>NO reaction at room temperature (室温下不反应)</li>
+</ul>
+<h4>(3) Reaction with Bases | 与碱反应</h4>
+<p>Amphoteric Nature | 两性:</p>
+<p>Aluminum is amphoteric - reacts with both acids AND bases!</p>
+<p>铝是两性的 - 既与酸反应又与碱反应！</p>
+<p>With Sodium Hydroxide Solution | 与氢氧化钠溶液:</p>
+<pre><code>
+2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑
+</code></pre>
+<ul>
+<li>Produces hydrogen gas (产生氢气)</li>
+<li>Forms sodium aluminate (形成偏铝酸钠)</li>
+<li>Solution remains clear (溶液保持澄清)</li>
+</ul>
+<h4>(4) Thermite Reaction | 铝热反应</h4>
+<p>Principle | 原理:</p>
+<p>Aluminum is a strong reducing agent at high temperature</p>
+<p>铝在高温下是强还原剂</p>
+<p>Example: Reduction of Fe₂O₃ | 示例：还原Fe₂O₃:</p>
+<pre><code>
+2Al + Fe₂O₃ --Δ--> 2Fe + Al₂O₃ (highly exothermic)
+</code></pre>
+<ul>
+<li>Temperature reaches ~3000°C (温度达到约3000°C)</li>
+<li>Molten iron produced (产生熔融铁)</li>
+<li>Used for welding rails (用于焊接铁轨)</li>
+</ul>
+<p>Other Thermite Reactions | 其他铝热反应:</p>
+<pre><code>
+2Al + 3CuO --Δ--> 3Cu + Al₂O₃
+8Al + 3Fe₃O₄ --Δ--> 9Fe + 4Al₂O₃
+</code></pre>
+<h3>3. Aluminum Oxide (Al₂O₃) | 氧化铝</h3>
+<p>Properties | 性质:</p>
+<ul>
+<li>White solid (白色固体)</li>
+<li>Very high melting point: 2054°C (熔点很高：2054°C)</li>
+<li>Amphoteric (两性) oxide (两性氧化物)</li>
+<li>Insoluble (不溶) in water (不溶于水)</li>
+</ul>
+<p>Amphoteric Reactions | 两性反应:</p>
+<p>As a base (with acids) | 作为碱（与酸）:</p>
+<pre><code>
+Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O
+Al₂O₃ + 3H₂SO₄ → Al₂(SO₄)₃ + 3H₂O
+</code></pre>
+<p>As an acid (with bases) | 作为酸（与碱）:</p>
+<pre><code>
+Al₂O₃ + 2NaOH → 2NaAlO₂ + H₂O (molten)
+Al₂O₃ + 2NaOH + 3H₂O → 2Na[Al(OH)₄] (solution)
+</code></pre>
+<h3>4. Uses of Aluminum | 铝的用途</h3>
+<p>1. Construction and Transportation | 建筑和运输:</p>
+<ul>
+<li>Aircraft and spacecraft (飞机和航天器)</li>
+<li>Automobile parts (汽车零件)</li>
+<li>Building materials (建筑材料)</li>
+<li>Lightweight and strong (轻而强)</li>
+</ul>
+<p>2. Electrical Applications | 电气应用:</p>
+<ul>
+<li>Electrical wiring (电线)</li>
+<li>Power transmission lines (输电线)</li>
+<li>Good conductor, lightweight (良好导体，重量轻)</li>
+</ul>
+<p>3. Packaging | 包装:</p>
+<ul>
+<li>Aluminum foil (铝箔)</li>
+<li>Beverage cans (饮料罐)</li>
+<li>Food containers (食品容器)</li>
+</ul>
+<p>4. Alloys | 合金:</p>
+<ul>
+<li>Duralumin (Al-Cu-Mg-Mn) (硬铝)</li>
+<li>Used in aircraft construction (用于飞机制造)</li>
+</ul>
+<p>5. Thermite Welding | 铝热焊接:</p>
+<ul>
+<li>Welding railway tracks (焊接铁轨)</li>
+<li>Repairing large metal parts (修复大型金属部件)</li>
+</ul>
+<h3>5. Comparison: Aluminum vs. Iron | 对比：铝与铁</h3>
+<p>| Property | Aluminum (Al) | Iron (Fe) |</p>
+<p>|----------|---------------|-----------|</p>
+<p>| Density | 2.70 g/cm³ | 7.87 g/cm³ |</p>
+<p>| Reactivity | More reactive | Less reactive |</p>
+<p>| Corrosion | Resistant (oxide layer) | Rusts easily |</p>
+<p>| With NaOH | Reacts | No reaction |</p>
+<p>| Magnetic | No | Yes |</p>
+<p>| Cost | Higher | Lower |</p>
+<hr>
+<hr>
+<h2>Knowledge Summary | 知识点梳理</h2>
+<h3>I. Key Properties | 关键性质</h3>
+<p>Physical Properties | 物理性质:</p>
+<ul>
+<li>[Properties will be summarized based on observations]</li>
+<li>[根据观察总结性质]</li>
+</ul>
+<p>Chemical Properties | 化学性质:</p>
+<ul>
+<li>[Reactions will be summarized based on experiments]</li>
+<li>[根据实验总结反应]</li>
+</ul>
+<h3>II. Important Reactions | 重要反应</h3>
+<p>[Key chemical equations from the experiment]</p>
+<p>[实验中的关键化学方程式]</p>
+<h3>III. Applications | 应用</h3>
+<p>[Practical applications of the element/compounds]</p>
+<p>[元素/化合物的实际应用]</p>
+<hr>
+<h2>Post-lab Questions | 实验后思考</h2>
+<p>Based on your observations and understanding of the principles, answer these questions:</p>
+<p>1. Observation Analysis | 观察分析</p>
+<ul>
+<li>- What were the most significant observations in this experiment?</li>
+<li>- 本实验中最重要的观察是什么？</li>
+</ul>
+<p>2. Reaction Mechanisms | 反应机理</p>
+<ul>
+<li>- Explain the mechanisms behind the key reactions observed.</li>
+<li>- 解释观察到的关键反应的机理。</li>
+</ul>
+<p>3. Safety Considerations | 安全考虑</p>
+<ul>
+<li>- What safety precautions were most important in this experiment and why?</li>
+<li>- 本实验中哪些安全预防措施最重要？为什么？</li>
+</ul>
+<p>4. Practical Applications | 实际应用</p>
+<ul>
+<li>- How are the properties observed in this experiment used in real-world applications?</li>
+<li>- 本实验中观察到的性质如何在实际应用中使用？</li>
+</ul>
+<p>5. Comparative Analysis | 比较分析</p>
+<ul>
+<li>- How do the properties of this element compare to related substances?</li>
+<li>- 这个元素的性质与相关物质相比如何？</li>
+</ul>
+<hr>
+<p>Experiment Completed | 实验完成</p>
+<p>Remember to clean all equipment and properly dispose of all chemical waste according to safety guidelines.</p>
+<p>记得清洁所有设备并按照安全指南正确处理所有化学废物。</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlify部署指南 | Netlify Deployment Guide - Blue Nova Chemistry</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif; line-height: 1.8; color: #1a202c; background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%); padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); }
+        h1 { color: #065f46; font-size: 2.5em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 4px solid #10b981; text-align: center; }
+        h2 { color: #047857; font-size: 2em; margin-top: 40px; margin-bottom: 20px; padding-left: 15px; border-left: 5px solid #34d399; }
+        h3 { color: #059669; font-size: 1.5em; margin-top: 30px; margin-bottom: 15px; }
+        h4 { color: #10b981; font-size: 1.2em; margin-top: 20px; margin-bottom: 10px; }
+        p { margin-bottom: 15px; text-align: justify; color: #1a202c; }
+        code { background: white; padding: 2px 6px; border-radius: 4px; font-family: "Consolas", "Monaco", monospace; color: #1a202c; font-size: 0.9em; border: 1px solid #d1fae5; }
+        pre { background: #f0fdf4; color: #1a202c; padding: 20px; border-radius: 10px; border: 2px solid #d1fae5; overflow-x: auto; margin: 20px 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+        pre code { background: transparent; color: #1a202c; padding: 0; border: none; }
+        ul, ol { margin: 15px 0 15px 30px; }
+        li { margin-bottom: 8px; color: #1a202c; }
+        strong { color: #065f46; font-weight: 600; }
+        blockquote { background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; margin: 20px 0; border-radius: 5px; color: #1a202c; }
+        .back-link { display: inline-block; margin-top: 30px; padding: 12px 24px; background: linear-gradient(135deg, #10b981 0%, #34d399 100%); color: white; text-decoration: none; border-radius: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; font-weight: 600; }
+        .back-link:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4); }
+        hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
+        @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>Netlify部署指南 | Netlify Deployment Guide</h1>
+<h2>📦 部署包已准备好！</h2>
+<p>文件位置：`/Users/zuo/Desktop/lab Mnue/markdown_versions/chemistry-lab-netlify.zip`</p>
+<h2>🚀 部署步骤（3分钟完成）</h2>
+<h3>步骤1：访问Netlify</h3>
+<p>1. 打开浏览器，访问：https://app.netlify.com/drop</p>
+<p>2. **无需注册**即可使用（拖拽上传功能）</p>
+<h3>步骤2：上传文件</h3>
+<p>1. 将 `chemistry-lab-netlify.zip` 文件拖拽到网页中</p>
+<p>2. 或者点击上传按钮选择文件</p>
+<h3>步骤3：等待部署</h3>
+<ul>
+<li>Netlify会自动解压并部署</li>
+<li>大约需要30秒</li>
+</ul>
+<h3>步骤4：获取链接</h3>
+<ul>
+<li>部署完成后，您会看到一个类似这样的链接：</li>
+</ul>
+<p>  `https://random-name-123456.netlify.app`</p>
+<ul>
+<li>这就是您的公开访问链接！</li>
+</ul>
+<h2>✨ 特点</h2>
+<ul>
+<li>✅ 任何人都可以通过链接访问</li>
+<li>✅ 自动HTTPS加密</li>
+<li>✅ 全球CDN加速</li>
+<li>✅ 永久免费（除非您删除）</li>
+<li>✅ 可以随时更新内容</li>
+</ul>
+<h2>📝 注意事项</h2>
+<p><strong>如果您想要：</strong></p>
+<ul>
+<li>自定义域名：需要注册Netlify账号</li>
+<li>修改内容：重新上传新的zip文件即可</li>
+<li>删除网站：在Netlify控制台删除</li>
+</ul>
+<h2>🔗 访问您的网站</h2>
+<p>部署完成后：</p>
+<p>1. 主页：`https://your-site.netlify.app/`</p>
+<p>2. 实验列表：`https://your-site.netlify.app/index.html`</p>
+<p>3. 单个实验：`https://your-site.netlify.app/1A_Lab1_Sodium.html`</p>
+<h2>📊 包含的文件</h2>
+<ul>
+<li>index.html（主页）</li>
+<li>14个实验HTML文件</li>
+<li>README.md（说明文档）</li>
+</ul>
+<hr>
+<p><strong>准备好了吗？</strong></p>
+<p>1. 找到文件：`chemistry-lab-netlify.zip`（在Desktop/lab Mnue/markdown_versions/）</p>
+<p>2. 访问：https://app.netlify.com/drop</p>
+<p>3. 拖拽上传</p>
+<p>4. 完成！🎉</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>

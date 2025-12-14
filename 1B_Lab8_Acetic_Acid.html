@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry 1B | Lab 8: Properties of Acetic Acid - Blue Nova Chemistry</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif; line-height: 1.8; color: #1a202c; background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%); padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); }
+        h1 { color: #065f46; font-size: 2.5em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 4px solid #10b981; text-align: center; }
+        h2 { color: #047857; font-size: 2em; margin-top: 40px; margin-bottom: 20px; padding-left: 15px; border-left: 5px solid #34d399; }
+        h3 { color: #059669; font-size: 1.5em; margin-top: 30px; margin-bottom: 15px; }
+        h4 { color: #10b981; font-size: 1.2em; margin-top: 20px; margin-bottom: 10px; }
+        p { margin-bottom: 15px; text-align: justify; color: #1a202c; }
+        code { background: white; padding: 2px 6px; border-radius: 4px; font-family: "Consolas", "Monaco", monospace; color: #1a202c; font-size: 0.9em; border: 1px solid #d1fae5; }
+        pre { background: #f0fdf4; color: #1a202c; padding: 20px; border-radius: 10px; border: 2px solid #d1fae5; overflow-x: auto; margin: 20px 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+        pre code { background: transparent; color: #1a202c; padding: 0; border: none; }
+        ul, ol { margin: 15px 0 15px 30px; }
+        li { margin-bottom: 8px; color: #1a202c; }
+        strong { color: #065f46; font-weight: 600; }
+        blockquote { background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px 20px; margin: 20px 0; border-radius: 5px; color: #1a202c; }
+        .back-link { display: inline-block; margin-top: 30px; padding: 12px 24px; background: linear-gradient(135deg, #10b981 0%, #34d399 100%); color: white; text-decoration: none; border-radius: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; font-weight: 600; }
+        .back-link:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4); }
+        hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
+        @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>Chemistry 1B | Lab 8: Properties of Acetic Acid</h1>
+<h1>化学1B | 实验8：乙酸的性质</h1>
+<hr>
+<h2>Experiment Purpose | 实验目的</h2>
+<p>This is an investigative experiment designed to help you:</p>
+<p>1. Explore the physical and chemical properties of acetic acid through hands-on observation</p>
+<p>2. Investigate the acidic properties of acetic acid and compare with mineral acids</p>
+<p>3. Study the esterification reaction of acetic acid with different alcohols</p>
+<p>4. Examine the oxidation of acetic acid and understand its stability</p>
+<p>5. Practice safe laboratory techniques with corrosive organic acids</p>
+<p>这是一个探究性实验，旨在帮助你：</p>
+<p>1. 通过亲手观察探索乙酸的物理和化学性质</p>
+<p>2. 研究乙酸的酸性并与无机酸进行比较</p>
+<p>3. 研究乙酸与不同醇的酯化反应</p>
+<p>4. 检查乙酸的氧化性并理解其稳定性</p>
+<p>5. 练习使用腐蚀性有机酸的安全实验室技术</p>
+<hr>
+<hr>
+<h2>Pre-lab Work | 实验前准备</h2>
+<h3>Basic Knowledge | 基础知识</h3>
+<blockquote>Inquiry-Based Learning Prompt | 探究式学习提示</blockquote>
+<blockquote>Before starting this experiment, research and answer the following questions about acetic acid.</blockquote>
+<blockquote>在开始实验前，请研究并回答以下关于乙酸的问题。</blockquote>
+<p>1. Acidity Origin | 酸性来源</p>
+<ul>
+<li>- Which hydrogen atom in the acetic acid molecule is ionizable? Mark it in the structure CH₃COOH.</li>
+<li>- 乙酸分子中哪个氢原子是可电离的？在结构CH₃COOH中标出。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>2. Acidity Comparison | 酸性比较</p>
+<ul>
+<li>- Rank the acidity of the following: Hydrochloric Acid > Acetic Acid > Carbonic Acid > Phenol. (Fill in the order).</li>
+<li>- 对以下物质的酸性进行排序：盐酸 > 乙酸 > 碳酸 > 苯酚。（填写顺序）。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>3. Esterification Reagents | 酯化试剂</p>
+<ul>
+<li>- In the preparation of ethyl acetate, what are the three key reagents added to the test tube?</li>
+<li>- 在制备乙酸乙酯时，加入试管的三种关键试剂是什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<h3>Theory Questions | 理论问题</h3>
+<p>1. Descaling Principle | 除垢原理</p>
+<ul>
+<li>- Why can vinegar be used to remove limescale (CaCO₃)? Write the ionic equation.</li>
+<li>- 为什么醋可以用来去除水垢（CaCO₃）？写出离子方程式。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>2. Sodium Carbonate Role | 碳酸钠作用</p>
+<ul>
+<li>- In esterification, the product is collected in saturated Na₂CO₃ solution. What are the three functions of this solution?</li>
+<li>- 在酯化反应中，产物收集在饱和Na₂CO₃溶液中。该溶液的三个功能是什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<hr>
+<h2>Safety Learning | 安全学习</h2>
+<blockquote>Inquiry-Based Learning Prompt | 探究式学习提示</blockquote>
+<blockquote>Before starting this experiment, think about the following questions and research the answers.</blockquote>
+<blockquote>在开始实验前，请思考以下问题并查阅资料。</blockquote>
+<h3>Pre-lab Safety Questions | 实验前安全问题</h3>
+<p>Answer the following safety questions before the experiment | 实验前请回答以下安全问题:</p>
+<p>1. Question 1: Glacial Acetic Acid | 问题1：冰醋酸</p>
+<ul>
+<li>- Why is pure acetic acid called "Glacial"? What is its hazard at room temperature (solid vs liquid)?</li>
+<li>- 为什么纯乙酸被称为“冰醋酸”？它在室温下的危害是什么（固体与液体）？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>2. Question 2: Skin Contact | 问题2：皮肤接触</p>
+<ul>
+<li>- Glacial acetic acid causes severe burns. If it touches skin, what is the IMMEDIATE first aid steps?</li>
+<li>- 冰醋酸会造成严重烧伤。如果接触皮肤，立即的急救步骤是什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>3. Question 3: Vibration/Bumping | 问题3：震动/爆沸</p>
+<ul>
+<li>- When heating the esterification mixture, how do we prevent bumping? (Water bath + Boiling chips/shaking).</li>
+<li>- 加热酯化混合物时，我们如何防止爆沸？（水浴+沸石/摇动）。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>4. Question 4: Reactivity | 问题4：反应性</p>
+<ul>
+<li>- Acetic acid reacts with limestone (CaCO3) to release CO2. Is this reaction widely exothermic or violent?</li>
+<li>- 乙酸与石灰石（CaCO3）反应释放CO2。这个反应是剧烈放热还是剧烈的？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>5. Question 5: Sodium Handling | 问题5：钠的处理</p>
+<ul>
+<li>- Standard sodium safety applies. How to ensure no water is present when testing Acetic Acid + Sodium?</li>
+<li>- 标准钠安全适用。测试乙酸+钠时如何确保无水存在？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>6. Question 6: Ventilation | 问题6：通风</p>
+<ul>
+<li>- Acetic acid vapor is pungent. How can it affect your respiratory system if inhaled in high concentration?</li>
+<li>- 乙酸蒸气有刺激性。如果高浓度吸入，会对呼吸系统有什么影响？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>7. Question 7: Eye Safety | 问题7：眼部安全</p>
+<ul>
+<li>- Acids are dangerous to eyes. If a splash occurs, how long must you rinse at the eyewash station?</li>
+<li>- 酸对眼睛很危险。如果发生飞溅，必须在洗眼台冲洗多久？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<p>8. Question 8: Waste Disposal | 问题8：废物处理</p>
+<ul>
+<li>- The esterification residue contains acid. How should it be neutralized before disposal?</li>
+<li>- 酯化残留物含有酸。处置前应如何中和？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________________________________________________________________</p>
+<h3>Safety Guidelines | 安全指南</h3>
+<blockquote>⚠️ CRITICAL SAFETY WARNINGS | 重要安全警告</blockquote>
+<p>1. Corrosive Hazard | 腐蚀危害</p>
+<ul>
+<li>- Glacial Acetic Acid: Causes severe burns. Wear gloves/goggles.</li>
+<li>- 冰醋酸：造成严重烧伤。佩戴手套/护目镜。</li>
+</ul>
+<p>2. Vapor Hazard | 蒸气危害</p>
+<ul>
+<li>- Pungent Odor. Use in well-ventilated area. Avoid direct inhalation.</li>
+<li>- 刺激性气味。在通风良好的区域使用。避免直接吸入。</li>
+</ul>
+<p>3. Heating Safety | 加热安全</p>
+<ul>
+<li>- Flammable Vapors. Ethanol and Ethyl Acetate are flammable. Use Water Bath.</li>
+<li>- 易燃蒸气。乙醇和乙酸乙酯是易燃的。使用水浴。</li>
+</ul>
+<hr>
+<h2>Experimental Procedure | 实验操作</h2>
+<blockquote>Inquiry-Based Learning | 探究式学习</blockquote>
+<blockquote>During the experiment, focus on careful observation of phenomena and think about the questions provided.</blockquote>
+<blockquote>在实验过程中，请仔细观察现象并思考提供的问题。</blockquote>
+<h3>Part 1: Physical Properties and Freezing Point | 物理性质与凝固点</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p><strong>Chemicals | 化学药品</strong>:</p>
+<ul>
+<li>Glacial acetic acid (CH₃COOH) | 冰醋酸</li>
+<li>Dilute acetic acid (0.1 M) | 稀乙酸 (0.1 M)</li>
+<li>Absolute ethanol (C₂H₅OH) | 无水乙醇</li>
+<li>Concentrated sulfuric acid (H₂SO₄) | 浓硫酸</li>
+<li>Sodium carbonate solution (saturated) | 碳酸钠溶液 (饱和)</li>
+<li>Magnesium ribbon or Zinc granules | 镁带或锌粒</li>
+<li>Sodium carbonate powder (Na₂CO₃) | 碳酸钠粉末</li>
+<li>Copper(II) oxide (CuO) powder | 氧化铜粉末</li>
+<li>pH paper and Litmus paper (Blue) | pH试纸和石蕊试纸（蓝）</li>
+<li>Phenolphthalein indicator | 酚酞指示剂</li>
+<li>Sodium hydroxide solution (0.1 M) | 氢氧化钠溶液 (0.1 M)</li>
+</ul>
+<p><strong>Equipment | 实验仪器</strong>:</p>
+<ul>
+<li>Test tubes | 试管</li>
+<li>Test tube rack | 试管架</li>
+<li>Beakers (100 mL, 250 mL) | 烧杯</li>
+<li>Thermometer | 温度计</li>
+<li>Droppers | 滴管</li>
+<li>Watch glass | 表玻璃</li>
+<li>Water bath setup | 水浴装置</li>
+</ul>
+<h4>Procedure | 操作步骤</h4>
+<p>1. Observe appearance and odor | 观察外观和气味</p>
+<ul>
+<li>- Observe the color and state of glacial acetic acid.</li>
+<li>- 观察冰醋酸的颜色和状态。</li>
+<li>- Carefully waft the odor to your nose.</li>
+<li>- 小心地扇闻气味。</li>
+</ul>
+<p>2. Freezing test (Optional/Demonstration) | 凝固测试（可选/演示）</p>
+<ul>
+<li>- Place a test tube containing 2 mL of glacial acetic acid into an ice-water bath.</li>
+<li>- 将装有2 mL冰醋酸的试管放入冰水浴中。</li>
+<li>- Observe the state change after a few minutes.</li>
+<li>- 几分钟后观察状态变化。</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record:</p>
+<p>1. Physical State:</p>
+<ul>
+<li>- Color: _____________ State at RT: _____________ Odor: _____________</li>
+<li>- 颜色：_____________ 室温状态：_____________ 气味：_____________</li>
+</ul>
+<p>2. Freezing Observation:</p>
+<ul>
+<li>- What happened in the ice bath?</li>
+<li>- 在冰水浴中发生了什么？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. "Glacial" Name | "冰"的名称</p>
+<ul>
+<li>- Why is pure acetic acid called "Glacial Acetic Acid"?</li>
+<li>- 为什么纯乙酸被称为“冰醋酸”？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<h3>Part 2: Acidic Properties | 酸性性质</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p><strong>Chemicals | 化学药品</strong>:</p>
+<ul>
+<li>Glacial acetic acid (CH₃COOH) | 冰醋酸</li>
+<li>Dilute acetic acid (0.1 M) | 稀乙酸 (0.1 M)</li>
+<li>Absolute ethanol (C₂H₅OH) | 无水乙醇</li>
+<li>Concentrated sulfuric acid (H₂SO₄) | 浓硫酸</li>
+<li>Sodium carbonate solution (saturated) | 碳酸钠溶液 (饱和)</li>
+<li>Magnesium ribbon or Zinc granules | 镁带或锌粒</li>
+<li>Sodium carbonate powder (Na₂CO₃) | 碳酸钠粉末</li>
+<li>Copper(II) oxide (CuO) powder | 氧化铜粉末</li>
+<li>pH paper and Litmus paper (Blue) | pH试纸和石蕊试纸（蓝）</li>
+<li>Phenolphthalein indicator | 酚酞指示剂</li>
+<li>Sodium hydroxide solution (0.1 M) | 氢氧化钠溶液 (0.1 M)</li>
+</ul>
+<p><strong>Equipment | 实验仪器</strong>:</p>
+<ul>
+<li>Test tubes | 试管</li>
+<li>Test tube rack | 试管架</li>
+<li>Beakers (100 mL, 250 mL) | 烧杯</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Thermometer | 温度计</li>
+<li>Droppers | 滴管</li>
+<li>Watch glass | 表玻璃</li>
+<li>Water bath setup | 水浴装置</li>
+<li>Boiling chips | 沸石</li>
+</ul>
+<h4>Procedure | 操作步骤</h4>
+<p>1. Indicator Test | 指示剂测试</p>
+<ul>
+<li>- Place a drop of dilute acetic acid on pH paper. Record pH.</li>
+<li>- 将一滴稀乙酸滴在pH试纸上。记录pH。</li>
+<li>- Place a drop on blue litmus paper.</li>
+<li>- 滴在蓝色石蕊试纸上。</li>
+</ul>
+<p>2. Reaction with Carbonates | 与碳酸盐反应</p>
+<ul>
+<li>- Add a small spatula of Na₂CO₃ powder to a test tube.</li>
+<li>- 向试管中加入一小勺Na₂CO₃粉末。</li>
+<li>- Add 2 mL of dilute acetic acid.</li>
+<li>- 加入2 mL稀乙酸。</li>
+<li>- Observe gas production.</li>
+<li>- 观察气体产生。</li>
+</ul>
+<p>3. Reaction with Metals | 与金属反应</p>
+<ul>
+<li>- Place a piece of Magnesium ribbon (polished) into a test tube.</li>
+<li>- 将一块镁带（打磨过）放入试管。</li>
+<li>- Add 2 mL of dilute acetic acid.</li>
+<li>- 加入2 mL稀乙酸。</li>
+<li>- Observe the rate of bubbling compared to what you know of HCl.</li>
+<li>- 观察气泡产生的速率（与你所知的HCl相比）。</li>
+</ul>
+<p>4. Reaction with Metal Oxide | 与金属氧化物反应</p>
+<ul>
+<li>- Place a small amount of CuO powder (black) in a test tube.</li>
+<li>- 在试管中取少量CuO粉末（黑色）。</li>
+<li>- Add 3 mL of dilute acetic acid.</li>
+<li>- 加入3 mL稀乙酸。</li>
+<li>- Heat gently over an alcohol lamp.</li>
+<li>- 在酒精灯上温热。</li>
+<li>- Observe the color change of the solution.</li>
+<li>- 观察溶液的颜色变化。</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record:</p>
+<p>1. Acidity Test:</p>
+<ul>
+<li>- pH Value: _______ Litmus Color Change: _______</li>
+<li>- pH值：_______ 石蕊颜色变化：_______</li>
+</ul>
+<p>2. Carbonate Reaction:</p>
+<ul>
+<li>- Phenomenon: _______________________</li>
+<li>- 现象：_______________________</li>
+</ul>
+<p>3. Metal Reaction:</p>
+<ul>
+<li>- Gas evolution rate (Fast/Slow?): _______________________</li>
+<li>- 气体放出速率（快/慢？）：_______________________</li>
+</ul>
+<p>4. CuO Reaction:</p>
+<ul>
+<li>- Solution color after heating: _______________________</li>
+<li>- 加热后溶液颜色：_______________________</li>
+</ul>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. Weak Acid Evidence | 弱酸证据</p>
+<ul>
+<li>- Although acetic acid reacts with Mg, it is slower than HCl of the same concentration. Why?</li>
+<li>- 虽然乙酸与Mg反应，但比同浓度的HCl慢。为什么？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<p>2. Descaling Application | 除垢应用</p>
+<ul>
+<li>- How does the reaction with Carbonate explain why vinegar removes scale (CaCO₃)?</li>
+<li>- 与碳酸盐的反应如何解释醋能去除水垢（CaCO₃）？</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<h3>Part 3: Esterification Reaction | 酯化反应</h3>
+<h4>Materials and Equipment | 材料与仪器</h4>
+<p><strong>Chemicals | 化学药品</strong>:</p>
+<ul>
+<li>Glacial acetic acid (CH₃COOH) | 冰醋酸</li>
+<li>Dilute acetic acid (0.1 M) | 稀乙酸 (0.1 M)</li>
+<li>Absolute ethanol (C₂H₅OH) | 无水乙醇</li>
+<li>Concentrated sulfuric acid (H₂SO₄) | 浓硫酸</li>
+<li>Sodium carbonate solution (saturated) | 碳酸钠溶液 (饱和)</li>
+<li>Magnesium ribbon or Zinc granules | 镁带或锌粒</li>
+<li>Sodium carbonate powder (Na₂CO₃) | 碳酸钠粉末</li>
+<li>Copper(II) oxide (CuO) powder | 氧化铜粉末</li>
+<li>pH paper and Litmus paper (Blue) | pH试纸和石蕊试纸（蓝）</li>
+<li>Phenolphthalein indicator | 酚酞指示剂</li>
+<li>Sodium hydroxide solution (0.1 M) | 氢氧化钠溶液 (0.1 M)</li>
+</ul>
+<p><strong>Equipment | 实验仪器</strong>:</p>
+<ul>
+<li>Test tubes | 试管</li>
+<li>Test tube rack | 试管架</li>
+<li>Beakers (100 mL, 250 mL) | 烧杯</li>
+<li>Alcohol lamp | 酒精灯</li>
+<li>Thermometer | 温度计</li>
+<li>Droppers | 滴管</li>
+<li>Watch glass | 表玻璃</li>
+<li>Water bath setup | 水浴装置</li>
+<li>Boiling chips | 沸石</li>
+</ul>
+<p>(Note: This overlaps with Lab 7, but focuses on the acid's role)</p>
+<p>(注：这与实验7重叠，但侧重于酸的作用)</p>
+<h4>Procedure | 操作步骤</h4>
+<p>1. Setup | 设置</p>
+<ul>
+<li>- In a test tube, add reagents in this order:</li>
+</ul>
+<p>1. 2 mL Absolute Ethanol</p>
+<p>2. 2 mL Glacial Acetic Acid</p>
+<p>3. 2-3 drops Concentrated H₂SO₄ (catalyst)</p>
+<ul>
+<li>- 在试管中按此顺序加入试剂：</li>
+</ul>
+<p>1. 2 mL 无水乙醇</p>
+<p>2. 2 mL 冰醋酸</p>
+<p>3. 2-3 滴浓硫酸（催化剂）</p>
+<ul>
+<li>- Add a few boiling chips.</li>
+<li>- 加入几粒沸石。</li>
+</ul>
+<p>2. Heating | 加热</p>
+<ul>
+<li>- Heat the test tube in a warm water bath (60-70°C) for 5-10 minutes.</li>
+<li>- 将试管在温水浴（60-70°C）中加热5-10分钟。</li>
+<li>- Do not boil violently.</li>
+<li>- 不要剧烈沸腾。</li>
+</ul>
+<p>3. Collection | 收集</p>
+<ul>
+<li>- Prepare a beaker with saturated Na₂CO₃ solution.</li>
+<li>- 准备一个装有饱和Na₂CO₃溶液的烧杯。</li>
+<li>- Hold the test tube vapor outlet above the solution (or pour strictly the liquid layer).</li>
+<li>- 将试管蒸气出口置于溶液上方（或仅倾倒液体层）。</li>
+<li>- Note: Usually we use a delivery tube, but pouring the mixture into carbonate is a quick qualitative test.</li>
+<li>- 注：通常我们使用导管，但将混合物倒入碳酸盐中是快速定性测试。</li>
+<li>- Pour the reaction mixture into the Na₂CO₃ solution.</li>
+<li>- 将反应混合物倒入Na₂CO₃溶液中。</li>
+</ul>
+<p>4. Observation | 观察</p>
+<ul>
+<li>- Smell the product (Wafting!).</li>
+<li>- 闻产物（扇闻！）。</li>
+<li>- Observe layers.</li>
+<li>- 观察分层。</li>
+</ul>
+<h4>Observations | 观察与记录</h4>
+<p>Please carefully observe and record:</p>
+<p>1. Odor:</p>
+<ul>
+<li>- Describe the smell: _______________________</li>
+<li>- 描述气味：_______________________</li>
+</ul>
+<p>2. Layers:</p>
+<ul>
+<li>- Is there an oily layer on top?</li>
+<li>- 顶部有油层吗？</li>
+</ul>
+<p>   Your observation | 你的观察: _______________________</p>
+<h4>Inquiry Questions | 探究问题</h4>
+<p>1. Catalyst Role | 催化剂作用</p>
+<ul>
+<li>- What is the function of H₂SO₄? (Two functions).</li>
+<li>- H₂SO₄的作用是什么？（两个作用）。</li>
+</ul>
+<p>   Your answer | 你的答案: _______________________</p>
+<hr>
+<p>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</p>
+<p>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</p>
+<h3>1. Molecular Structure of Acetic Acid | 乙酸的分子结构</h3>
+<p>Molecular Formula | 分子式: CH₃COOH</p>
+<p>Structural Formula | 结构式:</p>
+<pre><code>
+    H
+    |
+H - C - C = O
+    |   ||
+    H   O - H
+</code></pre>
+<p>Functional Group | 官能团: Carboxyl group (-COOH) | 羧基</p>
+<p>Key Structural Features | 关键结构特征:</p>
+<ul>
+<li>Contains both carbonyl (C=O) and hydroxyl (-OH) groups</li>
+<li>同时含有羰基（C=O）和羟基（-OH）</li>
+<li>The hydrogen of the -OH group can be partially ionized</li>
+<li>-OH基团中的氢可以部分电离</li>
+<li>Weak acid due to incomplete dissociation</li>
+<li>由于不完全电离而是弱酸</li>
+</ul>
+<h3>2. Physical Properties | 物理性质</h3>
+<p>Appearance | 外观:</p>
+<ul>
+<li>Colorless liquid below 16.6°C, becomes "glacial" (ice-like)</li>
+<li>16.6°C以下为无色液体，变成"冰状"</li>
+<li>Strong, pungent, vinegar-like odor</li>
+<li>强烈、刺激性、醋味</li>
+</ul>
+<p>Density | 密度:</p>
+<ul>
+<li>1.05 g/cm³ at 20°C (denser than water)</li>
+<li>20°C时为1.05克/立方厘米（比水密度大）</li>
+</ul>
+<p>Melting Point | 熔点:</p>
+<ul>
+<li>16.6°C (forms "glacial" acetic acid below this temperature)</li>
+<li>16.6°C（低于此温度形成"冰醋酸"）</li>
+</ul>
+<p>Boiling Point | 沸点:</p>
+<ul>
+<li>118°C (higher than water due to hydrogen bonding)</li>
+<li>118°C（由于氢键作用比水高）</li>
+</ul>
+<p>Solubility | 溶解性:</p>
+<ul>
+<li>Miscible with water in all proportions</li>
+<li>与水以任意比例互溶</li>
+<li>Good solvent for many organic and inorganic substances</li>
+<li>许多有机和无机物质的良好溶剂</li>
+</ul>
+<h3>3. Acidic Properties | 酸性性质</h3>
+<h4>(1) Weak Acid Nature | 弱酸性质</h4>
+<p>Ionization Equation | 电离方程式:</p>
+<pre><code>
+CH₃COOH ⇌ CH₃COO⁻ + H⁺
+</code></pre>
+<p>Acid Dissociation Constant | 酸性电离常数:</p>
+<ul>
+<li>Ka = 1.8 × 10⁻⁵ at 25°C</li>
+<li>25°C时Ka = 1.8 × 10⁻⁵</li>
+<li>Only about 1% of acetic acid molecules ionize in 0.1M solution</li>
+<li>在0.1M溶液中只有约1%的乙酸分子电离</li>
+</ul>
+<h4>(2) Typical Acid Reactions | 典型酸反应</h4>
+<p>With Carbonates | 与碳酸盐反应:</p>
+<pre><code>
+2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂↑
+</code></pre>
+<p>With Active Metals | 与活泼金属反应:</p>
+<pre><code>
+2CH₃COOH + 2Na → 2CH₃COONa + H₂↑
+</code></pre>
+<h3>4. Esterification Reaction | 酯化反应</h3>
+<p>General Reaction | 一般反应:</p>
+<pre><code>
+R-COOH + R'-OH ⇌ R-COO-R' + H₂O
+</code></pre>
+<p>Specific Example (acetic acid + ethanol) | 具体例子（乙酸 + 乙醇）:</p>
+<pre><code>
+CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O
+                    (ethyl acetate)
+</code></pre>
+<p>Reaction Conditions | 反应条件:</p>
+<ul>
+<li>Catalyst (催化剂): Concentrated H₂SO₄</li>
+<li>Temperature: 60-70°C (water bath)</li>
+<li>Time: 10-15 minutes</li>
+</ul>
+<p>Mechanism | 机理:</p>
+<ul>
+<li>"Acid loses -OH, alcohol loses -H"</li>
+<li>"酸脱羟基，醇脱氢"</li>
+<li>The oxygen in the ester comes from the alcohol, not the acid</li>
+<li>酯中的氧来自醇，而非酸</li>
+</ul>
+<p>Observations Explained | 观察解释:</p>
+<ul>
+<li>Fruity odor indicates ester formation (ethyl acetate)</li>
+<li>果香味表明酯的生成（乙酸乙酯）</li>
+<li>Oily layer on top (ester is less dense than water and immiscible)</li>
+<li>顶部油层（酯比水密度小且不互溶）</li>
+<li>Bubbles when added to Na₂CO₃ (CO₂ from neutralization of excess acid)</li>
+<li>加入Na₂CO₃时产生气泡（中和过量酸产生的CO₂）</li>
+</ul>
+<h3>5. Comparison with Mineral Acids | 与无机酸的比较</h3>
+<p>| Property | Acetic Acid | HCl | H₂SO₄ |</p>
+<p>|----------|-------------|-----|--------|</p>
+<p>| Type | Organic weak acid | Mineral strong acid | Mineral strong acid |</p>
+<p>| Strength | Weak (Ka = 1.8 × 10⁻⁵) | Strong (complete ionization) | Strong (complete ionization) |</p>
+<p>| Conductivity | Poor | Good | Excellent |</p>
+<p>| pH (0.1M) | ~2.9 | ~1.0 | ~0.8 |</p>
+<p>| Reaction with metals | Moderate | Vigorous | Very vigorous |</p>
+<p>| Oxidizing ability | None | None | Strong (conc.) |</p>
+<h3>6. Industrial Production of Acetic Acid | 乙酸的工业生产</h3>
+<h4>(a) Fermentation Method (Traditional) | 发酵法（传统）</h4>
+<p>Process | 过程:</p>
+<ul>
+<li>Ethanol oxidation by Acetobacter bacteria</li>
+<li>乙醇被醋酸菌氧化</li>
+<pre><code>
+C₂H₅OH + O₂ --bacteria--> CH₃COOH + H₂O
+</code></pre>
+</ul>
+<p>Applications | 应用:</p>
+<ul>
+<li>Vinegar production (4-8% acetic acid)</li>
+<li>醋的生产（4-8%乙酸）</li>
+</ul>
+<h4>(b) Methanol Carbonylation (Modern) | 甲醇羰基化法（现代）</h4>
+<p>Monsanto Process | 孟山都法:</p>
+<pre><code>
+CH₃OH + CO --Rh/Ir catalyst, 150-200°C, 30-60 atm--> CH₃COOH
+</code></pre>
+<p>Advantages | 优点:</p>
+<ul>
+<li>High yield (>99%)</li>
+<li>高产率（>99%）</li>
+<li>Uses inexpensive raw materials</li>
+<li>使用廉价原料</li>
+<li>Environmentally friendly</li>
+<li>环境友好</li>
+</ul>
+<h3>7. Uses of Acetic Acid | 乙酸的用途</h3>
+<p>1. Chemical Industry | 化学工业</p>
+<ul>
+<li>- Production of vinyl acetate (for PVC)</li>
+<li>- 乙酸乙烯酯生产（用于PVC）</li>
+<li>- Production of acetic anhydride</li>
+<li>- 醋酸酐生产</li>
+<li>- Production of acetate esters</li>
+<li>- 乙酸酯生产</li>
+</ul>
+<p>2. Food Industry | 食品工业</p>
+<ul>
+<li>- Vinegar (food preservative and flavoring)</li>
+<li>- 醋（食品防腐剂和调味品）</li>
+<li>- Food additive (E260)</li>
+<li>- 食品添加剂（E260）</li>
+</ul>
+<p>3. Medical Applications | 医疗应用</p>
+<ul>
+<li>- Antiseptic and disinfectant</li>
+<li>- 防腐剂和消毒剂</li>
+<li>- Component of topical preparations</li>
+<li>- 外用制剂成分</li>
+</ul>
+<p>4. Laboratory Reagent | 实验室试剂</p>
+<ul>
+<li>- Buffer solutions</li>
+<li>- 缓冲溶液</li>
+<li>- Titration</li>
+<li>- 滴定</li>
+<li>- Synthesis of organic compounds</li>
+<li>- 有机化合物合成</li>
+</ul>
+<p>5. Household Uses | 家用</p>
+<ul>
+<li>- Cleaning agent (descaling)</li>
+<li>- 清洁剂（除垢）</li>
+<li>- Weed killer</li>
+<li>- 除草剂</li>
+</ul>
+<hr>
+<h2>Knowledge Summary | 知识点梳理</h2>
+<h3>I. Structure and Properties | 结构与性质</h3>
+<p>Molecular Structure | 分子结构:</p>
+<ul>
+<li>Formula: CH₃COOH</li>
+<li>分子式：CH₃COOH</li>
+<li>Functional group: Carboxyl (-COOH)</li>
+<li>官能团：羧基（-COOH）</li>
+<li>Contains carbonyl and hydroxyl groups</li>
+<li>含有羰基和羟基</li>
+</ul>
+<p>Physical Properties | 物理性质:</p>
+<ul>
+<li>Colorless liquid with pungent odor</li>
+<li>无色液体，刺激性气味</li>
+<li>Forms "glacial" solid below 16.6°C</li>
+<li>16.6°C以下形成"冰状"固体</li>
+<li>Miscible with water</li>
+<li>与水互溶</li>
+</ul>
+<h3>II. Chemical Behavior | 化学性质</h3>
+<p>Acidic Nature | 酸性:</p>
+<ul>
+<li>Weak acid (Ka = 1.8 × 10⁻⁵)</li>
+<li>弱酸（Ka = 1.8 × 10⁻⁵）</li>
+<li>Partial ionization</li>
+<li>部分电离</li>
+<li>pH of 0.1M solution ~2.9</li>
+<li>0.1M溶液的pH约2.9</li>
+</ul>
+<p>Typical Reactions | 典型反应:</p>
+<ul>
+<li>With indicators (turns blue litmus red)</li>
+<li>与指示剂反应（使蓝石蕊变红）</li>
+<li>With carbonates (produces CO₂)</li>
+<li>与碳酸盐反应（产生CO₂）</li>
+<li>With metals (produces H₂)</li>
+<li>与金属反应（产生H₂）</li>
+</ul>
+<h3>III. Important Reactions | 重要反应</h3>
+<p>Esterification | 酯化:</p>
+<ul>
+<li>React with alcohols to form esters</li>
+<li>与醇反应生成酯</li>
+<li>Reaction: CH₃COOH + R-OH → CH₃COOR + H₂O</li>
+<li>Requires acid catalyst and heat</li>
+<li>需要酸催化剂和加热</li>
+</ul>
+<h3>IV. Key Concepts | 重要概念</h3>
+<p>"Glacial" Acetic Acid | "冰醋酸":</p>
+<ul>
+<li>Pure acetic acid forms ice-like crystals below 16.6°C</li>
+<li>纯乙酸在16.6°C以下形成冰状晶体</li>
+<li>Name derives from appearance</li>
+<li>名称来源于外观</li>
+</ul>
+<p>Weak Acid Behavior | 弱酸行为:</p>
+<ul>
+<li>Incomplete dissociation in water</li>
+<li>在水中不完全电离</li>
+<li>Equilibrium between molecules and ions</li>
+<li>分子和离子之间的平衡</li>
+<li>Less than 5% ionization in dilute solutions</li>
+<li>稀溶液中电离度小于5%</li>
+</ul>
+<hr>
+<h2>Post-lab Questions | 实验后思考</h2>
+<p>Based on your observations and understanding of the principles, answer these questions:</p>
+<p>1. Acid Strength Analysis | 酸强度分析</p>
+<ul>
+<li>- Explain why acetic acid is considered a weak acid based on your experimental observations.</li>
+<li>- 根据你的实验观察，解释为什么乙酸被认为是弱酸。</li>
+</ul>
+<p>2. Esterification Understanding | 酯化理解</p>
+<ul>
+<li>- Why does the esterification reaction give a yield of only about 60%? How could you improve the yield?</li>
+<li>- 为什么酯化反应的产率只有约60%？你将如何提高产率？</li>
+</ul>
+<p>3. Comparative Reactivity | 比较反应性</p>
+<ul>
+<li>- Compare the reaction of acetic acid with sodium to that of hydrochloric acid with sodium. Explain the differences.</li>
+<li>- 比较乙酸与钠的反应和盐酸与钠的反应。解释差异。</li>
+</ul>
+<p>4. Physical Properties | 物理性质</p>
+<ul>
+<li>- Why does glacial acetic acid form solid crystals below 16.6°C while water remains liquid?</li>
+<li>- 为什么冰醋酸在16.6°C以下形成固体晶体，而水仍然是液体？</li>
+</ul>
+<p>5. Real-World Applications | 实际应用</p>
+<ul>
+<li>- Vinegar is a 4-8% solution of acetic acid. Based on your experiments, why is vinegar safe for consumption while glacial acetic acid is dangerous?</li>
+<li>- 醋是4-8%的乙酸溶液。根据你的实验，为什么醋可以安全食用而冰醋酸是危险的？</li>
+</ul>
+<hr>
+<p>Experiment Completed | 实验完成</p>
+<p>Remember to clean all equipment, properly neutralize acid waste, and store acetic acid safely in a labeled container away from heat sources.</p>
+<p>记得清洁所有设备，正确中和酸废料，并将乙酸安全储存在远离热源的有标记容器中。</p>
+        <a href="index.html" class="back-link">← Return to Lab Index | 返回实验列表</a>
+    </div>
+</body>
+</html>
