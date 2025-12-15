@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -619,12 +624,34 @@
 <li>产生氢气（燃烧时呈淡蓝色火焰）</li>
 </ul>
 <p>Comparison with Water | 与水对比:</p>
-<p>| Property | Na + H₂O | Na + C₂H₅OH |</p>
-<p>|----------|----------|-------------|</p>
-<p>| Reaction rate | Vigorous | Moderate |</p>
-<p>| Sodium position | Floats | Sinks |</p>
-<p>| Sodium state | Melts into ball | Doesn't melt |</p>
-<p>| Product | NaOH + H₂ | C₂H₅ONa + H₂ |</p>
+<table>
+<thead><tr>
+<th>Property</th>
+<th>Na + H₂O</th>
+<th>Na + C₂H₅OH</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Reaction rate</td>
+<td>Vigorous</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Sodium position</td>
+<td>Floats</td>
+<td>Sinks</td>
+</tr>
+<tr>
+<td>Sodium state</td>
+<td>Melts into ball</td>
+<td>Doesn't melt</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>NaOH + H₂</td>
+<td>C₂H₅ONa + H₂</td>
+</tr>
+</tbody></table>
 <p>Activity Order | 活性顺序:</p>
 <p>H in H₂O > H in -OH of ethanol > H in -CH₃ of ethanol</p>
 <h4>(2) Oxidation Reactions | 氧化反应</h4>

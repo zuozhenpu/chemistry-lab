@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -593,13 +598,45 @@ K > Na > Ca > Mg > Al > Zn > Fe > ... > H > Cu > Ag > Au
 <li>Used in grid energy storage (用于电网能量储存)</li>
 </ul>
 <h3>6. Comparison with Other Alkali Metals | 与其他碱金属的比较</h3>
-<p>| Property | Lithium (Li) | Sodium (Na) | Potassium (K) |</p>
-<p>|----------|--------------|-------------|---------------|</p>
-<p>| Density (g/cm³) | 0.53 | 0.97 | 0.86 |</p>
-<p>| Melting Point (°C) | 180 | 98 | 63 |</p>
-<p>| Reactivity with H₂O | Moderate | Vigorous | Very vigorous |</p>
-<p>| Flame Color | Crimson red | Yellow | Violet |</p>
-<p>| Storage | Under oil | Under oil | Under oil |</p>
+<table>
+<thead><tr>
+<th>Property</th>
+<th>Lithium (Li)</th>
+<th>Sodium (Na)</th>
+<th>Potassium (K)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Density (g/cm³)</td>
+<td>0.53</td>
+<td>0.97</td>
+<td>0.86</td>
+</tr>
+<tr>
+<td>Melting Point (°C)</td>
+<td>180</td>
+<td>98</td>
+<td>63</td>
+</tr>
+<tr>
+<td>Reactivity with H₂O</td>
+<td>Moderate</td>
+<td>Vigorous</td>
+<td>Very vigorous</td>
+</tr>
+<tr>
+<td>Flame Color</td>
+<td>Crimson red</td>
+<td>Yellow</td>
+<td>Violet</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Under oil</td>
+<td>Under oil</td>
+<td>Under oil</td>
+</tr>
+</tbody></table>
 <p>Reactivity Trend | 反应性趋势:</p>
 <pre><code>
 Li < Na < K < Rb < Cs

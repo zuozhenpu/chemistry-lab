@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -111,12 +116,39 @@
 <li>batch_update.py</li>
 </ul>
 <h3>4. 教学质量提升 ✅</h3>
-<p>| 改进维度 | 旧版 | 新版 | 提升幅度 |</p>
-<p>|---------|------|------|---------|</p>
-<p>| 学习方式 | 死记硬背 | 理解思考 | 质的飞跃 |</p>
-<p>| 安全教育 | 3-5题 | 8题全面 | 60-100% |</p>
-<p>| 操作具体性 | 模糊 | 具体化 | 100% |</p>
-<p>| 书写空间 | 无 | 每题2-3行 | 从无到有 |</p>
+<table>
+<thead><tr>
+<th>改进维度</th>
+<th>旧版</th>
+<th>新版</th>
+<th>提升幅度</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>学习方式</td>
+<td>死记硬背</td>
+<td>理解思考</td>
+<td>质的飞跃</td>
+</tr>
+<tr>
+<td>安全教育</td>
+<td>3-5题</td>
+<td>8题全面</td>
+<td>60-100%</td>
+</tr>
+<tr>
+<td>操作具体性</td>
+<td>模糊</td>
+<td>具体化</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>书写空间</td>
+<td>无</td>
+<td>每题2-3行</td>
+<td>从无到有</td>
+</tr>
+</tbody></table>
 <hr>
 <h2>📋 剩余工作</h2>
 <h3>待处理实验（9个）</h3>

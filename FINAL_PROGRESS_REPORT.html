@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -97,12 +102,34 @@
 <hr>
 <h2>🎯 核心成就</h2>
 <h3>教学理念转变 ✅</h3>
-<p>| 维度 | 旧版 | 新版 |</p>
-<p>|------|------|------|</p>
-<p>| 学习方式 | 死记硬背口诀 | 理解思考"Why?" |</p>
-<p>| 安全教育 | 3-5个简单问题 | 8个全面问题 |</p>
-<p>| 操作指导 | "适当试剂" | "2M HCl 5mL" |</p>
-<p>| 学习记录 | 无书写空间 | 每题2-3行空间 |</p>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>旧版</th>
+<th>新版</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>学习方式</td>
+<td>死记硬背口诀</td>
+<td>理解思考"Why?"</td>
+</tr>
+<tr>
+<td>安全教育</td>
+<td>3-5个简单问题</td>
+<td>8个全面问题</td>
+</tr>
+<tr>
+<td>操作指导</td>
+<td>"适当试剂"</td>
+<td>"2M HCl 5mL"</td>
+</tr>
+<tr>
+<td>学习记录</td>
+<td>无书写空间</td>
+<td>每题2-3行空间</td>
+</tr>
+</tbody></table>
 <h3>标准化框架 ✅</h3>
 <p><strong>统一结构：</strong></p>
 <p>1. Pre-lab Work (Basic Knowledge + Theory Questions)</p>

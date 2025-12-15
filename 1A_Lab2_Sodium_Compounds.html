@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -565,12 +570,34 @@ Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑
 NaHCO₃ + HCl → NaCl + H₂O + CO₂↑
 </code></pre>
 <h3>6. Comparison: Na₂CO₃ vs. NaHCO₃ | 对比</h3>
-<p>| Property | Na₂CO₃ | NaHCO₃ |</p>
-<p>|----------|---------|---------|</p>
-<p>| Solubility | High | Lower |</p>
-<p>| Alkalinity | Strong | Weak |</p>
-<p>| Thermal stability | Stable | Decomposes |</p>
-<p>| With NaOH | No reaction | Forms Na₂CO₃ |</p>
+<table>
+<thead><tr>
+<th>Property</th>
+<th>Na₂CO₃</th>
+<th>NaHCO₃</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Solubility</td>
+<td>High</td>
+<td>Lower</td>
+</tr>
+<tr>
+<td>Alkalinity</td>
+<td>Strong</td>
+<td>Weak</td>
+</tr>
+<tr>
+<td>Thermal stability</td>
+<td>Stable</td>
+<td>Decomposes</td>
+</tr>
+<tr>
+<td>With NaOH</td>
+<td>No reaction</td>
+<td>Forms Na₂CO₃</td>
+</tr>
+</tbody></table>
 <hr>
 <hr>
 <h2>Post-lab Questions | 实验后思考</h2>

@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -526,15 +531,49 @@ CHCl₃ + Cl₂ --light--> CCl₄ + HCl (carbon tetrachloride)
 <li>Light is necessary to break Cl-Cl bond (光是打破Cl-Cl键所必需的)</li>
 </ul>
 <h3>5. Comparison: Methane vs. Ethylene | 对比：甲烷与乙烯</h3>
-<p>| Property | Methane (CH₄) | Ethylene (C₂H₄) |</p>
-<p>|----------|---------------|-----------------|</p>
-<p>| Structure | Tetrahedral, sp³ | Planar, sp² |</p>
-<p>| Saturation | Saturated | Unsaturated |</p>
-<p>| Main reaction | Substitution | Addition |</p>
-<p>| With Br₂ | No reaction | Decolorizes |</p>
-<p>| With KMnO₄ | No reaction | Decolorizes |</p>
-<p>| Combustion | Pale blue, no smoke | Bright, smoky |</p>
-<p>| Reactivity | Stable | Reactive |</p>
+<table>
+<thead><tr>
+<th>Property</th>
+<th>Methane (CH₄)</th>
+<th>Ethylene (C₂H₄)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Structure</td>
+<td>Tetrahedral, sp³</td>
+<td>Planar, sp²</td>
+</tr>
+<tr>
+<td>Saturation</td>
+<td>Saturated</td>
+<td>Unsaturated</td>
+</tr>
+<tr>
+<td>Main reaction</td>
+<td>Substitution</td>
+<td>Addition</td>
+</tr>
+<tr>
+<td>With Br₂</td>
+<td>No reaction</td>
+<td>Decolorizes</td>
+</tr>
+<tr>
+<td>With KMnO₄</td>
+<td>No reaction</td>
+<td>Decolorizes</td>
+</tr>
+<tr>
+<td>Combustion</td>
+<td>Pale blue, no smoke</td>
+<td>Bright, smoky</td>
+</tr>
+<tr>
+<td>Reactivity</td>
+<td>Stable</td>
+<td>Reactive</td>
+</tr>
+</tbody></table>
 <h2>I. Alkanes (Saturated Hydrocarbons) | 烷烃（饱和烃）</h2>
 <p>General Formula | 通式: CₙH₂ₙ₊₂ (n ≥ 1)</p>
 <p>Characteristics | 特征:</p>

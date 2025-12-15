@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -112,16 +117,63 @@
 <hr>
 <h2>🎯 质量标准（已验证）</h2>
 <p>基于Lab 1和Lab 2，以下标准已验证可行：</p>
-<p>| 标准项 | 要求 | Lab 1 | Lab 2 |</p>
-<p>|--------|------|-------|-------|</p>
-<p>| Pre-lab Work居中 | 必须 | ✅ | ✅ |</p>
-<p>| Basic Knowledge | 3-4题 + 书写空间 | ✅ | ✅ |</p>
-<p>| Theory Questions | 1-2题 + 书写空间 | ✅ | ✅ |</p>
-<p>| Safety Questions | 8题 + 书写空间 | ✅ | ✅ |</p>
-<p>| Part结构 | Materials → Procedure → Observations → Inquiry | ✅ | ✅ |</p>
-<p>| 具体化 | 所有剂量、浓度明确 | ✅ | ✅ |</p>
-<p>| 避免口诀 | 用问题引导思考 | ✅ | ✅ |</p>
-<p>| 安全警告 | 危险步骤必有 | ✅ | ✅ |</p>
+<table>
+<thead><tr>
+<th>标准项</th>
+<th>要求</th>
+<th>Lab 1</th>
+<th>Lab 2</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Pre-lab Work居中</td>
+<td>必须</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Basic Knowledge</td>
+<td>3-4题 + 书写空间</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Theory Questions</td>
+<td>1-2题 + 书写空间</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Safety Questions</td>
+<td>8题 + 书写空间</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Part结构</td>
+<td>Materials → Procedure → Observations → Inquiry</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>具体化</td>
+<td>所有剂量、浓度明确</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>避免口诀</td>
+<td>用问题引导思考</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>安全警告</td>
+<td>危险步骤必有</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
 <hr>
 <h2>💡 下次会话建议</h2>
 <h3>立即继续的工作</h3>
