@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -415,8 +420,9 @@
 <p>   Your answer | 你的答案: _______________________</p>
 <hr>
 <h2>Experimental Principles | 实验原理</h2>
-<p>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</p>
-<p>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</p>
+<blockquote>Inquiry-Based Learning | 探究式学习</blockquote>
+<blockquote>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</blockquote>
+<blockquote>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</blockquote>
 <h3>1. Physical Properties | 铝的物理性质</h3>
 <p>Appearance | 外观:</p>
 <ul>
@@ -552,14 +558,44 @@ Al₂O₃ + 2NaOH + 3H₂O → 2Na[Al(OH)₄] (solution)
 <li>Repairing large metal parts (修复大型金属部件)</li>
 </ul>
 <h3>5. Comparison: Aluminum vs. Iron | 对比：铝与铁</h3>
-<p>| Property | Aluminum (Al) | Iron (Fe) |</p>
-<p>|----------|---------------|-----------|</p>
-<p>| Density | 2.70 g/cm³ | 7.87 g/cm³ |</p>
-<p>| Reactivity | More reactive | Less reactive |</p>
-<p>| Corrosion | Resistant (oxide layer) | Rusts easily |</p>
-<p>| With NaOH | Reacts | No reaction |</p>
-<p>| Magnetic | No | Yes |</p>
-<p>| Cost | Higher | Lower |</p>
+<table>
+<thead><tr>
+<th>Property</th>
+<th>Aluminum (Al)</th>
+<th>Iron (Fe)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Density</td>
+<td>2.70 g/cm³</td>
+<td>7.87 g/cm³</td>
+</tr>
+<tr>
+<td>Reactivity</td>
+<td>More reactive</td>
+<td>Less reactive</td>
+</tr>
+<tr>
+<td>Corrosion</td>
+<td>Resistant (oxide layer)</td>
+<td>Rusts easily</td>
+</tr>
+<tr>
+<td>With NaOH</td>
+<td>Reacts</td>
+<td>No reaction</td>
+</tr>
+<tr>
+<td>Magnetic</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Higher</td>
+<td>Lower</td>
+</tr>
+</tbody></table>
 <hr>
 <hr>
 <h2>Post-lab Questions | 实验后思考</h2>

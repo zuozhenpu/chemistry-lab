@@ -25,6 +25,11 @@
         hr { border: none; border-top: 2px solid #d1fae5; margin: 30px 0; }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 20px; } .back-link { display: none; } }
         @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; }
+        th, td { border: 1px solid #d1fae5; padding: 12px; text-align: left; color: #1a202c; }
+        th { background: #f0fdf4; color: #065f46; font-weight: 600; }
+        tr:nth-child(even) { background: #f9fafb; }
+        @media (max-width: 600px) { th, td { font-size: 0.9em; padding: 8px; } }
     </style>
 </head>
 <body>
@@ -417,8 +422,10 @@
 </ul>
 <p>   Your answer | 你的答案: _______________________</p>
 <hr>
-<p>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</p>
-<p>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</p>
+<h2>Experimental Principles | 实验原理</h2>
+<blockquote>Inquiry-Based Learning | 探究式学习</blockquote>
+<blockquote>Now that you have completed the experimental procedures and made observations, let's understand the underlying principles.</blockquote>
+<blockquote>现在你已经完成了实验操作并进行了观察，让我们来理解其背后的原理。</blockquote>
 <h3>1. Molecular Structure of Acetic Acid | 乙酸的分子结构</h3>
 <p>Molecular Formula | 分子式: CH₃COOH</p>
 <p>Functional Group | 官能团: Carboxyl group (-COOH) | 羧基</p>
@@ -516,14 +523,51 @@ CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O
 <li>加入Na₂CO₃时产生气泡（中和过量酸产生的CO₂）</li>
 </ul>
 <h3>5. Comparison with Mineral Acids | 与无机酸的比较</h3>
-<p>| Property | Acetic Acid | HCl | H₂SO₄ |</p>
-<p>|----------|-------------|-----|--------|</p>
-<p>| Type | Organic weak acid | Mineral strong acid | Mineral strong acid |</p>
-<p>| Strength | Weak (Ka = 1.8 × 10⁻⁵) | Strong (complete ionization) | Strong (complete ionization) |</p>
-<p>| Conductivity | Poor | Good | Excellent |</p>
-<p>| pH (0.1M) | ~2.9 | ~1.0 | ~0.8 |</p>
-<p>| Reaction with metals | Moderate | Vigorous | Very vigorous |</p>
-<p>| Oxidizing ability | None | None | Strong (conc.) |</p>
+<table>
+<thead><tr>
+<th>Property</th>
+<th>Acetic Acid</th>
+<th>HCl</th>
+<th>H₂SO₄</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>Organic weak acid</td>
+<td>Mineral strong acid</td>
+<td>Mineral strong acid</td>
+</tr>
+<tr>
+<td>Strength</td>
+<td>Weak (Ka = 1.8 × 10⁻⁵)</td>
+<td>Strong (complete ionization)</td>
+<td>Strong (complete ionization)</td>
+</tr>
+<tr>
+<td>Conductivity</td>
+<td>Poor</td>
+<td>Good</td>
+<td>Excellent</td>
+</tr>
+<tr>
+<td>pH (0.1M)</td>
+<td>~2.9</td>
+<td>~1.0</td>
+<td>~0.8</td>
+</tr>
+<tr>
+<td>Reaction with metals</td>
+<td>Moderate</td>
+<td>Vigorous</td>
+<td>Very vigorous</td>
+</tr>
+<tr>
+<td>Oxidizing ability</td>
+<td>None</td>
+<td>None</td>
+<td>Strong (conc.)</td>
+</tr>
+</tbody></table>
 <h3>6. Industrial Production of Acetic Acid | 乙酸的工业生产</h3>
 <h4>(a) Fermentation Method (Traditional) | 发酵法（传统）</h4>
 <p>Process | 过程:</p>
